@@ -1,0 +1,1148 @@
+equation,answer
+"y\prime= \frac{3}{x^3+x}, \;\;\;\; y(1)=0",y = 3 \ln x -\frac{3}{2} \ln {(x^2+1)} + \frac{3}{2} \ln 2
+y\prime=3xy,y = C e^{\frac{3}{2} x^2}
+\frac{dy}{dx}= xy^2 + 4x + 2y^2 + 8,y =2 \tan{(x^2 +4x +2C)}
+"\frac{dy}{dx}= e^{x+2y}, y(0)=1 ",y = -\frac{1}{2} \ln{(-2 e^x + 2+e^{-2})}
+y\prime = x e^{2x+y} ,y = - \ln {(-\frac{1}{2} x e^{2x} + \frac{1}{4} e^{2x}-C)}
+x(x+1)(x+2) y\prime = (3x-3) y^2 ,y = \frac{1}{\frac{3}{2} \ln{|x|} - 6 \ln{|x+1|} +\frac{9}{2}\ln{|x+2|}-C}
+y\prime-xy=0,y= C e^{\frac{1}{2} x^2}
+(x^2+4) y\prime = 3xy,y = C (x^2+4)^{3/2}
+y\prime+ \frac{2}{x} y = \frac{3 e^{3x}}{x^2},y  =  \frac{1}{x^2} e^{3x} + \frac{C}{x^2}
+y\prime+2y=x,y = \frac{1}{2} x  - \frac{1}{4} +C e^{-2x}
+"y\prime - 2xy = 3x,  \; y(0)=1",y = -\frac{3}{2}+ \frac{5}{2} e^{x^2}
+2xy\prime = y+ 3\sqrt{x^5},y = \frac{3}{4}x^{5/2} +C x^{1/2}
+"xy\prime-5y = 2x, \; y(1)=0",y = -\frac{1}{2} x + \frac{1}{2} x^{5}
+"x^2 y\prime + y = \frac{1}{x}, \; y(1)=0",y = 1+\frac{1}{x}+ -\frac{2}{e} e^{\frac{1}{x}}
+x^2 y\prime +2xy + 10xy y\prime + 5y^2 + 9y^2 y\prime =0 ,x^2 y + 5 x y^2 + 3 y^3 + C = 0
+(3x \cos y + 5) dx + \left(-\frac{3}{2} x^2 \sin y + 3y^2\right) dy = 0,\frac{3}{2} x^2 \cos y + y^3+ 5x =C 
+5x^2 +2y + 2xy\prime = 0,2xy + \frac{5}{3} x^3 =C
+(1+y e^{xy})dx +(2y+x e^{xy})dy =0,x+ y^2 +e^{xy} =C
+"y\prime\prime-6y\prime+8y=0, \; y(0)=1, y\prime(0)=-6",y = (-4) e^{4 x}+ 5 e^{2 x}
+"y\prime\prime-8y\prime+16y=0, \; y(0)=2, y\prime(0)=0",y= 2 e^{4 x} - 8 x e^{4 x}
+"y\prime\prime-6y\prime+10y=0, \; y(0)=3, y\prime(0)=-2",y=e^{3 x} (3 \cos x -11 \sin x)
+"3y\prime\prime-5\prime-2y=0, \; y(0)=1, y\prime(0)=-2",y=\frac{12}{7} e^{-\frac{1}{3} x}-\frac{5}{7} e^{2 x}
+y\prime\prime -2y\prime - 3y = 5 e^{7x},y = C_1 e^{3x} + C_2 e^{-x}+\frac{5}{32}e^{7x}
+y\prime\prime-2y\prime-3y= 4 \sin 2x ,y = C_1 e^{3x} + C_2 e^{-x}  -\frac{28}{65} \cos 2x + \frac{16}{65} \sin 2x
+y\prime\prime - 6y\prime +9y = 3 e^{3x}- e^{4x},y = C_1 e^{3x} + C_2 x e^{3x}+\frac{3}{2} x^2 e^{3x} - e^{4x}
+y\prime\prime+y=\tan x,y = C_1 \cos x + C_2 \sin x - \cos x  \ln |\sec x + \tan x
+y\prime\prime - y =x,y= C_1 e^x + C_2 e^{-x} - x
+(x^2+3)y\prime\prime +4xy\prime+y =0,y= a_0 + a_1 x -\frac{1}{6} a_0 x^2 -\frac{5}{18}a_1 x^3 + \frac{11}{216} a_0x^4+\frac{19}{216} a_1 x^5 +\cdots
+"y\prime\prime + xy\prime+ y =0, \; \; y(0)=1, y\prime(0)=-2",y = 1 -2x -\frac{1}{2} x^2+ \frac{2}{3} x^3 - \frac{1}{8} x^4 -  -\frac{2}{15} x^5 \cdots
+2x^2 y\prime\prime + 3xy\prime - (x^2 +1)y =0,y = C y_1 \ln x + \sum_{n=0}^{\infty} b_n x^{k+r_2}
+2x^2 y\prime\prime + (7x-x^2) y\prime + 2y =0,y= C_1 \left( \frac{1}{x^2} + \frac{2}{x} -1 \right) + C_2 x^{-1/2} \left(1  -\frac{1}{10} x - \frac{1}{280} x^2  - \frac{1}{5040} x^3  - \frac{1}{88704} x^4 + \cdots  \right)
+\mathbf{X\prime} = \begin{pmatrix} 7 & -4 \\ 5 & -2 \\ \end{pmatrix} \mathbf{X},\begin{cases}x(t) = 4C_1 e^{2t}+ C_2 e^{3t} \\ y(t) = 5C_2 e^{2t}+ C_2 e^{3t}  \end{cases}
+"\begin{cases} x_1\prime = 4x_1-3x_2 \\ x_2\prime =6 x_1 - 7x_2 \\  \end{cases},  \; x_1(0) = 1, \; x_2(0) = -1",\begin{cases} x_1(t) = -\frac{5}{7}  e^{-5t} +\frac{12}{7}e^{2t} \\ x_2(t) = -\frac{15}{7}  e^{-5t} +\frac{8}{7}e^{2t} \\  \end{cases}
+"y\prime\prime-y=0, \; \; y(0)=2,y(4)=1",y = \frac{2-e^4}{1-e^8}e^x + \left(2- \frac{2-e^4}{1-e^8} \right)e^{-x}
+"y\prime\prime+y = 0, \; \; y(0)=0,y(\pi)=0",y= C_2 \sin x
+"y\prime\prime+4y =t  \; , \; \; y(0)=y(2)=0",y = \sum_{n=1}^{\infty} \frac{-\frac{4}{n\pi} (-1)^n}{-\frac{n^2\pi^2}{4}+4} \sin \frac{2n\pi}{2} t
+"$$\frac{\partial u}{\partial t}(x,t) = 3 \frac{\partial^2 u}{\partial x^2}(x,t)\; , \; \; 0<x<L, t>0$$ $$u(0,t)=u(2,t)=0 \; , \; \; t>0$$
+$$u(x,0)=4  \; , \; \; 0<x<L$$ ","u(x,t) = \sum_{n=1}^{\infty} c_n \sin \left(\frac{n\pi}{2} x \right) e^{-\frac{3n^2 \pi^2}{4} t}"
+"$$u_t(x,t) = 7 u_{xx}(x,t)\; , \; \; 0<x<L, t>0$$
+$$u(x,0)=-x+6  \; , \; \; 0<x<L$$
+$$u_x(0,t)=u_x(8,t)=0 \; , \; \; t>0$$","u(x,t) = 2 + \sum_{n=1}^{\infty} \frac{16}{n^2 \pi^2} \left( 1-  (-1)^n \right)  \cos \left( \frac{n \pi}{8} x \right) e^{-\frac{7n^2 \pi^2}{64} t}"
+"$$\frac{\partial u}{\partial t}(x,t) = 0.2 \frac{\partial^2 u}{\partial x^2}(x,t)\; , \; \; 0<x<L, t>0$$
+$$u(0,t)=u(3,t)=0 \; , \; \; t>0$$
+$$u(x,0)=\cos(6\pi x) - \cos(2\pi x) + 7  \; , \; \; 0<x<L$$","u(x,t) = 7 - \cos \left( 2\pi x \right) e^{-0.8 \pi^2 t}+\cos \left( 6\pi x \right) e^{-7.2\pi^2 t}"
+"$$ y_{tt} = 9 y_{xx} \; \; \; \;,  \; (0<x<4, \; t>0) $$
+        $$ y(0,t) = y(4,t)=0, \; \; \; \;,  \; ( t>0) $$
+        $$ y(x,0) = 4 - |2-x| \; \; \; \;,  \; (0<x<4) $$
+        $$ y_t (x,0) = 0 \; \; \; \;,  \; (0<x<4) $$
+        ","\begin{align*}
+y(x,t) &= \sum_{n=1}^{\infty} A_n \sin\frac{n\pi x}{4} \cos \frac{3n\pi t}{4} \\
+&= \sum_{m=0}^{\infty}  \left( \frac{16}{(2m+1)^2\pi^2} (-1)^m + \frac{8}{(2m+1)\pi}  \right) \sin \frac{(2m+1)\pi x }{4}  \cos \frac{3(2m+1)\pi t}{4}\\
+\end{align*}"
+"y\prime\prime+8y\prime+25y = 13 e^{-2t}  \; , \; \;  y(0)=-1, y\prime(0)=18 ",y(t)= \mathscr{L}^{-1} \left\{ \frac{1}{s+2}\right\} - 2\mathscr{L}^{-1} \left\{ \frac{(s+4)}{(s+4)^2 + 3^2} \right\}+4 \mathscr{L}^{-1} \left\{ \frac{3}{(s+4)^2 + 3^2} \right\} = e^{-2t} -2 e^{-4t}\cos 3t+ 4e^{-4t}\sin 3t
+"y\prime\prime - 3y\prime +2y = 6 \sin 2t  \; , \; \; y(0)=1, y\prime(0)=0",y(t) = \frac{9}{10} \cos 2t -\frac{3}{10}\sin 2t + \frac{1}{2} e^{2t} -\frac{2}{5} e^t 
+"y\prime\prime+4y\prime+13y =0  \; , \; \; y(0)=0, y\prime(0)=2 ",y(t)=  \frac{2}{3} e^{-2t} \sin{3t}
+"y\prime\prime+4y\prime+13y = e^{2t}  \; , \; \; y(0)=0, y\prime(0)=2 ",y(t)=\frac{46}{75}  e^{-2t} \sin{3t} - \frac{1}{25} e^{-2t} \cos{3t}  + \frac{1}{25} e^{2t} 
+"y\prime\prime + 5y\prime +4y = 17 \cos t  \; , \; \;  y(0)=-1, y\prime(0)=2 ",y(t)=-\frac{1}{2} \cos{t} + \frac{5}{2}\sin{t}  + e^{-4t} - \frac{7}{2} e^{-t}
+y\prime=e^{-y}sin(x); \; y(0)=0,y=\ln{2-cos(x)}
+d x+x d y=0,y={\frac{C}{x}}
+y^{\prime}=\mathrm{tg}{\frac{y}{x}}+{\frac{y}{x}},y=x\arcsin(C x)
+x y^{\prime}=y+{\sqrt{4x^{2}-y^{2}}},\arcsin{\frac{y}{2x}}=\ln\left|x\right|+\ln C
+x^{2}y^{\prime}={\frac{1}{\cos y}},"y(x)=\sin^{-1}\left({\frac{c_{1}\,x-1}{x}}\right)"
+"\mathrm{tg}\,x\cdot y^{\prime}={\sqrt{y^{2}+3}}",y(x)={\sqrt{3}}\ \sinh(c_{1}+\log(\sin(x)))
+{\sqrt{y}}d x+{\frac{d y}{\ln x}}=0,y=x^{2}\log^{2}(x)
+{\sqrt{y}}d x+{\frac{d y}{\ln x}}=1,y=0
+y^{\prime}=\cos^{2}{\frac{y}{x}}+{\frac{y}{x}},y(x)=x\tan^{-1}(c_{1}+\log(x))
+e^{3x}y^{\prime}=y^{2}-3,y(x)={\frac{{\sqrt{3}}\left(e^{(2e^{-3x})/{\sqrt{3}}}\ -e^{2{\sqrt{3}}\ c_{1}}\right)}{e^{2{\sqrt{3}}\cdot{\sqrt{3}}}\cdot{\mathrm{~}}e^{(2e^{-3x})/{\sqrt{3}}}}}
+(x^{2}+4)y^{\prime}=\operatorname{tg}y,y(x)=\sin^{-1}\!\left[e^{i x_{1}+i2\pi\alpha_{1}^{-1}(x/2)}\right]
+(y^{2}-4)dx+\sqrt{3-x^{2}}\cdot ydy=0,y(x)=-{\sqrt{e^{c_{1}-2\sin^{-1}(x/{\sqrt{3}})_{+4}}}}
+y^{\prime}={\frac{y+x}{y-x}},y(x)=x-\sqrt{c_{1}+2x^{2}}
+y^{\prime}={\frac{y+x}{y-x}},y(x)=\sqrt{c_{1}+2x^{2}}+x
+xy^{\prime}=y+{\sqrt{x^{2}+3y^{2}}},y(x)={\frac{x\sinh({\sqrt{3}}\;c_{1}+{\sqrt{3}}\;\log(x))}{\sqrt{3}}}
+xy^{\prime}+y={\frac{1}{x^{10}}},y={\frac{1}{x}}\cdot\left(-{\frac{1}{9x^{9}}}+C\right)
+(2x+y^{2})y^{\prime}=y,x=y^{2}(\ln y + C)
+xy^{\prime}-y=x^{5},y(x)=c_{1}x+{\frac{x^{5}}{4}}
+xy^{\prime}-2y=\ln x,"y(x)=c_{1}\,x^{2}-{\frac{\log(x)}{2}}-{\frac{1}{4}}"
+y^{\prime}+y\operatorname{tg}x={\frac{1}{\cos x}},y(x)=c_{1}\cos(x)+\sin(x)
+y^{\prime}-y={\frac{e^{x}}{x^{2}}},"y(x)=c_{1}\,e^{x}-{\frac{e^{x}}{x}}"
+\left(x^{2}+1\right)y^{\prime}-2x y=3(x^{2}+1)^{4},"y(x)=c_{1}\left(x^{2}+1\right)+\left(x^{2}+1\right)\left({\frac{3\,x^{5}}{5}}+2\,x^{3}+3\,x\right)"
+y^{\prime}+{\frac{2y}{x}}={\frac{x}{y^{2}}}; \; y(1)=2,y={\frac{1}{2}}\cdot{\frac{\sqrt{3x^{2}+61}}{x^{6}}}
+y^{\prime}+{\frac{y}{x}}={\frac{1}{3}}x^{2}y^{4},"y(x)={\frac{1}{({c_{1}\,x^{3}-x^{3}\log(x)})^{1/3}}}"
+2y^{\prime}-\frac{y}{x}=\frac{4x^{2}}{y},y(x)=-{\sqrt{x}}\;{\sqrt{c_{1}+2x^{2}}}
+(1+x^{2})y^{\prime}=2x y+x^{2}y^{2},y(x)=-{\frac{3\left(x^{2}+1\right)}{c_{1}+x^{3}}}
+y^{\prime}-2y=-y^{3}; \; y(0)=1,y(x)={\frac{\sqrt{2}\;e^{2x}}{\sqrt{e^{4x}+1}}}
+xy^{\prime}+2y=xy^{4},y(x)={\frac{5^{1/3}}{({c_{1}x^{6}+3x})^{1/3}}}
+xy^{\prime}-2y={\frac{x}{y}},"y(x)=-{\frac{\sqrt{x}\;{\sqrt{c_{1}\,x^{3}-2}}}{\sqrt{3}}}"
+xy^{\prime}-2y={\frac{x}{y}},"y(x)={\frac{\sqrt{x}\;{\sqrt{c_{1}\,x^{3}-2}}}{\sqrt{3}}}"
+y^{\prime}-{\frac{y}{2x}}=3y^{4},"y(x)={\frac{{\sqrt{5}}\;{\sqrt{x}}}{{\sqrt{c_{1}-18}}\,x^{5/2}}}"
+y^{\prime}-{\frac{y}{x}}={\frac{x^{2}}{y^{3}}},y(x)=-x^{3/4}{\overset{4}{\sqrt{c_{1}x-4}}} 
+y^{\prime}-{\frac{y}{x}}={\frac{x^{2}}{y^{3}}},y(x)=x^{3/4}{\overset{4}{\sqrt{c_{1}x-4}}}
+y^{\prime}+{\frac{3y}{x}}=5x^{3}y^{2},y(x)=-{\frac{1}{x^{3}(c_{1}+5x)}}
+y^{\prime}+2y=3y^{2}e^{x},"y(x)={\frac{e^{-x}}{c_{1}\,e^{x}+3}}"
+y^{\prime\prime\prime}=x+\sin2x,y={\frac{1}{24}}x^{4}+{\frac{1}{8}}\cos2x+C_{1}x^{2}+C_{2}x+C_{3}
+xy^{\prime\prime}-2y^{\prime}=x^{2},y={\frac{1}{3}}x^{3}\ln|x|-{\frac{1}{9}}x^{3}+C_{1}x^{3}+C_{2}
+yy^{\prime\prime}-(y^{\prime})^{2}+y(y^{\prime})^{3}=0,{\frac{1}{2}}y^{2}+C_{1}\ln|y|=2x+C_{2}
+y^{\prime\prime\prime}=x^{2}+\cos3x+2,"y(x)=c_{3}\,x^{2}+c_{2}\,x+c_{1}+{\frac{x^{5}}{60}}+{\frac{1}{24}}\,x^{4}\cos(3)+{\frac{x^{3}}{3}}"
+y^{\prime\prime}-\frac{1}{x}y^{\prime}=x^{2},"y(x)=c_{1}\,x^{2}+c_{2}+{\frac{x^{4}}{8}}"
+y^{2}+(y^{\prime})^{2}-2y y^{\prime\prime}=0,y(x)=c_{2}\;e^{-x}\left(c_{1}+e^{x}\right)^{2}
+2yy^{\prime\prime}+(y^{\prime})^{2}=0,"y(x)=c_{2}\left(c_{1}+3\,x\right)^{2/3}"
+y^{\prime\prime}=\left(y^{\prime}\right)^{2},y(x)=c_{2}-\log(c_{1}+x)
+x^{3}y^{(1\mathrm{V})}=4-x\qquad,"y(x)=c_{4}\,x^{3}+c_{3}\,x^{2}+c_{2}\,x+c_{1}+{\frac{1}{2}}\,x^{2}\log(x)+2\,x\log(x)"
+xy^{\prime\prime}=y^{\prime}+x\sin{\frac{y^{\prime}}{x}},"y(x)=x^{2}\cot^{-1}\!\left({\frac{e^{-x_{1}}}{x}}\right)-e^{-2\epsilon_{1}}\left(e^{\epsilon_{1}}\,x+\tan^{-1}\!\left({\frac{e^{-x_{1}}}{x}}\right)\right)+c_{2}"
+xy^{\prime\prime}=y^{\prime}+x\left(y^{\prime}\right)^{2}+x^{3},y(x)=c_{2}-\log {(\cos {(c_1+\frac{x^2}{2})})}
+yy^{\prime\prime}=1+\left(y^{\prime}\right)^{2},y(x)={\frac{e^{-c_{1}}\operatorname{tanh}(e^{c_{1}}\left(c_{2}+x\right))}{\sqrt{\operatorname{tanh}^{2}(e^{c_{1}}\left(c_{2}+x\right))-1}}}
+yy^{\prime\prime}=1+\left(y^{\prime}\right)^{2},y(x)=-{\frac{e^{-c_{1}}\operatorname{tanh}(e^{c_{1}}\left(c_{2}+x\right))}{\sqrt{\operatorname{tanh}^{2}(e^{c_{1}}\left(c_{2}+x\right))-1}}}
+yy^{\prime\prime}+(y^{\prime})^{2}=5,"y(x)=-{\frac{\sqrt{50c_{2}\,x+25\,c_{2}^{2}-c_{1}+25\,x^{2}}}{\sqrt{5}}}"
+yy^{\prime\prime}+(y^{\prime})^{2}=6,"y(x)={\frac{\sqrt{50c_{2}\,x+25\,c_{2}^{2}-c_{1}+25\,x^{2}}}{\sqrt{5}}}"
+(1+x^{2})y^{\prime\prime}-2x y^{\prime}=2(1+x^{2})^{2},"y(x)={\frac{c_{1}\,x^{3}}{3}}+c_{1}\,x+c_{2}+{\frac{x^{4}}{2}}+x^{2}"
+yy^{\prime\prime}-\left(y^{\prime}\right)^{2}=y^{4},y(x)=-{\sqrt{c_{1}}}\;{\sqrt{\operatorname{tanh}^{2}({\sqrt{c_{1}}}\;x+{\sqrt{c_{1}}}\;c_{2})-1}}
+yy^{\prime\prime}-\left(y^{\prime}\right)^{2}=y^{4},y(x)={\sqrt{c_{1}}}\;{\sqrt{\operatorname{tanh}^{2}({\sqrt{c_{1}}}\;x+{\sqrt{c_{1}}}\;c_{2})-1}}
+y=x(y^{\prime}-x\cos x),"y(x)=c_{1}\,x+x\,\mathrm{sin}(x)"
+y^{\prime\prime}={\frac{1}{x^{2}}}+e^{3x},"y(x)=c_{2}\,x+c_{1}+{\frac{e^{3\,x}}{9}}-\log(x)"
+2xy^{\prime}y^{\prime\prime}=\left(y^{\prime}\right)^{2},y(x)=c_{1}
+2xy^{\prime}y^{\prime\prime}=\left(y^{\prime}\right)^{2},"y(x)=c_{1}\,x^{3/2}+c_{2}"
+2yy^{\prime\prime}=y^{2}+\left(y^{\prime}\right)^{2},y(x)=c_{2}\;e^{-x}\left(c_{1}+e^{x}\right)^{2}
+yy^{\prime\prime}=y y^{\prime}+\left(y^{\prime}\right)^{2},y(x)=c_{2}\;e^{c_1\ e^x}
+xy^{\prime\prime\prime}-y^{\prime\prime}=0,"y(x)=c_{1}\,x^{3}+c_{3}\,x+c_{2}"
+2y^{\prime\prime}-3y^{\prime}+y=0,y=C_{1}e^{x}+C_{2}e^{x/2}
+y^{\prime\prime}+6y^{\prime}+9y=0,y=\left(C_{1}+C_{2}x\right)e^{-3x}
+y^{\prime\prime}-6y^{\prime}+25y=0,y=e^{3x}\left(C_{1}\cos4x+C_{2}\sin4x\right)
+2y^{\prime\prime}+7y^{\prime}+5y=0,y(x)=c_{1}\;e^{-(5 x)/2}+c_{2}\;e^{-x}
+4y^{\prime\prime}+12y^{\prime}+9y=0,y(x)=c_{1}\;e^{-(3\cdot x)/2}+c_{2}\;e^{-(3\cdot x)/2}\;x
+y^{\prime\prime}+25y=0,y(x)=c_{2}\sin(5x)+c_{1}\cos(5x)
+y^{\prime\prime}+25y^{\prime}=0,y(x)=c_{1}\;e^{-25 x}+c_{2}
+y^{\prime\prime}+4y^{\prime}+29y=0,y(x)=c_{1}\;e^{-2x}\sin(5\;x)+c_{2}\;e^{-2x}\cos(5\;x)
+y^{\prime\prime}+2y^{\prime}=(3x+1)e^{x},y=(x-1)e^x+C_1+C_2e^{-2x}
+"y^{\prime\prime}-4y^{\prime}+4y=10e^{2x}, \, y(0)=3, \ ,y^{\prime}(0)=7",y=(5x^{2}+x+3)e^{2x}
+2y^{\prime\prime}+3y^{\prime}-5y=10,y(x)=c_{1}\;e^{-(5x)/2}+c_{2}\;e^{x}-2
+y^{\prime\prime}+3y^{\prime}-4y=(10x+17)e^{x},"y(x)=c_{1}\,e^{-4x}+c_{2}\,e^{x}+e^{x}\,x^{2}+3\,e^{x}\,x"
+y^{\prime\prime}-5y^{\prime}+6y=4e^{-x},"y(x)=c_{1}\,e^{2x}+c_{2}\,e^{3x}+{\frac{e^{-x}}{3}}"
+y^{\prime\prime}-5y^{\prime}-6y=3e^{-x},"y(x)=c_{1}\,e^{-x}+c_{2}\,e^{6\,x}-{\frac{3}{7}}\,e^{-x}\,x"
+y^{\prime\prime}-2y^{\prime}-8y=x^{2}+3,y(x)=c_{1}\;e^{-2x}+c_{2}\;e^{4x}-{\frac{x^{2}}{8}}+{\frac{x}{16}}-{\frac{27}{64}}
+y^{\prime\prime}-6y^{\prime}-8y=3e^{3x},y(x)=c_{1}\;e^{(3-{{\sqrt{17}})\;x}}+c_{2}\;e^{(3+{\sqrt{17}})\;x}-{\frac{3\;e^{3x}}{17}}
+y^{\prime\prime}-4y^{\prime}=0,y(x)=c_{1}\;e^{4x}+c_{2}
+y^{\prime\prime}-4y=0,"y(x)=c_{1}\,e^{2x}+c_{2}\,e^{-2x}"
+2y^{\prime\prime}-y^{\prime}-y=0,y(x)=c_{1}\;e^{-x/2}+c_{2}\;e^{x}
+3y^{\prime\prime}+y^{\prime}+2y=0,y(x)=c_{1}\;e^{-x/6}\;\mathrm{sin}\!\left({\frac{{\sqrt{23}}\;x}{6}}\right)+c_{2}\;e^{-x/6}\;\mathrm{cos}\!\left({\frac{{\sqrt{23}}\;x}{6}}\right)
+y^{\prime\prime}-8y^{\prime}+16y=4,y(x)=c_{1}\;e^{4 x}+c_{2}\;e^{4 x}x+{\frac{1}{4}}
+y^{\prime\prime}-10y^{\prime}+26y=x^{2},"y(x)=c_{1}\,e^{5\,x}\sin(x)+c_{2}\,e^{5\,x}\cos(x)+{\frac{x^{2}}{26}}+{\frac{5\,x}{169}}+{\frac{37}{4394}}"
+y^{\prime\prime}+y^{\prime}=xe^{x},"y(x)=c_{1}\,e^{-x}+c_{2}+{\frac{e^{x}\,x}{2}}-{\frac{3\,e^{x}}{4}}"
+y^{\prime\prime}+3y^{\prime}+2y=(x-2)e^{-x},"y(x)=c_{1}\;e^{-2x}+c_{2}\;e^{-x}+{\frac{1}{2}}\;e^{-x}\,x^{2}-3\,e^{-x}\,x"
+y^{\prime\prime}+4y=7\sin{2x},y=-\frac{7}{4}x\cos2x+C_{1}\cos2x+C_{2}\sin2x
+y^{\prime\prime}-y^{\prime}=3\sin{5x},"y(x)=c_{1}\;e^{x}+c_{2}-{\frac{3}{26}}\sin(5\,x)+{\frac{3}{130}}\cos(5\,x)"
+y^{\prime\prime}+81y=5\cos{9x},y(x)=c_{2}\sin(9x)+c_{1}\cos(9x)+{\frac{5}{18}}x\sin(9x)
+y^{\prime\prime}+2y^{\prime}+y=e^{x}\cos x,"y(x)=c_{1}\;e^{-x}+c_{2}\;e^{-x}\,x+{\frac{4}{25}}\,e^{x}\,\mathrm{sin}(x)+{\frac{3}{25}}\,e^{x}\cos(x)"
+y^{\prime\prime}-3y^{\prime}=x\sin{2x},"y(x)=c_{1}\,e^{3\,x}+c_{2}-{\frac{1}{13}}\,x\,\sin(2\,x)-{\frac{63}{676}}\,\sin(2\,x)+{\frac{3}{26}}\,x\,\cos(2\,x)-{\frac{4}{169}}\,\cos(2\,x)"
+y^{\prime\prime}+9y=2\cos x+3\sin{3x},"y(x)=c_{2}\sin(3x)+c_{1}\cos(3x)+\frac{1}{2}\,x\cos(x)-x\cos(2x)\cos(x)+\displaystyle\frac{1}{3}\cos(2x)\cos(x)+\displaystyle\frac{\cos(x)}{12}"
+y^{\prime\prime}+y=\sin{4x},"y(x)=c_{2}\sin(x)+c_{1}\cos(x)-{\frac{1}{15}}\sin(4\,x)"
+y^{\prime\prime}+2y^{\prime}+2y=3\cos x,"y(x)=c_{1}\,e^{-x}\sin(x)+c_{2}\,e^{-x}\cos(x)+{\frac{6\sin(x)}{5}}+{\frac{3\cos(x)}{5}}"
+y^{\prime\prime}-2y^{\prime}+5y=3e^{x}\cos{2x},"y(x)=c_{1}\;e^{x}\sin(2\,x)+c_{2}\;e^{x}\cos(2\,x)+{\frac{3}{4}}\;e^{x}\,x\,\sin(2\,x)"
+y^{\prime\prime}+y=2\sin x+e^{-x},y(x)=c_{2}\sin(x)+c_{1}\cos(x)+{\frac{e^{-x}}{2}}-x\cos(x)
+y^{\prime}={\frac{x+y+1}{x-y-3}},\operatorname{arctg}{\frac{y+2}{x-1}}-{\frac{1}{2}}\ln\left(1+\left({\frac{y+2}{x-1}}\right)^{2}\right)=\ln\left|x-1\right|+C
+y^{\prime}={\frac{x+y-2}{2x-y-1}},"6\,{\sqrt{3}}\,\tan^{-1}\left({\frac{{\sqrt{3}}\,\left(y(x)-1\right)}{-{y(x)+2\,x-1}}}\right)=c_{1}+3\left[\log\left({\frac{{\sqrt{3}}+y(x)^{2}-(x+1)\,y(x)-x+1}{3\,(x-1)^{2}}}\right)+2\log(x-1)\right]"
+y^{\prime}=2\left({\frac{y+3}{x+y}}\right)^{2},\log(y(x)+3)+2\tan^{-1}\left({\frac{3-x}{y(x)+3}}\right)=c_{1}
+(y-1+{\sqrt{x y-x+y-1}})dx=(x+1)dy ,"y(x)={\frac{1}{4}}\left(c_{1}^{2}\,x-2\,c_{1}\,x\log(x+1)-2\,c_{1}\log(x+1)+c_{1}^{2}+(x+1)\log^{2}(x+1)+4\right)"
+2xydx+(x^{2}+3y^{2})dy=0,x^{2}y+y^{3}=C
+3y(x+1)dx+x(3x+4)dy=0,\frac{3}{4}x^{4}y^{4}+x^{3}y^{4}=C
+(2-3xy)xdx+(7-x^3)dy=0,y(x)={\frac{c_{1}}{x^{3}-7}}+{\frac{x^{2}}{x^{3}-7}}
+"y(1+x y)dx-x\,dy=0",y(x)=-{\frac{2X}{c_{1}+x^{2}}}
+"y^{2}\,dx+(x y-\tan(xy))\,dy=0",{\frac{\sin(x)(x))}{y(x)}}=c_{1}
+y=xy^{\prime}+3\left(y^{\prime}\right)^{4},y=-(\frac{9x^4}{256})^{\frac{1}{3}}
+x^{2}y^{\prime\prime}=2y+3x^{2},y=C_{1}x^{2}+C_{2}x^{-1}+x^{2}\ln x
+xyy^{\prime\prime}+x\left(y^{\prime}\right)^{2}=3,"y(x)={\sqrt{c_{2}\,x+c_{1}+6\,x\log(x)}}"
+xyy^{\prime\prime}+x\left(y^{\prime}\right)^{2}=4,"y(x)={-\sqrt{c_{2}\,x+c_{1}+6\,x\log(x)}}"
+x^{2}y^{\prime\prime}=2y,"y(x)=c_{2}\,x^{2}+{\frac{c_{1}}{x}}"
+yy^{\prime}=2x(y^{\prime})^{2}-3xyy^{\prime\prime},y(x)=c_{2}(c_{1}+x^{2/3})^{3}
+x^{2}yy^{\prime\prime}=x^{2}(y^{\prime})^{2}+2y^{2},"y(x)={\frac{c_{2}\,e^{c_{1}x}}{x^{2}}}"
+\frac{d y}{d x}}={\frac{1}{x},y=\ln\mid x\mid-\d1\mid x_{0}\mid+y_{0}=\ln\frac{x}{x_{0}}+y_{0}
+\left({\frac{d y}{d x}}\right)^{2}-x,"y=+{\frac{2}{3}}\,x^{\frac{3}{2}}+C"
+\left({\frac{d y}{d x}}\right)^{2}-x,"y=-{\frac{2}{3}}\,x^{\frac{3}{2}}\,+C"
+{\frac{d y}{d x}}=y^{2},y={\frac{1}{{\frac{1}{y_{0}}}-x+x_{0}}}
+{\frac{d y}{d x}}=y^{2},y=0
+"x\,{\sqrt{1+y^{2}}}+y\,{\sqrt{1+x^{2}}}\,{\frac{d y}{d x}}=0, \ x=0,\,y=1",\sqrt{1+x^2}+\sqrt{1+y^2}=\sqrt{2}+1
+"\sec^{2}x\operatorname{tg}y\,d x+\sec^{2}y\operatorname{tg}x\,d y=0",\tan x \tan y = C
+{\sqrt{1-x^{2}}}\ d y\ +\ {\sqrt{{1-y^{2}}}}\ d x=0,\arcsin x+\arcsin y=C
+\frac{d y}{d x}=\frac{2x y}{x^{2}-y^{2}},x^{2}+ y^{2}= C y
+9y{\frac{d y}{d x}}-18x y+4x^{3}=0,{\frac{(3y-2x^{2})^{2}}{3y-x^{i}}}=C
+{\frac{d y}{d x}}={\frac{2xy}{x^{2}+y^{2}}},x^{2}- y^{2}= C y
+{\frac{d y}{d x}}={\frac{y}{x}}\left(1+\ln y-\ln x\right),y=xe^{Cx}
+y^{2}+x^{2}{\frac{d y}{d x}}=x y{\frac{d y}{d x}},e^{\frac{y}{x}}=Cy
+"(y+x)\,{d y}=(y-x)\,d x",\sqrt{x^2+y^2}=Ce^{-\arctan{\frac{y}{x}}}
+"\left(x-y\cos{\frac{y}{x}}\right)d x+x\cos{\frac{y}{x}}\,d y=0",\sin{\frac{y}{x}}=\ln x+C
+3y-7x+7=(3x-7y-3)\frac{dy}{dx},(y+x-1)^5(y-x+1)^2=C
+(x+2y+1){\frac{d y}{d x}}=2x+4y+3,e^{10y-20x}=C(5x+10y+7)^{2}
+{\frac{d y}{d x}}=2\Bigl({\frac{y+2}{x+y-1}}\Bigr)^{2},e^{-2\arctan{\frac{y+2}{x-3}}}=C\left(y+2\right)
+(x+y)^{2}{\frac{d y}{d x}}=a^{2},x=-y+a\tan({\frac{y+C}{a}})
+"x\,{\frac{d y}{d x}}-4y=x^{2}\sqrt{y}",y=x^{4}\Bigl(C_{1}+\frac{1}{2}\ln x\Bigr)^{2}
+"{\frac{d i}{d t}}+{\frac{R}{L}}\,i={\frac{E}{L}}",i=\frac{E}{R}{\Big(}1- e^{-\frac{R}{L}t}{\Big)}
+"\cos x\,{\frac{d y}{d x}}=y\sin x+\cos^{2}x",y={\frac{C}{\cos x}}+{\frac{1}{2}}\sin x+{\frac{x}{2\cos x}}
+{\frac{d y}{d x}}+y\;{\frac{d\varphi}{d x}}=\varphi\;(x)\;{\frac{d\varphi}{d x}},y=C e^{-\varphi(x)}+\varphi\left(x\right)-1
+{\frac{d y}{d x}}=2x y-x^{3}+x,"y=C e^{x^{2}}+{\frac{1}{2}}\,x^{2}"
+"{\frac{d y}{d x}}+{\frac{x}{1+x^{2}}}y={\frac{1}{x\,(1+x^{2})}}",y={\frac{1}{V{\overline{{1+x^{2}}}}}}{\Big(}C+\ln{\frac{-1+{\sqrt{1+x^{2}}}}{x}}{\Big)}
+"(x-2y x-y^{2})\,d y+y^{2}\,d x=0",x=y^{2}+C y^{2}e^{\frac{1}{y}}
+xy^{\prime}\vdash y=x y^{2}\ln x,{\frac{1}{y}}=x{\Big(}C-{\frac{1}{2}}\ln^{2}x{\Big)}
+y^{\prime}-{\frac{x y}{2\left(x^{2}-1\right)}}-{\frac{x}{2y}}=0,"y=\textstyle{\sqrt{2\,{\sqrt{1-x^{2}}}+x^{2}-1}}"
+{\frac{d y}{d x}}\left(x^{2}y^{3}+x y\right)=1,{\frac{1}{x}}=C e^{-{\frac{1}{2}}{\ y}^{2}}-y^{2}+2
+"(x-y^{2})\,d x+2x y\,d y=0",y^{2}=-x\ln x+C x
+"(14x+13y+6)\,d x+(4x+5y+3)\,d y+(7x+5y)\,(y\,d x-x\,d y)=0",x-1=C\left(y\ +2\right)
+"(7x+8y+5)\,d x-(7x+8y)\,d y+5\,(x-y)\,(y\,d x-x\,d y)=0","(2x+3y+1)\,(x-y+1)=C(-x+y+1)^{2}"
+{\frac{d y}{d x}}=y^{2}+{\frac{1}{2x^{2}}},y=\frac{1}{x\left[-1+\mathrm{tg}\bigl(C-\frac{1}{2}\ln x\bigr)\right]}
+{\frac{d y}{d x}}+y^{2}=x^{-{\frac{4}{3}}},"y_{1}=\frac{3\,(C e^{6x_1^\frac{1}{3}}+1)}{(3x_{1}^{\frac{2}{3}}-x_{1}^{\frac{1}{3}})\,C e^{6x_1^\frac{1}{3}}-(3x_{1}^{\frac{2}{3}}+x_{1}^{\frac{1}{3}})}"
+y^{\prime}={\frac{1}{3}}\;y^{2}+{\frac{2}{3x^{2}}},y={\frac{-C x^{\frac{2}{3}}+2x}{C x^{\frac{5}{3}}-x^{2}}}
+y^{\prime}+y^{2}+{\frac{1}{x}}y-{\frac{4}{x^{2}}}=0,y={\frac{2x^{4}-2C}{x^{5}+C x}}
+x y^{\prime}-3y+y^{2}=4x^{2}-4x,y=2x
+y^{\prime}=y^{2}+x^{-4},y={\frac{\operatorname{ctg}\left({\frac{1}{x}}+C\right)}{x^{2}}}-{\frac{1}{x}}
+(y-x)\ \sqrt{1+x^{2}}\ \frac{d y}{d x}=(1+y^{2})^{\frac{3}{2}},\operatorname{arctg}y+C={\frac{{\sqrt{1-x^{2}}}{\sqrt{1+y^{2}}}+y-x}{x y+1}}
+\frac{{d y}}{d x}(x^{2}+y^2+3)=2x(2y-\frac{x^2}{y}),"(y^{2}-2x^{2}-3)^{3}=C\,(y^{2}-x^2-1)^2"
+"\frac{d y}{d x}=\frac{x-y^{2}}{2y\,(x+y^{2})}",y^{4}+2x y^{2}-x^2=C
+[x\left(x+y\right)+a^{2}]\frac{d y}{d x}=y\left(x+y\right)+b^{2},(x+y)^{2}+a^{2}+b^{2}=C\ (b^{2}x-a^{2}y)^{2}
+"\frac{d \eta}{d\xi}=\frac{2\eta}{\xi},\,\,\,\eta=C\xi^{2}",\eta=C|\xi|^{-k}
+{\frac{d \eta}{d\xi}}=-{\frac{\eta}{\xi}},\xi\eta=C
+"(3x^{2}+6x y^{2})\,d x +(6x^{2}y\,+\,4y^{3})\,d y=0", x^{8}+3x^{2}y^{2}+y^{4}=C
+"{\frac{x\,d x+y\,d y}{y\,\overline{{{1+x^{2}+y^{2}}}}}}+{\frac{y\,d x-x\,d y}{x^{2}+y^{2}}}=0",{\sqrt{{1+x^{2}+y^{2}}}}+\arctan{\frac{x}{y}}=C
+{\frac{2x\;d x}{y^{3}}}+{\frac{y^{2}-3x^{2}}{y^{4}}}\;d y=0,"\scriptstyle{\frac{x^{3}}{y^{3}}}\,-\,{\frac{1}{y}}\,=\,C"
+\left({\frac{1}{y}}\sin{\frac{x}{y}}-{\frac{y}{x^{2}}}\cos{\frac{y}{x}}+1\right)d x+\left({\frac{1}{x}}\cos{\frac{y}{x}}-{\frac{x}{y^{2}}}\sin{\frac{x}{y}}+{\frac{1}{y^{2}}}\right)d y=0,\sin{\frac{y}{x}}-\cos{\frac{x}{y}}+x-{\frac{1}{y}}=C
+\left(\frac{1}{x}-\frac{y^{2}}{(x-y)^{2}}\right)d x+\left(\frac{x^{2}}{(x-y)^{2}}-\frac{1}{y}\right)d y=0,{\frac{x y}{x-y}}+\ln{\frac{x}{y}}=C
+"\left(\,2x y+x^{2}y+{\frac{y^{3}}{3}}\right)d x+\left(x^{2}+y^{2}\right)d y=0",y e^{x}\left(x^{2}+{\frac{y^{3}}{3}}\right)=C
+{\frac{d y}{d x}}-y{\mathrm{\scriptsize~tg.}}x=\cos x,y\cos x-{\frac{x}{2}}-{\frac{1}{2}}\sin x\cos x=C
+"y^{3}\,d x+2\,(x^{2}-x y^{2})\,d y=0",\nu=\frac{1}{x^2y}
+"y^{3}\,d x+2\,(x^{2}-x y^{2})\,d y=1",\ln y-{\frac{y^{2}}{x}}=C
+"(x^{2}y^{2}-1)\,d y+2x y^{3}\,d x=0",x^{2}y+{\frac{1}{y}}=C
+"(2x y^{2}{-}y)\,d x+(y^{2}+x+y)\,d y=0",x^{2}-{\frac{x}{y}}+y+\ln y=C
+y^{\prime2}+yy\prime-x^2-xy=0,y={\frac{x^{2}}{2}}+C
+y^{\prime2}+yy\prime-x^2-xy=1,y=C e^{-x}-x+1
+{y^{\prime2}+}y^{2}-1=0,\arcsin y=x+C
+{y^{\prime2}+}y^{2}-1=1,\arcsin y=-x+C
+x y^{\prime2}-2yy^{\prime}+4x=0,x^{2}=2C(y-2C)
+{\frac{dy}{dx}}^{2}y+{\frac{dy}{dx}}\left(x-y\right)-x=0,y={\sqrt{{C^{2}-x^{2}}}}
+{\frac{dy}{dx}}^{2}y+{\frac{dy}{dx}}\left(x-y\right)-x=1,y=x+C
+x^{2}{\frac{dy}{dx}}^{2}-2x y {\frac{dy}{dx}}+y^{2}=x^{2}y^{2}+x^{4},y=x\operatorname{sh}\left(x+C\right)
+{\frac{dy}{dx}}^{3}\!-(x^{2}+x y+y^{2}){\frac{dy}{dx}}^{2}+(x^{3}y+x^{2}y^{2}+x y^{3}){\frac{dy}{dx}}-x^{3}y^{3}=0,"y={\frac{1}{3}}\,x^{3}+C"
+{\frac{dy}{dx}}^{3}\!-(x^{2}+x y+y^{2}){\frac{dy}{dx}}^{2}+(x^{3}y+x^{2}y^{2}+x y^{3}){\frac{dy}{dx}}-x^{3}y^{3}=1,y={\frac{1}{C-x}}
+{\frac{dy}{dx}}^{3}\!-(x^{2}+x y+y^{2}){\frac{dy}{dx}}^{2}+(x^{3}y+x^{2}y^{2}+x y^{3}){\frac{dy}{dx}}-x^{3}y^{3}=2,"y=C e^{{\frac{1}{2}}\,x^{2}}"
+x {\frac{dy}{dx}}^{2}+2x {\frac{dy}{dx}}-y=0,(y{{{-C}}})^{2}=4x C
+y=p+\ln\;p,"x=\ln\,p-{\frac{1}{p}}+C"
+p^{3}-y^{2}(a-p)=0,"x=t+2\operatorname{arctg}\,t+C"
+p^{3}-y^{2}(a-p)=1,y={\frac{a t^{2}}{1+t^{2}}}
+x y^{\prime3}=1+y^{\prime},x=t^{3}+t^{2}
+x y^{\prime3}=1+y^{\prime},y={\frac{3}{2}}t^{2}+2t+C
+p^{3}-x^{3}(1-p)=0,x={\frac{1}{t}}-t^{2}
+p^{3}-x^{3}(1-p)=1,{y}=\frac{1}{t}-\frac{t^{2}}{2}+\frac{2t^{5}}{5}+C
+p^{3}+y^{3}-3p y=0,{{x}}=-t+\ln{\frac{1+t}{\sqrt{1-t+t^{2}}}}+{+\mathrm{arctg}\frac{2t-1}{\sqrt{3}}}+C
+p^{3}+y^{3}-3p y=1,y={\frac{3t^{2}}{1+t^{3}}}
+y=e^{{y}^{\prime}}y^{\prime2},y=e^{p}p^{2}
+y=e^{{y}^{\prime}}y^{\prime2},x=e^{p}(p+1)+C
+y^{2}(y^{\prime}-1)=(2-y^{\prime})^{2},y=x-C-{\frac{1}{x-C}}
+"y\,{{(1+y^{\prime2})}}=2a","y=\alpha\,(1+\cos2\varphi)"
+"y\,{{(1+y^{\prime2})}}=2a","x=\alpha\,(-2\varphi-\sin2\varphi)+C"
+y=2p x+p^{2},y={\frac{2C}{p}}-{\frac{p^{2}}{3}}
+"{\frac{dy}{dx}}^{4}=4y\,(x {\frac{dy}{dx}}-2y)^{2}",y=C^{2}(x- C)^{2}
+"{\frac{dy}{dx}}^{4}=4y\,(x {\frac{dy}{dx}}-2y)^{2}",y={\frac{x^{4}}{16}}
+"{\frac{dy}{dx}}^{4}=4y\,(x {\frac{dy}{dx}}-2y)^{2}",y=0
+y=2{\frac{dy}{dx}} x+{\frac{x^{2}}{2}}+{\frac{dy}{dx}}^{2},y=-{\frac{x^{2}}{4}}+C x+C^{2}
+y=2{\frac{dy}{dx}} x+{\frac{x^{2}}{2}}+{\frac{dy}{dx}}^{2},y={\frac{-x^{2}}{2}}
+y={\frac{k\left(x+y {\frac{dy}{dx}}\right)}{{\sqrt{{1+{\frac{dy}{dx}}^2}}}}},"k\neq1,\;x^{2}+y^{2}={\frac{{{2}}C x+C^{2}}{k^{2}-1}}"
+y={\frac{k\left(x+y {\frac{dy}{dx}}\right)}{{\sqrt{{1+{\frac{dy}{dx}}^2}}}}},"k=1,x^{2}+y^{2}=C x"
+x={\frac{dy}{dx}}y+a{\frac{dy}{dx}}^{2},y={\frac{C+a\arcsin {\frac{dy}{dx}}}{\sqrt{1-{\frac{dy}{dx}}^{2}}}}-a {\frac{dy}{dx}}
+y={{x}}{\frac{dy}{dx}}^{2}+{{{\frac{dy}{dx}}}}^{3},x=-{\frac{dy}{dx}}-{\frac{1}{2}}+{\frac{C}{(1-{\frac{dy}{dx}})^{2}}}
+y=xy^{\prime}+y^{\prime}-y^{\prime2},y={\frac{(x+1)^{2}}{4}}
+y=2{\frac{dy}{dx}} x+y^{2}{\frac{dy}{dx}}^{3},y^{4}=-{\frac{32x^{3}}{27}}
+{\frac{dy}{dx}}^{2}\left(x^{2}-1\right)-2{\frac{dy}{dx}} x y+y^{2}-1=0,x^{2}+y^{2}=1
+{y}^{\prime2}+2xy^{\prime}+2y=0,x=\frac{C}{\sqrt{p}}-\frac{p}{3}
+y^{\prime}=y^{\frac{2}{3}},27y=({{x}}+C)^{3}
+y^{\prime2}+y^{2}=1,y^{\prime}=\sqrt{1-y^2}
+y^{\prime2}+y^{2}=1,y^{\prime}=-\sqrt{1-y^2}
+{\frac{d y}{d x}}={\sqrt{y-x}}+1,y=x
+{\frac{d y}{d x}}={\sqrt{|y|}},y=0
+{\frac{d y}{d x}}=\pm{\sqrt{y}},y=0
+{\frac{d y}{d x}}=y\ln y,y=0
+{\frac{d y}{d x}}=y\left(\ln y\right)^{2},y=0
+\frac{d y}{d x}=-x\pm\sqrt{x^{2}+2y},y=C x+{\frac{C^{2}}{2}}
+\frac{d y}{d x}=-x\pm\sqrt{x^{2}+2y},y=-{\frac{x^{2}}{2}}
+a y^{\prime\prime}=-\ (1+y^{\prime2})^{\frac{3}{2}},(x- C_{1})^{2}+(y- C_{2})^{2}=a^{2}
+"a^{2}\,{\frac{d v}{d x^{4}}}={\frac{d^{2}y}{d x^{2}}}",y=4e^{\frac{x}{a}}+B e^{-{\frac{x}{a}}}+C x+D
+y^{\prime\prime\prime2}+{{x}}^{2}=1,x=\sin\varphi
+y^{\prime\prime\prime2}+{{x}}^{2}=2,"y=-\,\frac{1}{8}\,\varphi\cos2\varphi\,+\,\frac{3}{16}\,\varphi+C_{2}\,\mathrm{sin}\,\varphi+\frac{7}{48}\,\mathrm{sin}\,2\varphi-\frac{C_{1}}{4}\,\mathrm{cos}\,2\varphi-\frac{1}{192}\,\mathrm{sin}\,4\varphi+C_{3}"
+"y^{\prime\prime}={\frac{1}{\sqrt{y\,}}}",x+C_2={\frac{2}{3}}(\sqrt{y}+C_{1})^{\frac{3}{2}}-2C_{1}(\sqrt{y}+C_{1})^{\frac{1}{2}}
+a^{3}y^{\prime\prime\prime}y^{\prime\prime}=(1+C^{2}y^{\prime\prime2})^{\frac{1}{2}},y={\frac{1}{6a^{3}C^{5}}}\left[C^{4}(x+C_{1})^{2}-a^{6}\right]^{3/2}-{\frac{a^{3}}{2C^{3}}}(x+C_{1})\ln{[C^{2}(x+C_{1})}+{\sqrt{C^{4}(x+C_{1})^{2}-a^{6}}}+{\frac{a^{5}}{2C^{5}}}~{\sqrt{C^{4}(x+C_{1})^{2}-a^{6}}}+{\frac{a^{5}}{2C^{4}(x+C_{1})^{2}-a^{6}}}+C_2x+C_3
+y^{\prime\prime\prime}\ =\ \sqrt{1+y^{\prime\prime2}},y=\operatorname{sh}{(x+C_{1})}+C_{2}x+C_{3}
+2\left(2a-y\right)y^{\prime\prime}=1+y^{\prime2},y=2a+C_{1}(1-\cos\phi)
+2\left(2a-y\right)y^{\prime\prime}=1+y^{\prime2},x=C_{1}(\varphi-\sin\varphi)+C_2
+y^{\prime\prime}-x y^{\prime\prime\prime}-y^{\prime\prime3}=0,y={\frac{C_{1}x^{3}}{6}}-{\frac{C_{1}^{3}x^{3}}{2}}+C_{2}x+C_{3}
+y y^{\prime\prime}+y^{\prime2}=y^{2}\ln y,\ln y=C_{1}e^{x}+C_{2}e^{-x}.
+x^{2}y y^{\prime\prime}=(y- x y^{\prime})^{2},y=C_2xe^{-\frac{C_1}{x}}
+y y^{\prime\prime}-y^{\prime2}={0},y=C_{1}e^{C_2x}
+x y y^{\prime\prime}+x y^{\prime 2}-y y^{\prime}=0,y=C_{1}\;{\sqrt{{x^{2}+C_{2}}}}
+"x^{4}\,\frac{d^{2}y}{d x^{2}}-(x^{3}+2x y)\,\frac{d y}{d x}\,+4y^{2}=0","y={\frac{(1+a)\,x^{2}-C_{2}(1-a)\,x^{2a+2}}{1-C_{2}x^{2a}}}"
+n x^{3}y^{\prime\prime}=(y-{x y^{\prime}})^2,y=n x\ln{\frac{C_{1}x}{1+C_{2}x}}
+y^2(x^2y^{\prime\prime}-xy^{\prime}+y)=x^3,c^{\prime}x^{c^{3}}=\frac{c\sqrt{y}+\sqrt{cy-2x}}{c\sqrt{y}-\sqrt{cy-2x}}-e^{\frac{2c\sqrt{y}\sqrt{cy-2x}}{(c^2-c)y+2x}}
+x^{2}y^{3}y^{\prime\prime}-3x y^{2}y^{\prime}+4y^{3}+x^{6}=0,c^{\prime}x^{c^{3}}=\frac{c\sqrt{y}+\sqrt{cy-2x^2}}{c\sqrt{y}-\sqrt{cy+2x^2}}*e^{\frac{2c\sqrt{y}\sqrt{cy+2x^2}}{(c^2-c)y-2x^2}}
+y^{\prime\prime}- x y^{\prime}-y=0,y=e^{\frac{x^{2}}{2}}(C_{1}\int e^{-{\frac{x^{2}}{2}}}d x+C_{2})
+y^{\prime\prime}y+2y^{2}y^{\prime2}+y^{\prime2}=\frac{2y y^{\prime}}x,y=\sqrt{{\ln(C_{1}^{\prime}x^{3}+(C_{2}^{\prime})}}
+y y^{\prime\prime}=2y^{\prime2},"y=-\,{\frac{1}{C_{1}x+C_{2}}}"
+y^{\prime}y^{\prime\prime}-x^{2}y y^{\prime}-x y^{2}=0,y^{\prime2}-x^{2}y^{2}=C
+"x\,(x^{2}y^{\prime}+2x y)\,y^{\prime\prime}+4x y^{\prime2}+8x y y^{\prime}+4y^{2}-1=0",y={\frac{(x^{2}+C_{1})^{\frac{3}{2}}}{3x^{2}}}+{\frac{C_{3}}{x^{2}}}
+"x\,(x y+1)\,y^{\prime\prime}+x^{2}y^{\prime2}+(4x y+2)\,y^{\prime}+y^{2}+1=0",x^2y^3+2x y+x^{2}=C_{1}x+C_{2}
+y y^{\prime\prime}- y^{\prime2}\mathbb{-}y^{\prime\ 4}=0,"x=C_{1}\Bigl(\ln\,\mathrm{tg\,}\frac\varphi2+\cos\varphi\Bigr)+C_{2}"
+y y^{\prime\prime}- y^{\prime2}\mathbb{-}y^{\prime\ 4}=1,y=C_{1}\sin\varphi
+a^{2}y^{\prime\prime}=2x\ (1+y^{\prime2})^{\frac{1}{2}},y=C_{2}+\frac{1}{2}\int\big[e^{\frac{x^2}{a^2}+C_1}-e^{-(\frac{x^2}{a^2}+C_1)}\big]d x
+x^2yy^{\prime\prime}+x^2y^{\prime2}-5xyy^{\prime}+4y^2=0,y=C_{1}x{\sqrt{x^{2}+C_{2}}}
+y\left(1-\ln y\right)y^{\prime\prime}+\left(1+\ln y\right)y^{\prime2}=0,\ln y=1-{\frac{1}{C x+{{C}}^{\prime}}}
+5y^{\prime\prime\prime2}{-}3y^{\prime\prime}y^{\prime\prime\prime\prime}=0,y{=}C_{1}x{+}C_{2}{+}\ {\sqrt{{C_{3}}x{+}C_{4}}}
+5y^{\prime\prime\prime2}{-}3y^{\prime\prime}y^{\prime\prime\prime\prime}=1,y=a x^{2}+b x+c
+y^{\prime\prime2}+2x y^{\prime\prime}-y^{\prime}=0,x=-{\frac{2t}{3}}+{\frac{C_{1}}{t^{2}}}
+y^{\prime\prime2}+2x y^{\prime\prime}-y^{\prime}=1,y={\frac{2}{27}}\;t^{3}-{\frac{2C_{1}}{3}}\ln t+{\frac{4C_{1}^{2}}{3t^{3}}}+C_{2}
+y^{\prime\prime2}-2x y^{\prime\prime}- y^{\prime}=0,"x={\frac{C_{1}}{t^{2}}}+{\frac{2}{5}}\,t^{5}"
+y^{\prime\prime2}-2x y^{\prime\prime}- y^{\prime}=1,y=-{\frac{4C_{1}^{2}}{t}}-{\frac{7}{10}}t^{4}+{\frac{2}{75}}t^{3}+C_{1}
+y^{\prime\prime}+\frac{2}{x}\;y^{\prime}+y=0,y=C_{1}{\frac{\sin x}{x}}+C_{2}{\frac{\cos x}{x}}
+y^{\prime\prime}\sin^{2}x=2 y,y=C_{2}+\left(C_{1}-C_{2}x\right)\operatorname{ctg}x
+x^{5}y^{\prime\prime\prime}-3x^{2}y^{\prime\prime}+6x y^{\prime}-6y=0,y=C_{1}x+C_{2}x^{2}+C_{3}x^{3}
+x y^{\prime\prime\prime}-y^{\prime\prime}+x y^{\prime}-y=0,y=C_{1}x+C_{2}\sin x+C_{3}\cos x
+(1-x^2)\;y^{\prime\prime\prime}-x y{\prime\prime}+y{\prime}=0,y=C_{1}+C_{2}x^{2}+C_{3}\left(\operatorname{arcsin}x+x{\sqrt{1-x^{2}}}\right)
+x^{2}y^{\prime\prime}-2x y^{\prime}+2y=2x^{3},y=C_{1}x+C_{2}x^{2}+x^{3}
+x y^{\prime\prime}- y^{\prime}= x^{2},y=С_{1}+С_{2}x^{2}+\frac{x^{3}}{3}
+y^{\prime\prime}+{\frac{x}{1-x}}y^{\prime}-{\frac{1}{1-x}}y=x-1,y=C_{1}e^{x}+C_{2}x-(x^{2}+1)
+"(x^{2}+2)\,y^{\prime\prime\prime}-2x y^{\prime\prime}+(x^{2}+2)\,y^{\prime}-2x y=x^{4}+12",y=C_{1}\cos x+C_{2}\sin x+C_{3}x^{2}+x^{3}
+{\frac{d^{2}y}{d x^{2}}}+{\frac{1}{x^{2}\ln x}}y=e^{x}\left({\frac{2}{x}}+\ln x\right),y=\ln x\left(C_{1}+C_{2}\int\frac{d x}{\ln^{2}x}+e^{x}\right)
+"(2x+1)\,y^{\prime\prime}\!+(4x-2)\,y^{\prime}-8y=0",y=C_{1}e^{-2x}+C_{2}\left(4x^{2}+1\right)
+"{\sin}^{2}\,x y^{\prime\prime}+{\sin}\,x{\cos}\,x y^{\prime}=y",y_{1}={\frac{1}{\sin x}}
+"{\sin}^{2}\,x y^{\prime\prime}+{\sin}\,x{\cos}\,x y^{\prime}=y",y_{2}=\operatorname{ctg}x
+{\frac{d^{2}x}{d t^{2}}}+a^{2}x=0,x=C_{1}\cos a t\ -C_{2}\sin a t
+y^{\prime\prime\prime}+y=0,y=C_{1}e^{-x}+e^{\frac{x}{2}}(C_2\cos x \frac{\sqrt{3}}{2}+C_3\sin x \frac{\sqrt{3}}{2})
+y^{\prime\prime\prime}- y^{\prime\prime}- y^{\prime}+ y=0,y=e^{x}(C_{1}+ C_{2}x)+ C_{3}e^{-x}
+y^{\mathrm{IV}}+8y^{\prime\prime}+16y=0,y=(C_{1}+C_{2}x)\cos2x+(C_{3}+C_{4}x)\sin2x
+y^{\mathrm{IV}}-2y^{\prime\prime}=0,y=C_{1}+C_{2}x+C_{3}e^{x\sqrt{2}}+C_{4}e^{-x\sqrt{2}}
+y^{\prime\prime\prime}-3y^{\prime\prime}+3y^{\prime}- y=0,y=e^{x}\left(C_{1}+C_{2}x+C_{3}x^{2}\right)
+y^{\mathrm{IV}}+4y=0,y=e^{x}(C_{1}\cos x+C_{2}\sin x)+e^{-x}(C_{3}\cos x+C_{4}\sin x)
+y^{\mathrm{IV}}-y=0,y=C_{1}e^{x}+C_{2}e^{-x}+C_{3}\cos x+C_{4}\sin x
+y^{\prime\prime}+{y}^{\prime}-y=0,y=C_{1}e^{\frac{x}{2}}+C_{2}e^{-x}
+y^{\mathrm{IV}}+y^{\prime\prime\prime}+3y^{\prime\prime}+2y^{\prime}+y=0,"y=e^{-\frac{x}{2}}\biggl\{(C_{1}+C_{2}x)\cos\frac{x\sqrt{3}}{2}+(C_{3}+C_{4}x)\sin\frac{x\,\sqrt{3}}{2}\biggr\}"
+2xy\mathrm{d}x + (x^2 - y^2)\mathrm{d}y = 0,3x^2 - y^3 = C
+(2 - 9xy^2)x\mathrm{d}x + (4y^2 - 6x^3)y\mathrm{d}y = 0,x^2 - 3x^3y^2 + y^4 = C
+e^{-y}\mathrm{d}x - (2y + xe^{-y})\mathrm{d}y = 0,xe^{-y} - y^2 = C
+\frac{y}{x}\mathrm{d}x + (y^3 + \ln x)\mathrm{d}y = 0,4y\ln{x} + y^4 = C
+\frac{3x^2 + y^2}{y^2}\mathrm{d}x - \frac{2x^3 + 5y}{y^3}\mathrm{d}y,x + \frac{x^3}{y^2} + \frac{5}{y} = C
+2x(1 + \sqrt{x^2 - y})\mathrm{d}x - \sqrt{x^2 - y}\mathrm{d}y = 0,x^2 + \frac{2}{3}(x^2 - y)^{\frac{3}{2}} = C
+(1 + y^2\sin{2x})\mathrm{d}x - 2y\cos^2{x}\mathrm{d}y = 0,x - y^2\cos^2{x} = C
+3x^2(1 + \ln y)\mathrm{d}x = (2y - \frac{x^3}{y})\mathrm{d}y,x^3 + x^3\ln{y} - y^2 = C
+(\frac{x}{\sin{y}} + 2)\mathrm{d}x + \frac{(x^2 + 1)\cos{y}}{\cos{2y} - 1}\mathrm{d}y = 0,x^2 + 1 = 2(C - 2x)\sin{y}
+"(x^{2}+y^{2}+x)\,\mathrm{d}x+y\,\mathrm{d}y=0.",{\bf2x}+\ln(x^{2}+y^{2})=C.
+"(x^{2}+y^{2}+y)\,\mathrm{d}x-x\,\mathrm{d}y=0.",x + \arctg{\frac{x}{y}} = C
+"y\,{\mathrm{d}}y=(x\,{\mathrm{d}}y+y\,{\mathrm{d}}x){\sqrt{1+y^{2}}},",x y+C={\sqrt{1+y^{2}}}
+x y^{2}(x y^{\prime}+y)=1.,"2x^{3}y^{3}\,-\,3x_{.}^{2}=C."
+"\begin{array}{c}{{y^{2}\,\mathrm{d}x-(x y+x^{3})\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",y^{2}=x^{2}(C-2y);
+"\begin{array}{c}{{y^{2}\,\mathrm{d}x-(x y+x^{3})\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",x=0
+"\left(y-{\frac{1}{x}}\right)\,\mathrm{d}x+{\frac{\mathrm{d}y}{y}}=0.",(x^{2}-C)y=2x.
+"(x^{2}+3\ln y)y\,\mathrm{d}x=x\,\mathrm{d}y.",x^{2}+\ln y=C x^{3};
+"(x^{2}+3\ln y)y\,\mathrm{d}x=x\,\mathrm{d}y.",x=0
+y^{2}\operatorname{d}\!x+(x y+\operatorname{tg}\!x y)\operatorname{d}\!y=0.,y\sin x y=C.
+"y(x+y)\,{\mathrm{d}}x+(x y+1)\,{\mathrm{d}}y=0.",\frac{x^{2}}{2}+x y+\ln|y|=C;
+"y(x+y)\,{\mathrm{d}}x+(x y+1)\,{\mathrm{d}}y=0.",y=0
+"\begin{array}{r}{y(y^{2}+1)\,{\mathrm{d}}x+x(y^{2}-x+1)\,{\mathrm{d}}y=0.}\\ {\cdot}\end{array}",-x + 1 = xy(\arctg{y} + C)
+"\begin{array}{r}{y(y^{2}+1)\,{\mathrm{d}}x+x(y^{2}-x+1)\,{\mathrm{d}}y=0.}\\ {\cdot}\end{array}",y=0
+"\begin{array}{r}{y(y^{2}+1)\,{\mathrm{d}}x+x(y^{2}-x+1)\,{\mathrm{d}}y=0.}\\ {\cdot}\end{array}",x=0
+"(x^{2}+2x+y)\,\mathrm{d}x=(x-3x^{2}y)\,\mathrm{d}y.",x+2\ln|x|+{\textstyle{\frac{3}{2}}}y^{2}-{\textstyle{\frac{y}{x}}}=C;
+"(x^{2}+2x+y)\,\mathrm{d}x=(x-3x^{2}y)\,\mathrm{d}y.",x=0
+"\begin{array}{r}{y\,{\mathrm{d}}x-x\,{\mathrm{d}}y=2x^{3}\,{\mathrm{tg}}\,{\frac{y}{x}}\,{\mathrm{d}}x.}\end{array}",\sin{\frac{y}{x}}=C e^{-x^{2}}
+y^{2}\operatorname{d}\!x+(e^{x}-y)\operatorname{d}\!y=0.,\ln|y|-y\mathrm{e}^{-x}=C;
+y^{2}\operatorname{d}\!x+(e^{x}-y)\operatorname{d}\!y=0.,y = 0
+\begin{array}{c}{{x y\operatorname{d}\!x=\left(y^{3}+x^{2}y+x^{2}\right)\operatorname{d}\!y.}}\end{array},\ln\!\left({\frac{x^{2}}{y^{2}}}+1\right)=2y+C;
+\begin{array}{c}{{x y\operatorname{d}\!x=\left(y^{3}+x^{2}y+x^{2}\right)\operatorname{d}\!y.}}\end{array},y=0
+"\begin{array}{l}{{x^{2}y(y\,\mathrm{d}x+x\,\mathrm{d}y)=2y\,\mathrm{d}x+x\,\mathrm{d}y.}}\\ {{\cdot}}\end{array}",x^{2}y\ln C x y=-1;
+"\begin{array}{l}{{x^{2}y(y\,\mathrm{d}x+x\,\mathrm{d}y)=2y\,\mathrm{d}x+x\,\mathrm{d}y.}}\\ {{\cdot}}\end{array}",x=0
+"\begin{array}{l}{{x^{2}y(y\,\mathrm{d}x+x\,\mathrm{d}y)=2y\,\mathrm{d}x+x\,\mathrm{d}y.}}\\ {{\cdot}}\end{array}",y=0
+\begin{array}{c}{{\left(x^{2}-y^{2}+y\right)\mathrm{d}x+x(2y-1)\mathrm{d}y=0.}}\\ {{\cdot}}\end{array},x^{2}+{y}^{2}=y+C x;
+\begin{array}{c}{{\left(x^{2}-y^{2}+y\right)\mathrm{d}x+x(2y-1)\mathrm{d}y=0.}}\\ {{\cdot}}\end{array},x=0
+"\begin{array}{l}{{(2x^{2}y^{2}+y)\,{\mathrm{d}}x+(x^{3}y-x)\,{\mathrm{d}}y=0.}}\\ {{.}}&{{.}}\end{array}",x^{2}y+\ln|x/y|=C;
+"\begin{array}{l}{{(2x^{2}y^{2}+y)\,{\mathrm{d}}x+(x^{3}y-x)\,{\mathrm{d}}y=0.}}\\ {{.}}&{{.}}\end{array}",x=0
+"\begin{array}{l}{{(2x^{2}y^{2}+y)\,{\mathrm{d}}x+(x^{3}y-x)\,{\mathrm{d}}y=0.}}\\ {{.}}&{{.}}\end{array}",y=0
+"(2x^{2}y^{3}-1)y\,\mathrm{d}x+(4x^{2}y^{3}-1)x\,\mathrm{d}y=0.",2x y^{2}+({\frac{1}{x y}})=C
+"(2x^{2}y^{3}-1)y\,\mathrm{d}x+(4x^{2}y^{3}-1)x\,\mathrm{d}y=0.",x=0
+"(2x^{2}y^{3}-1)y\,\mathrm{d}x+(4x^{2}y^{3}-1)x\,\mathrm{d}y=0.",y=0
+"y(x+y^{2})\,\mathrm{d}x+x^{2}(y-1)\,\mathrm{d}y=0.","\ln\left|\frac{x+y}{y}\right|\,+\,\frac{y(1\!+\!x)}{x\!+\!y}\,=\,{\cal C}"
+"y(x+y^{2})\,\mathrm{d}x+x^{2}(y-1)\,\mathrm{d}y=0.",y=0
+"y(x+y^{2})\,\mathrm{d}x+x^{2}(y-1)\,\mathrm{d}y=0.",y=-x
+(x^{2}-\sin^{2}y)\operatorname*{d}\!x+x\sin2y\operatorname*{d}\!y=0.,\sin^2{y} = Cx - x^2
+(x^{2}-\sin^{2}y)\operatorname*{d}\!x+x\sin2y\operatorname*{d}\!y=0.,x=0
+x(\ln y+2\ln x-1)\operatorname{d}y=2y\operatorname{d}x.,y=C\ln x^{2}y.
+"(x^{2}+1)(2x\,\mathrm{d}x+\cos y\,\mathrm{d}y)=2x\sin y\,\mathrm{d}x.",\sin y=-(x^{2}+1)\ln C(x^{2}+1)
+"\begin{array}{l}{{(2x^{3}y^{2}-y)\,\mathrm{d}x+(2x^{2}y^{3}-x)\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",x y(C-x^{2}-{{y}}^{2})=-1
+"\begin{array}{l}{{(2x^{3}y^{2}-y)\,\mathrm{d}x+(2x^{2}y^{3}-x)\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",x=0
+"\begin{array}{l}{{(2x^{3}y^{2}-y)\,\mathrm{d}x+(2x^{2}y^{3}-x)\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",y=0
+x^{2}y^{3}+y+(x^{3}y^{2}-x)y^{\prime}=0.,y^{2}=C x^{2}e^{x^{2}y^{2}}
+"\begin{array}{c}{{(x^{2}-y)\,\mathrm{d}x+x(y+1)\,\mathrm{d}y=0.}}\\ {{.}}\end{array}","x\sqrt{1+(y^{2}/x^{2})}+ \ln(y/x+\sqrt{1+(y^{2}/x^{2})})\;=\;\,C;"
+"\begin{array}{c}{{(x^{2}-y)\,\mathrm{d}x+x(y+1)\,\mathrm{d}y=0.}}\\ {{.}}\end{array}",x=0
+"y^{2}(y\,\mathrm{d}x-2x\,\mathrm{d}y)=x^{3}(x\,\mathrm{d}y-2y\,\mathrm{d}x)",x^3 - 4y^2 = Cy\sqrt[3]{xy}
+"y^{2}(y\,\mathrm{d}x-2x\,\mathrm{d}y)=x^{3}(x\,\mathrm{d}y-2y\,\mathrm{d}x)",x=0
+"y^{2}(y\,\mathrm{d}x-2x\,\mathrm{d}y)=x^{3}(x\,\mathrm{d}y-2y\,\mathrm{d}x)",y=0
+y^{\prime^{2}}-y^{2}=0.,y=C\mathrm{e}^{\pm x}.
+{\bf8}y^{\prime^3}{\bf=}27y.,y^2 = (x + C)^3
+{\bf8}y^{\prime^3}{\bf=}27y.,y=0
+(y^{\prime}+1)^{3}=27(x+y)^{2}.,"y+x\,=\,(x+C)^{3};"
+(y^{\prime}+1)^{3}=27(x+y)^{2}.,"\,y\,=\,-x."
+y^{2}(y^{\prime2}+1)=1.,"(x+C)^{2}+y^{2}\,=\,1;\,"
+y^{2}(y^{\prime2}+1)=1.,y=\pm1.
+y^{\prime2}-4y^{3}=0.,y(x + C)^2 = 1
+y^{\prime2}-4y^{3}=0.,y=0
+y^{\prime^{2}}=4y^{3}(1-y).,y[1 + (x - C)^{2}]=1
+y^{\prime^{2}}=4y^{3}(1-y).,y=0
+y^{\prime^{2}}=4y^{3}(1-y).,y=1
+x y^{\prime}{}^{2}=y.,"(y-x)^{2}\,=\,2C(x+y)-C^{2};"
+x y^{\prime}{}^{2}=y.,y=0
+y y^{\prime3}+x=1.,(x-1)^{4/3}+y^{4/3}=C
+y^{\prime^{3}}+y^{2}=y y^{\prime}(y^{\prime}+1).,4y=(x+C)^{2};
+y^{\prime^{3}}+y^{2}=y y^{\prime}(y^{\prime}+1).,y=C\mathrm{e}^{x}.
+\begin{array}{c}{{4(1-y)=(3y-2)^{2}y^{\prime}{}^{2}.}}\end{array},y^{2}(1-y)=(x+C)^{2};
+\begin{array}{c}{{4(1-y)=(3y-2)^{2}y^{\prime}{}^{2}.}}\end{array},y=1
+y^{\prime^{2}}+x y=y^{2}+x y^{\prime}.,"y\,=\,C\mathrm{e}^{x};"
+y^{\prime^{2}}+x y=y^{2}+x y^{\prime}.,"y\,=\,C\mathrm{e}^{-x}+x\,-\,1"
+x y^{\prime}(x y^{\prime}+y)=2y^{2}.,"x^{2}y\,=\,C;"
+x y^{\prime}(x y^{\prime}+y)=2y^{2}.,"y\,=\,C x."
+x y^{\prime2}-2y y^{\prime}+x=0.,x^{2}+C^{2}=2C y
+x y^{\prime2}-2y y^{\prime}+x=0.,y=\pm x.
+x y^{\prime2}=y(2y^{\prime}-1).,(x+C)^{2}=4C y;
+x y^{\prime2}=y(2y^{\prime}-1).,y=0
+x y^{\prime2}=y(2y^{\prime}-1).,y=x
+y^{\prime2}+x=2y,\ln\left|1\pm2{\sqrt{2y-x}}\right|=2\left(x+C\pm{\sqrt{2y-x}}\right)
+y^{\prime2}+x=2y,8y=4x+1
+y^{\prime^{3}}+(x+2)e^{y}=0.,(x+2)^{4/3}+C=4e^{-y/3}
+y^{\prime}{}^{2}-2x y^{\prime}=8x^{2}.,y=2x^{2}+C;
+y^{\prime}{}^{2}-2x y^{\prime}=8x^{2}.,"\,y=-x^{2}+C."
+(x y^{\prime}+3y)^{2}=7x.,y=C x^{-3}\pm2\sqrt{x/7}
+y^{\prime}{}^{2}-2y y^{\prime}=y^{2}(\mathrm{e}^{x}-1).,\ln C y=x\pm2\mathrm{e}^{x/2}
+y^{\prime}{}^{2}-2y y^{\prime}=y^{2}(\mathrm{e}^{x}-1).,y=0
+y^{\prime}(2y-y^{\prime})=y^{2}\sin^{2}x.,\ln{C y}=x\pm\sin{x}
+y^{\prime}(2y-y^{\prime})=y^{2}\sin^{2}x.,y=0
+y^{\prime^4}+y^{2}=y^{4},\operatorname{arctg}u+{\frac{1}{2}}\ln\left|(u-1)/(u+1)\right|=\pm x+C
+y^{\prime^4}+y^{2}=y^{4},y=0
+y^{\prime^4}+y^{2}=y^{4},y=\pm1
+x(y-x y^{\prime})^{2}=x y^{\prime2}-2y y^{\prime}.,x^{2}+(C y+1)^{2}=1
+x(y-x y^{\prime})^{2}=x y^{\prime2}-2y y^{\prime}.,y=0
+y(x y^{\prime}-y)^{2}=y-2x y^{\prime}.,(C x+1)^{2}=1-y^{2};
+y(x y^{\prime}-y)^{2}=y-2x y^{\prime}.,y=\pm1
+y y^{\prime}(y y^{\prime}-2x)=x^{2}-2y^{2}.,"2(x-C)^{2}+2y^{2}\,=\,C^{2};"
+y y^{\prime}(y y^{\prime}-2x)=x^{2}-2y^{2}.,"y\,=\,\pm x."
+y^{\prime}{}^{2}+4x y^{\prime}-y^{2}-2x^{2}y=x^{4}-4x^{2}.,y=Ce^{\pm x} - x^2
+y(y-2x y^{\prime})^{2}=2y^{\prime}.,y^2=C^2x-C
+y(y-2x y^{\prime})^{2}=2y^{\prime}.,4xy^2=-1
+x=y^{\prime3}+y^{\prime}.,"x = p^3 + p, 4y = 3p^4 + 2p^2 + C"
+x(y^{\prime}{}^{2}-1)=2y^{\prime}.,"x=\frac{2p}{p^{2}-1},y=\frac{2}{p^{2} - 1} - \ln|p^2 - 1| + C"
+x=y^{\prime}{\sqrt{y^{\prime2}+1}}.,"x=p{\sqrt{p^{2}+1}},3y=(2p^{2}-1){\sqrt{p^{2}+1}}+C"
+y^{\prime}(x-\ln y^{\prime})=1.,"x=\ln p+(1/p),\,y=p-\ln p+C"
+y=y^{\prime}{}^{2}+2y^{\prime}{}^{3}.,"x=3p^{2}+2p+C,y=2p^{3}+p^{2}"
+y=y^{\prime}{}^{2}+2y^{\prime}{}^{3}.,y=0
+y=\ln(1+y^{\prime2}).,"x=2\operatorname{arctg}p+C,y=\ln(1+p^{2});"
+y=\ln(1+y^{\prime2}).,y=0
+(y^{\prime}+1)^{3}=(y^{\prime}-y)^{2}.,"x\,=\,\ln\,|p|\,\pm\,{\textstyle\frac{3}{2}}\,\ln\left|\frac{\sqrt{p+1}-1}{\sqrt{p+1+1}}\right|\,\pm\,3\sqrt{p+1}\,+\,C, y=p\pm(p+1)^{3/2}"
+(y^{\prime}+1)^{3}=(y^{\prime}-y)^{2}.,y=\pm1
+y=(y^{\prime}-1)\mathrm{e}^{y^{\prime}}.,"x=\mathrm{e}^{p}+C,\;y=(p-1)\,\mathrm{e}^{p}"
+y=(y^{\prime}-1)\mathrm{e}^{y^{\prime}}.,y=-1
+{y^{\prime}}^{4}-{y^{\prime}}^{2}=y^{2}.,"x=\pm\left(2\sqrt{p^{2}-1}+\arcsin\frac{1}{\left|p\right|}\right)+C,y=\,\pm p\sqrt{p^{2}-1}"
+{y^{\prime}}^{4}-{y^{\prime}}^{2}=y^{2}.,y=0.
+y^{\prime}{}^{2}-y^{\prime}{}^{3}=y^{2}.,"$$x=\pm(\ln|\frac{1-\sqrt{1-p}}{1+\sqrt{1-p}}|)+3\sqrt{1-p}\;+C,\;y=\pm p\sqrt{1-p}"
+y^{\prime}{}^{2}-y^{\prime}{}^{3}=y^{2}.,y=0.
+y^{\prime}{}^{4}=2y y^{\prime}+y^{2}.,"x=\pm2\sqrt{1+p^{2}}-\ln(\sqrt{p^{2}+1}\pm1)+C,\ y=-p\pm p\sqrt{p^{2}+1}"
+y^{\prime}{}^{4}=2y y^{\prime}+y^{2}.,y=0.
+y^{\prime^2}-2x y^{\prime}=x^{2}-4y.,4y=C^{2}-2(x-C)^{2};
+y^{\prime^2}-2x y^{\prime}=x^{2}-4y.,2y=x^{2}.
+5y+y^{\prime}{}^{2}=x(x+y^{\prime}).,"x=-{\frac{p}{2}}+C,\,5y=C^{2}-{\frac{5p^{2}}{4}};"
+5y+y^{\prime}{}^{2}=x(x+y^{\prime}).,x^{2}\ =\ 4y.
+x^{2}y^{\prime2}=x y y^{\prime}+1.,"x={{\pm x p{\sqrt{2\ln C p}}}}\;=\;\mathrm{{1,\;}}y\;=\;\mp\Big(\;\sqrt{2\ln C p-\;-\;\frac{1}{\sqrt{2\ln C p}}}\Big)"
+y^{\prime^{3}}+y^{2}=x y y^{\prime}.,"p x y=y^{2}+p^{3},\;y^{2}(2p+C)=p^{4};"
+y^{\prime^{3}}+y^{2}=x y y^{\prime}.,y=0.
+2x y^{\prime}-y=y^{\prime}\ln y y^{\prime}.,y^{2}=2C x-{C}\ln{C}
+2x y^{\prime}-y=y^{\prime}\ln y y^{\prime}.,2x=1+2\ln{\vert y\vert}.
+y^{\prime}=\mathrm{e}^{x y^{\prime}/y}.,C x=\ln C y;
+y^{\prime}=\mathrm{e}^{x y^{\prime}/y}.,y=\operatorname{e}x.
+y=x y^{\prime}-x^{2}y^{\prime3}.,"x p^{2}=2\sqrt{|p|}-1, y=x p-x^{2}p^{3}; "
+y=x y^{\prime}-x^{2}y^{\prime3}.,y=0
+y=2x y^{\prime}+y^{2}y^{\prime3}.,"2p^{2}x\,{=}C-C^{2}p^{2},\,p y={C};"
+y=2x y^{\prime}+y^{2}y^{\prime3}.,32x^3 = -27y^4
+y=2x y^{\prime}+y^{2}y^{\prime3}.,y=0
+y(y-2x y^{\prime})^{3}=y^{\prime2}.,y^{2}=2C^{3}x+C^{2}
+y(y-2x y^{\prime})^{3}=y^{\prime2}.,27x^{2}y^{2}=1.
+y=x y^{\prime}-y^{\prime2}.,y=C x-C^{2};
+y=x y^{\prime}-y^{\prime2}.,4y=x^{2}.
+y+x y^{\prime}=4{\sqrt{y^{\prime}}}.,"x\sqrt{p}=\ln p+C,\,y=\sqrt{p}(4-\ln p-C);"
+y+x y^{\prime}=4{\sqrt{y^{\prime}}}.,y=0.
+y=2x y^{\prime}-4y^{\prime3}.,"x=3p^{2}+C p^{-2}, y=2p^{3}+2C p^{-1}"
+y=2x y^{\prime}-4y^{\prime3}.,y=0.
+y=x y^{\prime}-(2+y^{\prime}).,y=C x-C-2.
+y^{\prime^{3}}=3(x y^{\prime}-y).,C^{3}=3(C x-y);
+y^{\prime^{3}}=3(x y^{\prime}-y).,9y^{2}=4x^{3}
+y=x y^{\prime2}-2y^{\prime3}.,"x=C(p-1)^{-2}+2p+1,\,y=C p^{2}(p-1)^{-2}+p^{2};"
+y=x y^{\prime2}-2y^{\prime3}.,y=0;
+y=x y^{\prime2}-2y^{\prime3}.,y=x-2
+x y^{\prime}-y=\ln y^{\prime}.,y=C x-\ln C;
+x y^{\prime}-y=\ln y^{\prime}.,y=\ln x+1.
+x y^{\prime}(y^{\prime}+2)=y.,y=\pm2{\sqrt{C x}}+C;
+x y^{\prime}(y^{\prime}+2)=y.,y=-x
+2y^{\prime2}(y-x y^{\prime})=1.,2C^{2}(y-C x)=1;
+2y^{\prime2}(y-x y^{\prime})=1.,8y^{3}=27x^{2}.
+2x y^{\prime}-y=\ln y^{\prime}.,"x p^{2}=p+C,\;y= \,2+2C p^{-1}-\ln p."
+x y^{\prime}+x^{2}+x y-y=0.,"y\,=\,x(C\mathrm{e}^{-\,x}\,-\,1)."
+2x y^{\prime}+y^{2}=1.,"(C x+1)y\,=\,C x-1;"
+2x y^{\prime}+y^{2}=1.,y = 1
+"(2x y^{2}-y)\,\mathrm{d}x+x\,\mathrm{d}y=0.","y(x^{2}-C)\,=\,x"
+"(2x y^{2}-y)\,\mathrm{d}x+x\,\mathrm{d}y=0.","y\,=\,0."
+(x y^{\prime}+y)^{2}=x^{2}y^{\prime}.,"x(C-y)\,=\,C^{2}"
+(x y^{\prime}+y)^{2}=x^{2}y^{\prime}.,x\;=\;4y.
+y-y^{\prime}=y^{2}+x y^{\prime}.,y(x+C)=x+1
+y-y^{\prime}=y^{2}+x y^{\prime}.,y=0
+(x+2y^{3})y^{\prime}=y,x=C y+y^{3}{}_{;}
+(x+2y^{3})y^{\prime}=y,y=0.
+y^{\prime^{3}}-y^{\prime}\mathrm{e}^{2x}=0.,y=C\pm\mathrm{e}^{x}.
+y^{\prime^{3}}-y^{\prime}\mathrm{e}^{2x}=0.,y = C
+x^{2}y^{\prime}=y(x+y).,"y\ln C x\,=\,-x"
+x^{2}y^{\prime}=y(x+y).,"y\,=\,0."
+"(1-x^{2})\,\mathrm{d}y+x y\,\mathrm{d}x=0.","y^{2}\,=\,C(x^{2}\,-\,1);"
+"(1-x^{2})\,\mathrm{d}y+x y\,\mathrm{d}x=0.","x\,\,=\pm1."
+y^{\prime^{2}}+2(x-1)y^{\prime}-2y=0.,2y=2C(x-1)+C^{2}
+y^{\prime^{2}}+2(x-1)y^{\prime}-2y=0.,2y=-(x-1)^{2}.
+y+y^{\prime}\ln^{2}y=(x+2\ln y)y^{\prime}.,x=C y+\ln^{2}y.
+x^{2}y^{\prime}-2x y=3y.,y=C x^{2}\mathrm{e}^{-3/x}.
+x+y y^{\prime}=y^{2}(1+y^{\prime 2}),4(y^{2}-x)=1.
+x+y y^{\prime}=y^{2}(1+y^{\prime 2}),(x-C)^{2}+y^{2}=C
+y=(x y^{\prime}+2y)^{2}.,4x^{2}y=(x+2C)^{2}
+y=(x y^{\prime}+2y)^{2}.,y=0.
+y^{\prime}={\frac{1}{x-y^{2}}}.,x=C\mathrm{e}^{y}+y^{2}+2y+2.
+y^{\prime^{3}}+(3x-6)y^{\prime}=3y.,3y=3C(x-2)+C^{3};
+y^{\prime^{3}}+(3x-6)y^{\prime}=3y.,9y^{2}=4(2-x)^{3}
+x-{\frac{y}{y^{\prime}}}={\frac{2}{y}}.,y^{2}=C(x y-1);
+x-{\frac{y}{y^{\prime}}}={\frac{2}{y}}.,x y=1.
+2y^{\prime^{3}}-3y^{\prime^{2}}+x=y.,4(x-C)^{3}=27(y-\ C)^{2};
+2y^{\prime^{3}}-3y^{\prime^{2}}+x=y.,y=\ x-1.
+(x+y)^{2}y^{\prime}=1.,"x\,+\,y\,=\,\mathrm{tg}(y\,-\,C)."
+2x^{3}y y^{\prime}+3x^{2}y^{2}+7=0.,x^{3}y^{2}+7x\;=\;C.
+"{\frac{\mathrm{d}x}{x}}=\left({\frac{1}{y}}-2x\right)\,\mathrm{d}y.",y(x y-1)\;=\;C x.
+x y^{\prime}=\mathrm{e}^{y}+2y^{\prime}.,"-\mathbf{e}^{-y}\,=\,\ln C(x-2)."
+"2(x-y^{2})\,\mathrm{d}y=y\,\mathrm{d}x.","x\,=\,y^{2}(C - 2\ln|y|)"
+"2(x-y^{2})\,\mathrm{d}y=y\,\mathrm{d}x.",y\ =\ 0.
+x^{2}y^{\prime2}+y^{2}=2x(2-y y^{\prime}).,"3x y\,=\,C\pm4x^{3/2}"
+"\mathrm{d}y+(x y-x y^{3})\,\mathrm{d}x=0.","y^{2}(C\mathrm{e}^{x^{2}}+1)\,=\,1;"
+"\mathrm{d}y+(x y-x y^{3})\,\mathrm{d}x=0.",y=0
+2x^{2}y^{\prime}=y^{2}(2x y^{\prime}-y).,y^{2}=2x\ln C y
+2x^{2}y^{\prime}=y^{2}(2x y^{\prime}-y).,y=0.
+{\frac{y-x y^{\prime}}{x+y y^{\prime}}}=2.,\ln(x^{2}+y^{2})+\arg(y/x)=C.
+x(x-1)y^{\prime}+2x y=1.,"(x-1)^{2}y\,=\,x\,-\,\ln|x|\,+\,C"
+x y(x y^{\prime}-y)^{2}+2y^{\prime}=0.,"{C}^{2}{x}^{2}+2{y}^{2}\,=\,2{C}"
+x y(x y^{\prime}-y)^{2}+2y^{\prime}=0.,"2{x}^{2}{y}^{2}\,=\,1."
+(1-x^{2})y^{\prime}-2x y^{2}=x y.,y(C\sqrt{|x^{2}-1|}-2)=1;
+(1-x^{2})y^{\prime}-2x y^{2}=x y.,y=0.
+y^{\prime}+y=x y^{3}.,"y^{2}(C\mathrm{e}^{2x}+x+0,5)=1"
+y^{\prime}+y=x y^{3}.,y=0.
+"(x y^{4}-x)\,\mathrm{d}x+(y+x y)\,\mathrm{d}y=0.",y^{2}-1=C(x+1)^{4}\mathrm{e}^{-4x}(y^{2}+1);
+"(x y^{4}-x)\,\mathrm{d}x+(y+x y)\,\mathrm{d}y=0.",x=-1.
+"(\sin x+y)\,\mathrm{d}y+(y\cos x-x^{2})\,\mathrm{d}x=0.",y\sin x-{\frac{x^{3}}{3}}+{\frac{y^{2}}{2}}=C.
+3y^{\prime^{3}}-x y^{\prime}+1= 0.,"x=3p^{2}+p^{-1},\,y=2p^{3}-\ln|p|+C."
+y y^{\prime}+y^{2}\operatorname{ctg}x=\cos x.,3y^{2}=2\sin x+C\sin^{-2}x.
+"(\mathrm{e}^{y}+2x y)\,\mathrm{d}x+(\mathrm{e}^{y}+x)x\,\mathrm{d}y=0.",x(\mathrm{e}^{y}+x y)=C
+x y^{\prime2}=y-y^{\prime}.,"x(p\div{1})^{2}=\ln C p-p,\;y=x p^{2}+p"
+x y^{\prime2}=y-y^{\prime}.,y=0;
+x y^{\prime2}=y-y^{\prime}.,y=x+1.
+x(x+1)(y^{\prime}-1)=y.,(x+1)y={{x}}^{2}+{x}\ln C x.
+y(y-x y^{\prime})={\sqrt{x^{4}+y^{4}}}.,y^{2}+\sqrt{x^{4}+y^{4}}=C.
+x y^{\prime}+y=\ln y^{\prime}.,"p x=C\sqrt{p}-1,\;y=\ln p-C\sqrt{p}+1."
+"x^{2}(\mathrm{d}y-\mathrm{d}x)=(x+y)y\,\mathrm{d}x.",y=x\operatorname{tg}{\ln C} x
+"x^{2}(\mathrm{d}y-\mathrm{d}x)=(x+y)y\,\mathrm{d}x.",x=0.
+y^{\prime}+x\sqrt[3]{y}=3y.,y^{2/3}=C\mathrm{e}^{2x}+(x/3)+(1/6)
+y^{\prime}+x\sqrt[3]{y}=3y.,y=0.
+(x\cos y+\sin2y)y^{\prime}=1.,x=C\mathrm{e}^{\sin y}-2(1+\sin y).
+y^{\prime^{2}}-y y^{\prime}+e^{x}=0.,C y=C^{2}\mathrm{e}^{x}+1
+y^{\prime^{2}}-y y^{\prime}+e^{x}=0.,y=\pm \mathrm{e}^{x/2}.
+y^{\prime}={\textstyle\frac{x}{y}}\mathrm{e}^{2x}+y.,y^{2}=(x^{2}+C)\mathrm{e}^{2x}
+(x y^{\prime}-y)^{3}=y^{\prime3}-1.,"y=\,C x - \sqrt[3]{C^{3}-1}"
+(x y^{\prime}-y)^{3}=y^{\prime3}-1.,"y^{3}\,=\,(x^{3/2}\pm1)^{2}."
+(4x y-3)y^{\prime}+y^{2}=1.,"x(y^{2}-1)^{2}\,=\,y^{3}\,-\,3y+C;"
+(4x y-3)y^{\prime}+y^{2}=1.,y=\pm1.
+y^{\prime}{\sqrt{x}}={\sqrt{y-x}}+{\sqrt{x}}.,{\sqrt{y-x}}-{\sqrt{x}}=C
+y^{\prime}{\sqrt{x}}={\sqrt{y-x}}+{\sqrt{x}}.,y=x.
+x y^{\prime}=2\sqrt y\cos x-2y.,x\sqrt{y}=\sin x+C
+x y^{\prime}=2\sqrt y\cos x-2y.,y=0.
+3y^{\prime4}=y^{\prime}+y.,"x=4p^{3}\!-\!\ln C p,\,y=3p^{4}-p"
+3y^{\prime4}=y^{\prime}+y.,y=0.
+y^2(y - xy^{\prime}) = x^3y^{\prime},y^{2}+2x^{2}\ln C y=0
+y^2(y - xy^{\prime}) = x^3y^{\prime},y=0.
+y^{\prime}=(4x+y-3)^{2},4x+y-3=2\operatorname{tg}(2x+C).
+"(\cos x-x\sin x)y\,\mathrm{d}x+(x\cos x-2y)\,\mathrm{d}y=0.",x y\cos x-y^{2}=C.
+x^{2}y^{\prime^{2}}-2x y y^{\prime}=x^{2}+3y^{2}.,4C x y={C^{2}}{x^{4}}-1
+{\frac{x y^{\prime}}{y}}+2x y\ln x+1=0.,x y(\ln^{2}x+C)=1.
+x y^{\prime}=x{\sqrt{y-x^{2}}}+2y.,2\sqrt{y-x^{2}}=x\ln C x;
+x y^{\prime}=x{\sqrt{y-x^{2}}}+2y.,y=x^{2}.
+"(1-x^{2}y)\,\mathrm{d}x+x^{2}(y-x)\,\mathrm{d}y=0.",(y^{2}/2)-(1/x)-x y=C
+"(1-x^{2}y)\,\mathrm{d}x+x^{2}(y-x)\,\mathrm{d}y=0.",x=0.
+(2x e^{y}+y^{4})y^{\prime}=y e^{y}.,x=C y^{2}-y^{2}(y+1)\mathrm{e}^{-y}
+(2x e^{y}+y^{4})y^{\prime}=y e^{y}.,y=0
+x y^{\prime}(\ln y-\ln x)=y.,y(\ln y-\ln x-1)=C.
+2y^{\prime}=x+\ln y^{\prime}.,"x=2p-\ln p,\;y=p^{2}-p+C"
+(2x^{2}y-3y^{2})y^{\prime}=6x^{2}-2x y^{2}+1.,2x^{3}-x^{2}y^{2}+y^{3}+x\;=\;C.
+y y^{\prime}=4x+3y-2.,(y-4x+2)^{4}(2y+2x-1)=C
+y^{2}y^{\prime}+x^{2}\sin^{3}x=y^{3}\operatorname{ctg}x.,"y^{3}\,=\,(C-x^{3})\mathrm{sin}^{3}\,x."
+2x y^{\prime}-y=\sin y^{\prime}.,"p^{2}x=p\sin p+\cos p+C,p y=p\sin p+2\cos p+2C;"
+2x y^{\prime}-y=\sin y^{\prime}.,y=0.
+(x^{2}y^{2}+1)y+(x y-1)^{2}x y^{\prime}=0.,x^{2}y^{2}-1=x y\ln C y^{2};
+(x^{2}y^{2}+1)y+(x y-1)^{2}x y^{\prime}=0.,y=0.
+y\sin x+y^{\prime}\cos x=1.,"y\,=\,C\cos x\,+\,\sin x."
+"x\,{\mathrm{d}}y-y\,{\mathrm{d}}x=x{\sqrt{x^{2}+y^{2}}}\,{\mathrm{d}}x.",|x|=\ln\!\left({\textstyle{\frac{y}{x}}}+{\sqrt{1+{\frac{y^{2}}{x^{2}}}}}\right)+C;
+"x\,{\mathrm{d}}y-y\,{\mathrm{d}}x=x{\sqrt{x^{2}+y^{2}}}\,{\mathrm{d}}x.",x=0.
+y^{2}+x^{2}y^{\prime5}=x y(y^{\prime}{}^{2}+y^{\prime3}).,(y\mathrm{-}x)^{2}=2C(x+y)\mathrm{-}{C}^{2};
+y^{2}+x^{2}y^{\prime5}=x y(y^{\prime}{}^{2}+y^{\prime3}).,y^{2/3}-x^{2/3}=C;
+y^{2}+x^{2}y^{\prime5}=x y(y^{\prime}{}^{2}+y^{\prime3}).,y=0.
+y^{\prime}=\sqrt[3]{2x-y}+2.,27(y-2x)^{2}=(C-2x)^{3};
+y^{\prime}=\sqrt[3]{2x-y}+2.,y=2x.
+"\left(x-y\cos\frac y x\right)\,\mathrm{d}x+x\cos\frac y x\,\mathrm{d}y=0.",\sin(y/x)=-\ln C x.
+"2\left(x^{2}y+{\sqrt{1+x^{4}y^{2}}}\right)\,\mathrm{d}x+x^{3}\,\mathrm{d}y=0.",x^{2}({\sqrt{1+x^{4}y^{2}}}+x^{2}y)=C.
+\left(y^{\prime}-x{\sqrt{y}}\right)(x^{2}-1)=x y.,3\sqrt{y}=x^{2}-1+{C}\sqrt[4]{\vert x^{2}-1}\vert
+\left(y^{\prime}-x{\sqrt{y}}\right)(x^{2}-1)=x y.,y=0.
+y^{\prime^{3}}+(y^{\prime^{2}}-2y^{\prime})x=3y^{\prime}-y.,"x={\frac{c}{p^{2}}}-p-{\textstyle\frac{3}{2}},\,y=C\left({\textstyle\frac{2}{p}}-1\right)-{\textstyle\frac{p^{2}}{2}};"
+y^{\prime^{3}}+(y^{\prime^{2}}-2y^{\prime})x=3y^{\prime}-y.,y=x+2;
+y^{\prime^{3}}+(y^{\prime^{2}}-2y^{\prime})x=3y^{\prime}-y.,y=0.
+"(2x+3y-1)\,\mathrm{d}x+(4x+6y-5)\,\mathrm{d}y=0.",(2x+3y-7)^{3}=C\mathrm{e}^{x+2y}.
+"(2x y^{2}-y)\,\mathrm{d}x+(y^{2}+x+y)\,\mathrm{d}y=0.","(x^{2}+y+\ln C y)y\,=\,x;"
+"(2x y^{2}-y)\,\mathrm{d}x+(y^{2}+x+y)\,\mathrm{d}y=0.","y\,=\,0."
+y=y^{\prime}{\sqrt{1+y^{\prime 2}}}.,"x\,=\,2\sqrt{p^{2}+1}-\,\mathrm{ln}(1\,+\sqrt{p^{2}+1})+\ln C p,\;y=p\sqrt{p^{2}+1};"
+y=y^{\prime}{\sqrt{1+y^{\prime 2}}}.,y=0.
+y^{2}=(x y y^{\prime}+1)\ln x.,y^{2}=C\ln^{2}x+2\ln x.
+4y=x^{2}+y^{\prime2}.,"x=C u e^{u},\,4y=C^{2}\mathrm{e}^{2u}(2u^{2}+2u+1);"
+4y=x^{2}+y^{\prime2}.,x^{2}=2y.
+"2x\,\mathrm{d}y+y\,\mathrm{d}x+x y^{2}(x\,\mathrm{d}y+y\,\mathrm{d}x)=0.",x y^{2}\ln C x y=1
+"2x\,\mathrm{d}y+y\,\mathrm{d}x+x y^{2}(x\,\mathrm{d}y+y\,\mathrm{d}x)=0.",x=0
+"2x\,\mathrm{d}y+y\,\mathrm{d}x+x y^{2}(x\,\mathrm{d}y+y\,\mathrm{d}x)=0.",y=0
+"x\,\mathrm{d}x+(x^{2}\ctg y-3\cos y)\,\mathrm{d}y=0.",x^{2}\sin^{2}y=2\sin^{3}y+C.
+x^{2}y^{\prime2}-2(x y-2)y^{\prime}+y^{2}=0.,1-x y=(C x-1)^{2};
+x^{2}y^{\prime2}-2(x y-2)y^{\prime}+y^{2}=0.,x y=1
+x^{2}y^{\prime2}-2(x y-2)y^{\prime}+y^{2}=0.,y=0.
+x y^{\prime}+1=\mathrm{e}^{x-y}.,x\mathrm{e}^{y}=\mathrm{e}^{x}+C.
+y^{\prime} = \tg{y - 2x},\sin(y-2x)-2\cos(y-2x)=C\mathrm{e}^{x+2y}
+3x^{2}-y=y^{\prime}{\sqrt{x^{2}+1}}.,y=(2x+C)\sqrt{x^{2}+1}-x^{2}-C x-2.
+y y^{\prime}+x y=x^{3}.,"(y+x^{2})^{2}(2y-\,x^{2})=C."
+x(x-1)y^{\prime}+y^{3}=x y.,(x-1)^{2}=y^{2}(2x-2\ln C x);
+x(x-1)y^{\prime}+y^{3}=x y.,y=0.
+x y^{\prime}=2y+y\sqrt{{1+y^{\prime}{}^{2}}}.,"x=p[\mathrm{ln}(1+\,\,\sqrt{p^{2}+1})-\ln C p],\;2y\,=\,x p-\,\sqrt{p^{2}+1}"
+x y^{\prime}=2y+y\sqrt{{1+y^{\prime}{}^{2}}}.,"2y\,=\,-1."
+(2x+y+5)y^{\prime}=3x+6.,"(y+3x+\,7)(y-x-1)^{3}=C."
+"y^{\prime}+\mathrm{tg}\,y=x\,\mathrm{sec}\,y.",\sin y=C\mathrm{e}^{-x}+x-1.
+y^{\prime}{}^{4}=4y(x y^{\prime}-2y)^{2}.,y=C^{2}(x-C)^{2};
+y^{\prime}{}^{4}=4y(x y^{\prime}-2y)^{2}.,16y\;=\;x^{4}
+y^{\prime}={\frac{y^{2}-x}{2y(x+1)}}.,"y^{2}\;=\;x\;-\;(x\,+\,1)\mathrm{ln}\,C(x\,+\,1)."
+x y^{\prime}=x^{2}\mathrm{e}^{-y}+2.,"\mathrm{e}^{y}\ = x^{2}\mathrm{ln}\,C x."
+y^{\prime}=3x+{\sqrt{y-x^{2}}}.,(y-2x{\sqrt{y-x^{2}}})(2{\sqrt{y-x^{2}}}+x)=C.
+"x\,{\mathrm{d}}y-2y\,{\mathrm{d}}x+x y^{2}(2x\,{\mathrm{d}}y+y\,{\mathrm{d}}x)=0.",x y^{2}=\ln x^{2}-\ln C y;
+"x\,{\mathrm{d}}y-2y\,{\mathrm{d}}x+x y^{2}(2x\,{\mathrm{d}}y+y\,{\mathrm{d}}x)=0.",x=0;
+"x\,{\mathrm{d}}y-2y\,{\mathrm{d}}x+x y^{2}(2x\,{\mathrm{d}}y+y\,{\mathrm{d}}x)=0.",y=0.
+"(x^{3}-2x y^{2})\,{\mathrm{d}}x+3x^{2}y\,{\mathrm{d}}y=x\,{\mathrm{d}}y-y\,{\mathrm{d}}x.",x(y^{2}+x^{2})^{3}={\textstyle\frac{2}{5}}y^{5}+{\textstyle\frac{4}{3}}x^{2}y^{3}+2x^{4}y+C x^{5};
+"(x^{3}-2x y^{2})\,{\mathrm{d}}x+3x^{2}y\,{\mathrm{d}}y=x\,{\mathrm{d}}y-y\,{\mathrm{d}}x.",x=0.
+(y y^{\prime})^{3}=27x(y^{2}-2x^{2}).,"(u-1)\ln C x^{6}(u-1)^{5}(u+2)^{4}=3,"
+(y y^{\prime})^{3}=27x(y^{2}-2x^{2}).,y^{2}=3x^{2}.
+y^{\prime}-8x{\sqrt{y}}={\frac{4x y}{x^{2}-1}}.,{\sqrt{y}}=(x^{2}-1)(2\ln|x^{2}-1|+C);
+y^{\prime}-8x{\sqrt{y}}={\frac{4x y}{x^{2}-1}}.,y=0.
+"[2x-\ln(y+1)]\,\mathrm{d}x-{\frac{x+y}{y+1}}\,\mathrm{d}y=0.",x^{2}-(x-1)\ln(y+1)-y=C.
+"x y^{\prime}=(x^{2}+\mathrm{tg}\,y)\cos^{2}y.",\mathrm{tg}y=x^{2}+Cx;
+"x y^{\prime}=(x^{2}+\mathrm{tg}\,y)\cos^{2}y.","y={(2k+1)\pi}/2,\,k=0,\pm1,\,\pm2,\,\cdots\,."
+x^{2}(y-x y^{\prime})=y y^{\prime}{}^{2}.,y^{2}=C x^{2}+C^{2}
+y^{\prime}=\frac{3x^{2}}{x^{3}+y+1}.,x^{3}=C\mathrm{e}^{y}-y-2.
+y^{\prime}=\frac{(1+y)^{2}}{x(y+1)-x^{2}}.,y+1=x\ln C(y+1);
+y^{\prime}=\frac{(1+y)^{2}}{x(y+1)-x^{2}}.,y=-1.
+(y-2x y^{\prime})^{2}=4y y^{\prime^{3}}.,y^{2}=2C^{2}(x{-}C)
+(y-2x y^{\prime})^{2}=4y y^{\prime^{3}}.,8x^{3}=27 y^{2}.
+"6x^{5}y\,\mathrm{d}x+(y^{4}\ln y-3x^{6})\,\mathrm{d}y=0.",x^{6}=y^{3}(C-y\ln y+y)
+"6x^{5}y\,\mathrm{d}x+(y^{4}\ln y-3x^{6})\,\mathrm{d}y=0.",y=0
+y^{\prime}=\frac{1}{2}\sqrt{x}+\sqrt[3]{y},"\ln C(u-v)^{3}{\Big(}u^{2}+u v+{\frac{v^{2}}{3}}{\Big)}^{2}=2\operatorname{arctg}(1+2u/v), u^{3}=y, v^{2}=x;\,y^{2}=x^{3}"
+2x y^{\prime}+1=y+{\frac{x^{2}}{y-1}}.,(y-1)^{2}=x^{2}+C x.
+y y^{\prime}+x={\frac{1}{2}}\left({\frac{x^{2}+y^{2}}{x}}\right)^{2},(x^{2}+y^{2})(C x+1)=x.
+y^{\prime}=\left({\frac{3x+y^{3}-1}{y}}\right)^{2}.,3x+y^{3}-1=\mathrm{tg}(3x+C).
+"\left(x\sqrt{y^{2}+1}+1\right)\left(y^{2}+1\right)\mathrm{d}x=x y\,\mathrm{d}y.","(C-x^{2})\,{\sqrt{y^{2}+1}}=2x."
+(x^{2}+y^{2}+1)y y^{\prime}+(x^{2}+y^{2}-1)x=0.,(x^{2}+y^{2}+1)^{2}=4x^{2}+C
+"y^{2}(x-1)\,\mathrm{d}x=x(x y+x-2y)\,\mathrm{d}y.",xy - x = y(y - x)\ln|Cy/(y-x)|
+"y^{2}(x-1)\,\mathrm{d}x=x(x y+x-2y)\,\mathrm{d}y.",y = 0
+"y^{2}(x-1)\,\mathrm{d}x=x(x y+x-2y)\,\mathrm{d}y.",x=0
+"y^{2}(x-1)\,\mathrm{d}x=x(x y+x-2y)\,\mathrm{d}y.",y=x
+(x y^{\prime}-y)^{2}=x^{2}y^{2}-x^{4}.,y=\pm x\operatorname{ch}(x+C);
+(x y^{\prime}-y)^{2}=x^{2}y^{2}-x^{4}.,y=\pm x.
+x y y^{\prime}-x^{2}{\sqrt{y^{2}+1}}=(x+1)(y^{2}+1).,{\sqrt{y^{2}+1}}=x(C\mathrm{e}^{x}-1).
+(x^{2}-1)y^{\prime}+y^{2}-2x y+1=0.,(y-x)\ln C{\frac{x-1}{x+1}}\;=\;2
+(x^{2}-1)y^{\prime}+y^{2}-2x y+1=0.,y\;=\;x.
+"y^{\prime}\ {\mathrm{tg}}\,y+4x^{3}\cos y=2x.","({ C}\mathrm{e}^{x^{2}}+2x^{2}+2)\cos y\,=\,1."
+(x y^{\prime}-y)^{2}=y^{\prime2}-{\frac{2y y^{\prime}}{x}}+1,(y^{2}-C x^{2}+1)^{2}=4(1-C)y^{2};
+(x y^{\prime}-y)^{2}=y^{\prime2}-{\frac{2y y^{\prime}}{x}}+1,y=\pm x.
+"(x+y)(1-x y)\,\mathrm{d}x+(x+2y)\,\mathrm{d}y=0.",y^{2}+x y-1=C\mathrm{e}^{x^{2}/2}.
+"(3x y+x+y)y\,{\mathrm{d}}x+(4x y+x+2y)x\,{\mathrm{d}}y=0.",6x^{3}y^{4}+2x^{3}y^{3}+3x^{2}y^{4}=C.
+"(x^{2}-1)\,{\mathrm d}x+(x^{2}y^{2}+x^{3}+x)\,{\mathrm d}y=0.",x+{\frac{1}{x}}+y^{2}-2y+2=C\mathrm{e}^{-y};
+x(y^{\prime}{}^{2}+\mathrm{e}^{2y})\underline{{{}}}=-2y^{\prime}.,x^{2}=\mathrm{e}^{-2y}.
+"(x^{2}-1)\,{\mathrm d}x+(x^{2}y^{2}+x^{3}+x)\,{\mathrm d}y=0.",x=0.
+x(y^{\prime}{}^{2}+\mathrm{e}^{2y})\underline{{{}}}=-2y^{\prime}.,\mathrm{e}^{y}({C}^{2}x^{2}+1)=2C
+x^{2}y^{\prime\prime}=y^{\prime 2},C_{1}x-C_{1}^{2}y=\ln|C_{1}x+1|+C_{2};
+x^{2}y^{\prime\prime}=y^{\prime 2},2y=x^{2}+C;
+x^{2}y^{\prime\prime}=y^{\prime 2},y=C.
+2x y^{\prime}y^{\prime\prime}=y^{\prime 2}-1.,9C_{1}^{2}(y-C_{2})^{2}=4(C_{1}x+1)^{3}
+2x y^{\prime}y^{\prime\prime}=y^{\prime 2}-1.,y=\pm x+C.
+y^{3}y^{\prime\prime}=1,C_{1}y^{2}-1=(C_{1}x+C_{2})^{2}.
+y^{\prime^{2}}+2y y^{\prime\prime}=0,y^{3}=C_{1}(x+C_{2})^{2};
+y^{\prime^{2}}+2y y^{\prime\prime}=0,y=C.
+y^{\prime\prime}=2y y^{\prime},y=C_{1}\mathrm{tg}(C_{1}x+C_{2})
+y^{\prime\prime}=2y y^{\prime},\ln\big|\frac{y-C_{1}}{y+C_1}\big|=2C_{1}x+C_{2}
+y^{\prime\prime}=2y y^{\prime},y=(C-x)=1;
+y^{\prime\prime}=2y y^{\prime},y=C.
+y y^{\prime\prime}+1=y^{\prime2},C_{1}y=\sin(C_{1}x+{C}_{2});
+y y^{\prime\prime}+1=y^{\prime2},{C}_{1}y=\pm\sh(C_{1}x+C_{2});
+y y^{\prime\prime}+1=y^{\prime2},y=C\pm x.
+y^{\prime\prime}(\mathrm{e}^{x}+1)+y^{\prime}=0,y=C_{1}(x - \mathrm{e}^{-x})+C_{2}.
+y^{\prime\prime\prime}=y^{\prime\prime2},y=C_{3}-(x+C_{1})\ln C_{2}(x+C_{1});
+y^{\prime\prime\prime}=y^{\prime\prime2},y=C_{1}x+C_{2}.
+y y^{\prime\prime}=y^{\prime2}-y^{\prime3},y+C_{1}\ln|y|=x+C_{2}
+y y^{\prime\prime}=y^{\prime2}-y^{\prime3},y=C.
+y^{\prime\prime\prime}=2(y^{\prime\prime}-1)\operatorname{ctg}x.,2y=C_{1}\cos2x+(1+2C_{1})x^{2}+C_{2}x+C_{3}.
+2y y^{\prime\prime}=y^{2}+y^{\prime 2},y=C_{1}[1\pm\mathrm{ch}(x+C_{2})]
+2y y^{\prime\prime}=y^{2}+y^{\prime 2},y=C\mathrm{e}^{\pm x}.
+y^{\prime\prime^{3}}+x y^{\prime\prime}=2y^{\prime}.,"x=C_{1}p+3p^{2},y={\textstyle\frac{12}{5}p^{5}}+{\textstyle\frac{5}{4}}C_{1}p^{4}+C_{1}^{2}{\textstyle\frac{p^{3}}{6}}+C_{2};"
+y^{\prime\prime^{3}}+x y^{\prime\prime}=2y^{\prime}.,y=C.
+y^{\prime\prime2}+y^{\prime}=x y^{\prime\prime}.,y=C_{1}{\frac{x^{2}}{2}}-C_{1}^{2}x+C_{2};
+y^{\prime\prime2}+y^{\prime}=x y^{\prime\prime}.,y=({x}^{3}/12)+C
+y^{\prime\prime}+y^{\prime 2}=2\mathrm{e}^{-y}.,\mathrm{e}^{y}+C_{1} = (x+C_{2})^{2}.
+x y^{\prime\prime\prime}=y^{\prime\prime}-x y^{\prime\prime}.,"y=C_{1}(x+2)\mathrm{e}^{-x}+\,C_{2}x+C_{3}."
+y^{\prime\prime2}=y^{\prime2}+1.,y=\pm\operatorname{ch}(x+C_{1})+C_{2}.
+y^{\prime\prime}=\mathrm{e}^{y}.,\mathrm{e}^{y}\sin^{2}(C_{1}x+C_{2})=2C_{1}^{2};
+y^{\prime\prime}=\mathrm{e}^{y}.,"\mathrm{e}^{y}\,\mathrm{sh}^{2}(C_{1}x+C_{2})=2C_{1}^{2}"
+y^{\prime\prime}=\mathrm{e}^{y}.,\mathrm{e}^{y}(x+C)^{2}=2.
+y^{\prime\prime}-x y^{\prime\prime\prime}+y^{\prime\prime \prime 3}=0.,"y=C_{1}\frac{x^{3}}{6}-C_{1}^{3}\frac{x^{2}}{2}+C_{2}x\left.+\,C_{3}"
+y^{\prime\prime}-x y^{\prime\prime\prime}+y^{\prime\prime \prime 3}=0.,y=\frac{\pm8}{315}x^{3}\sqrt{3x}+C_{1}x+C_{2}.\right.
+2y^{\prime}(y^{\prime\prime}+2)=x y^{\prime\prime2}.,3C_{1}y=(x-C_{1})^{3}+C_{2}
+2y^{\prime}(y^{\prime\prime}+2)=x y^{\prime\prime2}.,y=C;
+2y^{\prime}(y^{\prime\prime}+2)=x y^{\prime\prime2}.,y=C-2x^{2}.
+y^{4}-y^{3}y^{\prime\prime}=1.,\ln\big|y^{2}+C_{1}\pm\sqrt{y^{4}+2C_{1}y^{2}+1}\big|=2x+C_{2}
+y^{4}-y^{3}y^{\prime\prime}=1.,y=\pm1.
+y^{\prime 2}=(3y-2y^{\prime})y^{\prime\prime}.,"x=3C_{1}p^{2}+\ln C_{2}p,\,y=2C_{1}p^{3}+p"
+y^{\prime 2}=(3y-2y^{\prime})y^{\prime\prime}.,y=C.
+y^{\prime\prime}(2y^{\prime}+x)=1.,"x=C_{1}\mathrm{e}^{p}-2p-2, y\,=\,C_{1}(p-1)\mathrm{e}^{p}-p^{2}+C_{2}."
+y^{\prime\prime^{2}}-2y^{\prime}y^{\prime\prime\prime}+1=0.,12(C_{1}y-x)=C_{1}^{2}(x+C_{2})^{3}+C_{3}.
+(1-x^{2})y^{\prime\prime}+x y^{\prime}=2.,"y\,=\,x^{2}+C_{1}+C_{2}(x\sqrt{x^{2}-1}-\ln\vert x+\sqrt{x^{2}-1}\vert)"
+(1-x^{2})y^{\prime\prime}+x y^{\prime}=2.,"y\,=\,x^{2}+C_{1}+C_{2}(x\sqrt{1-x^{2}}+\mathrm{arcsin}{x})."
+y y^{\prime\prime}-2y y^{\prime}\ln y=y^{\prime2}.,\ln y\ =\ C_{1}\mathop{\mathrm{tg}}(C_{1}x+C_{2})
+y y^{\prime\prime}-2y y^{\prime}\ln y=y^{\prime2}.,"\ln\vert(\ln y\,-\,C_{1}\big)/(\ln y+C_{1})\vert=2C_{1}x+C_{2}"
+y y^{\prime\prime}-2y y^{\prime}\ln y=y^{\prime2}.,(C-x)\ln y=1;
+y y^{\prime\prime}-2y y^{\prime}\ln y=y^{\prime2}.,y=C.
+(y^{\prime}+2y)y^{\prime\prime}=y^{\prime}{}^{2}.,x=u-\ln|1+u|+C_{2}
+(y^{\prime}+2y)y^{\prime\prime}=y^{\prime}{}^{2}.,y=C
+(y^{\prime}+2y)y^{\prime\prime}=y^{\prime}{}^{2}.,y=C\mathrm{c}^{-x}.
+x y^{\prime\prime}=y^{\prime}+x\sin{\frac{y^{\prime}}{x}},"C_{1}y==(C_{1}^{2}x^{2}+1)\mathrm{arctg}\,C_{1}x-C_{1}x+C_{2};"
+x y^{\prime\prime}=y^{\prime}+x\sin{\frac{y^{\prime}}{x}},"2y=k\pi x^{2}+C,"
+y^{\prime\prime\prime}y^{\prime2}=y^{\prime\prime3}.,"x=\ln|p|+2C_{1}p-C_{2},\,y=p+C_{1}p^{2}+C_{3};"
+y^{\prime\prime\prime}y^{\prime2}=y^{\prime\prime3}.,y=C_{1}x+C_{2}.
+y y^{\prime\prime}+y=y^{\prime}{}^{2}.,"C_{1}^{2}y + 1\,=\,\pm\operatorname{ch}(C_{1}x+C_{2});"
+y y^{\prime\prime}+y=y^{\prime}{}^{2}.,"C_{1}^{2}y\,-\,1\;=\;\sin(C_{1}x+C_{2})"
+y y^{\prime\prime}+y=y^{\prime}{}^{2}.,"2y\;=\;(x\,+\,C)^{2};"
+y y^{\prime\prime}+y=y^{\prime}{}^{2}.,y=0
+x y^{\prime\prime}=y^{\prime}+x(y^{\prime2}+x^{2}).,"y\,=\,C_{2}\,-\,\mathrm{ln}\bigr|\mathrm{cos}\bigl({\frac{x^{2}}{2}}\,+\,C_{1}\bigr)\bigr|\,."
+x y^{\mathrm{{IV}}}=1.,"6y\,=\,x^{3}\,\mathrm{ln}\vert x\vert+C_{1}x^{3}{}+C_{2}x^{2}+C_{3}x+C_{4}."
+x y^{\prime\prime}=\sin x.,y = x\int_0^x\frac{\sin{t}}{t}\mathrm{d}t + \cos{x} + C_1x + C_2
+y^{\prime\prime\prime}=2x y^{\prime\prime}.,y=C_{1}\Bigr[x\int_0^x[e^{t^{2}}\mathrm{d}t-\frac{1}{2}(e^{x^{2}}-1)\Bigr]+C_{2}x+C_{3}.
+x y^{IV}+y^{\prime\prime\prime}=\mathrm{e}^{x}.,y={\frac{x^{2}}{2}}\int_{1}^{x}{\frac{\mathrm{e}^{t}}{t}}\mathrm{d}t-{\frac{x+1}{2}}\mathrm{e}^{x}{}+C_{1}x^{2}\ln|x|+C_{2}x^{2}+C_{3}x+C_{4}.
+y y^{\prime\prime\prime}+3y^{\prime}y^{\prime\prime}=0.,C_{2}y^{2}-C_{1}=C_{2}^{2}(x+C_{3})^{2}
+y y^{\prime\prime\prime}+3y^{\prime}y^{\prime\prime}=0.,y=C.
+y^{\prime}y^{\prime\prime\prime}=2y^{\prime\prime^{2}}.,C_{1}y=\ln|C_{1}x+C_{2}|+C_{3}
+y^{\prime}y^{\prime\prime\prime}=2y^{\prime\prime^{2}}.,y=C_{1}x+C_{2}.
+y y^{\prime\prime}=y^{\prime}(y^{\prime}+1).,C_{1}y-1=C_{2}\mathrm{e}^{C_{1}x};
+y y^{\prime\prime}=y^{\prime}(y^{\prime}+1).,y=C-x
+y y^{\prime\prime}=y^{\prime}(y^{\prime}+1).,y=0.
+5y^{\prime\prime\prime}-3y^{\prime\prime}y^{IV}=0.,y=C_{1}x^{2}+C_{2}x+C_{3}
+5y^{\prime\prime\prime}-3y^{\prime\prime}y^{IV}=0.,y=\pm{\sqrt{C_{1}x+C_{2}}}+C_{3}x+C_4
+y y^{\prime\prime}+y^{\prime2}=1.,y^{2}=x^{2}+C_{1}x+C_{2}.
+y^{\prime\prime}=x y^{\prime}+y+1.,y=\mathrm{e}^{x^{2}/2}\Bigl(C_{1}\int\mathrm{e}^{-x^{2}/2}\mathrm{d}x+C_{2}\Bigr)-1.
+x y^{\prime\prime}=2y y^{\prime}-y^{\prime}.,y=C_1\mathrm{tg}(C_{1}\ln C_{2}x)
+x y^{\prime\prime}=2y y^{\prime}-y^{\prime}.,y-C_{1}=C_{2}(y+C_{1})\vert x\vert^{2C_{1}}
+x y^{\prime\prime}=2y y^{\prime}-y^{\prime}.,y\ln C x=-1.
+x y^{\prime\prime}-y^{\prime}=\ x^{2}y y^{\prime}.,2\ln\left|\frac{y-C_{1}}{y+C_{1}}\right|=C_{1}x^{2}+C_{2}
+x y^{\prime\prime}-y^{\prime}=\ x^{2}y y^{\prime}.,"y=4C_{1}\mathrm{tg}(C_{1}x^{2}+C_{2});\,\,y(C-x^{2})=\ 4"
+x y^{\prime\prime}-y^{\prime}=\ x^{2}y y^{\prime}.,y\ =\ C.
+x y y^{\prime\prime}-x y^{\prime2}=y y^{\prime}.,y\;=\;C_{2}\mathrm{e}^{C x^{2}}.
+y y^{\prime\prime}=y^{\prime}+15y^{2}\sqrt{x}.,"C_{1}x+4x^{5/2}\ =\ln\,C_{2}y"
+y y^{\prime\prime}=y^{\prime}+15y^{2}\sqrt{x}.,y\ = 0
+(x^{2}+1)(y^{\prime^{2}}-y y^{\prime\prime})=x y y^{\prime}.,"y\,=\,C_{2}(x+\sqrt{x^{2}+1})^{C_{1}}."
+x y y^{\prime\prime}+x y^{\prime2}=2y y^{\prime}.,"y^{2}\,=\,C_{1}\,x^{3}\,+\,C_{2}."
+x^{2}y y^{\prime\prime}=(y-x y^{\prime})^{2}.,"y=\,C_{2}x\mathrm{e}^{-\,C_{1}/x}."
+y^{\prime\prime}+\frac{y^{\prime}}{x}+\frac{y}{x^{2}}=\frac{{\bar{y}}^{\prime}{}^{2}}{y}.,"y\,=\,C_{2}|x|^{C_{1}-(1/2)\ln|x|}"
+y(x y^{\prime\prime}+y^{\prime})= x y^{\prime2}(1-x).,"y=\,C_{2}\left|\frac{x}{x+C_{1}}\right|^{1/C_{1}}"
+y(x y^{\prime\prime}+y^{\prime})= x y^{\prime2}(1-x).,y=C
+x^{2}y y^{\prime\prime}+y^{\prime 2}=0.,|y|^{C_{1}^{2}+1}\;=\;C_{2}\Bigl(x-{\frac{1}{C_{1}}}\Bigr)|x+C_{1}|^{C_{1}^{2}};
+x^{2}y y^{\prime\prime}+y^{\prime 2}=0.,y\;=\;C
+x^{2}(y^{\prime}{}^{2}-2y y^{\prime\prime})=y^{2}.,y\ =\ C_{2}x(\ln C_{1}x)^{2}
+x^{2}(y^{\prime}{}^{2}-2y y^{\prime\prime})=y^{2}.,y\ =\ C x.
+x y y^{\prime\prime}=y^{\prime}(y+y^{\prime}).,"\ln|y|\,=\,\ln|x^{2}-\,2x\,+\,C_{1}|+\int{\frac{2\mathrm{d}x}{(x-1)^{2}+C_{1}-1}}+C_{2};"
+x y y^{\prime\prime}=y^{\prime}(y+y^{\prime}).,y=C.
+4x^{2}y^{3}y^{\prime\prime}= \ x^{2}-y^{4}.,4C_{1}y^{2}=4x+x(C_{1}\ln C_{2}x)^{2}.
+x^{3}y^{\prime\prime}=(y-x y^{\prime})(y-x y^{\prime}-x).,y=-x\ln(C_{2}\ln C_{1}x)
+x^{3}y^{\prime\prime}=(y-x y^{\prime})(y-x y^{\prime}-x).,y=C x.
+{\frac{y^{2}}{x^{2}}}+y^{\prime2}=3x y^{\prime\prime}+{\frac{2y y^{\prime}}{x}}.,"{\begin{array}{l}{{\frac{y}{x}}=C_{2}-3\ln{\big\vert}{\frac{1}{x}}-C_{1}{\big\vert}}\end{array}}\,"
+{\frac{y^{2}}{x^{2}}}+y^{\prime2}=3x y^{\prime\prime}+{\frac{2y y^{\prime}}{x}}.,y=Cx
+y^{\prime\prime}=\left(2x y-{\frac{5}{x}}\right)y^{\prime}+4y^{2}-{\frac{4y}{x^{2}}}.,"x^{2}y=C_{1}\,\mathrm{tg}(C_{1}\ln C_{2}x),\,C_{2}(x^{2}y+C_{1})\vert x\vert^{2C_{1}^{.}}=x^{2}y-C_{1};"
+y^{\prime\prime}=\left(2x y-{\frac{5}{x}}\right)y^{\prime}+4y^{2}-{\frac{4y}{x^{2}}}.,"x^{2}y\mathrm{ln}\,C x=-1."
+x^{2}(2y y^{\prime\prime}-y^{\prime}{}^{2})=1-2x y y^{\prime}.,4(C_{1}y-1)=C_{1}^{2}\ln^{2}C_{2}x.
+x^{2}(y y^{\prime\prime}-y^{\prime 2})+x y y^{\prime}=(2x y^{\prime}-3y)\sqrt{x^3}.,Cy=x^{3/2}( C_{2}x^ C\left.+2\right)
+x^{2}(y y^{\prime\prime}-y^{\prime 2})+x y y^{\prime}=(2x y^{\prime}-3y)\sqrt{x^3}.,y=C x^{3/2}
+x^{2}(y y^{\prime\prime}-y^{\prime 2})+x y y^{\prime}=(2x y^{\prime}-3y)\sqrt{x^3}.,y=-2x^{3/2}\ln{Cx}
+x^{4}(y^{\prime2}-2y y^{\prime\prime})=4x^{3}y y^{\prime}+1.,2C_{2}x^{2}y=(C_{2}x-C_{1})^{2}-1;
+x^{4}(y^{\prime2}-2y y^{\prime\prime})=4x^{3}y y^{\prime}+1.,xy = \pm 1
+y y^{\prime}+x y y^{\prime\prime}-x y^{\prime2}=x^{3}.,2C_{1}C_{2}y=C_{2}^{2}|x|^{2+C_{1}}+|x|^{2-C_{1}}
+y^{\prime\prime}+y^{\prime}-2y=0.,y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-2x}
+y^{\prime\prime}+4y^{\prime}+3y=0.,y=C_{1}\mathrm{e}^{-x}+C_{2}\mathrm{e}^{-3x}.
+y^{\prime\prime}-2y^{\prime}=0.,y=C_1 {}+{C_{2}\mathrm{e}^{2x}}.
+2y^{\prime\prime}-5y^{\prime}+2y=0.,y=C_{1}\mathrm{e}^{2x}+C_{2}\mathrm{e}^{x/2}.
+y^{\prime\prime}-4y^{\prime}+5y=0.,"y\,=\,\mathrm{e}^{2x}(C_{1}\cos x\,+\,C_{2}\sin x)."
+y^{\prime\prime}+2y^{\prime}+10y=0.,"y\,=\,\mathrm{e}^{-x}(C_{1}\cos3x\,+\,C_{2}\sin3x)."
+y^{\prime\prime}+4y=0.,"y\,=\,C_{1}\cos\,2x+C_{2}\sin\,2x."
+y^{\prime\prime\prime}-8y=0.,y=C_{1}\mathrm{e}^{2x}+\mathrm{e}^{-x}(C_{2}\cos x\sqrt{3}+C_{3}\sin x\sqrt{3}).
+y^{\mathrm{IV}}-y=0.,"y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-x}\,+C_{3}\cos x+C_{4}\sin x."
+"y^{\mathrm{IV}}\,+\,4y=0.","y=\mathrm{e}^{x}(C_{1}\cos x+C_{2}\sin x)+\mathrm{e}^{-x}(C_{3}\cos x+\,C_{4}\,\sin x)."
+y^{\mathrm{VI}}+64y=0.,"y=\mathrm{e}^{x{\sqrt{3}}}(C_{1}\mathrm{cos}\,x+C_{2}\sin x)+C_{3}\cos2x+C_{4}\sin2x+\ \mathrm{e}^{-x\sqrt{3}}(C_{5}\cos x\,+\,C_{6}\sin x)."
+y^{\prime\prime}-2y^{\prime}+y=0.,y=e^{x}(C_{1}\:+\:C_{2}.x).
+4y^{\prime\prime}+4y^{\prime}+y=0.,"y=mathrm{e}^{-x/2}\bigl(C_{1}\,+\,C_{2}x\bigr)."
+y^{\mathrm{V}}-6y^{\mathrm{IV}}+9y^{\prime\prime\prime}=0.,"y\;=\;C_{1}\,+\,C_{2}x\,+\,C_{3}x^{2}\,+\,\mathrm{e}^{3x}\,(C_{4}\,+\,C_{5}x)."
+y^{V}-10y^{\prime\prime\prime}+9y^{\prime}=0.,"y=C_{1}\,+\,C_{2}\mathrm{e}^{x}\,+\,C_{3}\mathrm{e}^{-x}\,+\,C_{4}\mathrm{e}^{3x}\,+\,C_{5}\mathrm{e}^{-3x}."
+y^{\mathrm{IV}}+2y^{\prime\prime}+y=0.,"y\,=\,(C_{1}+C_2x)\cos{x} + (C_3 + C_4x)\sin{x}"
+y^{\prime\prime\prime}-3y^{\prime\prime}+3y^{\prime}-y=0,"y=\mathrm{e}^{x}(C_{1}\,+\,C_{2}x\,+\,C_{3}x^{~2})."
+y^{\prime\prime\prime}-y^{\prime\prime}-y^{\prime}+y=0.,"y\;=\;\mathrm{e}^{x}(C_{1}\,+\,C_{2}x)\,+\,C_{3}\mathrm{e}^{-x}."
+y^{\mathrm{IV}}-5y^{\prime\prime}+4y=0.,"y\,=\,C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-x}+C_{3}\mathrm{e}^{2x}+\,C_{4}\mathrm{e}^{-2x}."
+y^{V}+8y^{\prime\prime\prime}+16y^{\prime}=0.,"y=C_{1}\,+\,(C_{2}\,+\,C_{3}x)\cos2x\,+\,(C_{4}\,+\,C_{5}x)\sin2x."
+y^{\prime\prime\prime}-3y^{\prime}+2y=0.,"y~=~\mathrm{e}^{x}(C_{1}\,+\,C_{2}x)\,+\,C_{3}\mathrm{e}^{-2x}."
+y^{\mathrm{IV}}+4y^{\prime\prime}+3y=0.,y\ =\ C_{1}\cos x+C_{2}\sin x+C_{3}\cos x\sqrt{3}+{\cal C}_{4}\sin x\sqrt{3}.
+y^{\prime\prime}-2y^{\prime}-3y=\mathrm{e}^{4x}.,y=C_{1}\mathrm{e}^{-x}+C_{2}\mathrm{e}^{3x}+(1/5)\mathrm{e}^{4x}.
+y^{\prime\prime}+y=4x\mathrm{e}^{x}.,"y=\,C_{1}\cos x+C_{2}\sin x+(2x-2)\mathrm{e}^{x}."
+y^{\prime\prime}-y=2\mathrm{e}^{x}-x^{2}.,"y\,=\,C_{1}\mathrm{e}^{x}\,+\,C_{2}\mathrm{e}^{-x}\,+\,x\mathrm{e}^{x}\,+\,x^2 + 2"
+y^{\prime\prime}+y^{\prime}-2y=3x\mathrm{e}^{x}.,"y\;=\;\Big({\frac{x^{2}}{2}}\,-\,{\frac{x}{3}}\Big)\mathrm{e}^{x}\,+\,C_{1}\mathrm{e}^{-2x}\,+\,C_{2}\mathrm{e}^{x}."
+y^{\prime\prime}-3y^{\prime}+2y=\sin x.,"y=C_1e^x+C_{2}\,\mathrm{e}^{2x}+0,1\sin x+0,{3}\cos x."
+y^{\prime\prime}+y=4\sin x.,y=C_{1}\cos x+C_{2}\sin x-2x\cos x.
+y^{\prime\prime}-5y^{\prime} + 4y = 4x^{2}e^{2x}.,y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{4x}-(2x^{2}-2x+3)\mathrm{e}^{2x}.
+y^{\prime\prime}-3y^{\prime}+2y=x\cos x.,"y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{2x}+\left(0,1x-0,12\right)\cos x-(0,3x+0,34)\sin x."
+y^{\prime\prime} + 3y^{\prime} - 4y = e^{-4x} + xe^{-x},"y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-4x}-\frac{x}{5}\mathrm{e}^{-4x}-\left(\frac{x}{6}\,+\,\mathrm{\frac{~1}{36}}\right)\mathrm{e}^{-x}."
+y^{\prime\prime}+2y^{\prime}-3y=x^{2}\mathrm{e}^{x}.,"y=\left(\frac{x^{3}}{12}\,-\,\frac{x^{2}}{16}\,+\,\frac{x}{32}\right)\mathrm{e}^{x}+C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-3x}\,."
+y^{\prime\prime}-4y^{\prime}+8y=\mathrm{e}^{2x}+\sin2x.,"y=\mathrm{e}^{2x}(C_{1}\mathrm{cos}\,2x+C_{2}\mathrm{sin}\,2x)^{\cdot}+0,25\mathrm{e}^{2x}+0,1\,\mathrm{cos}\,2x+0,05\,\mathrm{sin}\,2x."
+y^{\prime\prime}-9y=\mathrm{e}^{3x}\cos x.,"y=C_{1}\mathrm{e}^{3x}+C_{2}\mathrm{e}^{-3x}+\mathrm{e}^{3x}({\frac{6}{37}}\mathrm{sin}\:x-\frac{\mathrm{cos}\:x}{37}),"
+y^{\prime\prime}-2y^{\prime}+y=6x\mathrm{e}^{x}.,y=(C_{1}+C_{2}x+x^{3})\mathrm{e}^{x}.
+y^{\prime\prime}+y=x\sin x.,"y\,=\,\bigl(C_{1}-{\frac{x^{2}}{4}}\bigr)\cos x\,+\,\bigl(C_{2}+{\frac{x}{4}}\bigr)\sin x."
+y^{\prime\prime}+4y^{\prime}+4y=x\mathrm{e}^{2x}.,"y\,=\,(C_{1}\,+C_{2}x)e^{-2x}+\left({\frac{x}{16}}\,-\,{\frac{1}{32}}\right)\mathrm{e}^{2.x}."
+y^{\prime\prime}-5y^{\prime}=3x^{2}+\sin5x.,"y=C_{1}+C_{2}\mathrm{e}^{5x}-0,2x^{3}-0,12x^{2}-0,048x+0,02(\cos5x-\sin5x)."
+y^{\prime\prime}-2y^{\prime}+y={\textstyle\frac{e^{x}}{x}}.,y=\mathrm{e}^{x}(x\ln|x|+C_{1}x+C_{2}).
+y^{\prime\prime}+3y^{\prime}+2y={\frac{1}{\mathrm{e}^{x}+1}}.,"y=(\mathrm{e}^{-x}\,+{\mathrm{e}}^{-2x})\ln(\mathrm{e}^{x}\!+\!1)\!+\!C_{1}\mathrm{e}^{-x}\!+\!C_{2}\mathrm{e}^{-2x}."
+y^{\prime\prime}+y={\textstyle\frac{1}{\sin x}}.,y=(C_{1}+\ln\mid\sin x\mid)\sin x+(C_{2}-x)\cos x.
+y^{\prime\prime}+4y=2\operatorname{tg}x.,y=\sin2x\ln|\cos x|-x\cos2x+C_{1}\sin2x+C_{2}\cos2x.
+y^{\prime\prime}+2y^{\prime}+y=3\mathrm{e}^{-x}\sqrt{x+1}.,y=\mathrm{e}^{-x}\left(\textstyle{\frac{4}{5}}(x+1)^{5/2}+C_{1}+C_{2}x\right).
+y^{\prime\prime}+y=2\sec^{3}x.,"y=C_{1}\cos x+C_{2}\sin x-\frac{\cos2x}{\cos x}\,."
+x^{3}(y^{\prime\prime}-y)\underline{{{}}}=x^{2}-2.,y=-{\textstyle\frac{1}{x}}+C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-x}.
+x^{2}y^{\prime\prime}-4x y^{\prime}+6y=0.,y=C_{1}x^{2}+C_{2}x^{3}.
+x^{2}y^{\prime\prime}-x y^{\prime}-3y=0.,y=C_{1}x^{3}+C_{2}x^{-1}.
+x^{3}y^{\prime\prime\prime}+x y^{\prime}-y=0.,y=x(C_{1}+C_{2}\ln|x|+C_{3}\ln^{2}\!\!|x|).
+x^2y^{\prime\prime\prime}=2y^{\prime},y=C_{1}+C_{2}\mathrm{ln}|x|+C_{3}x^{3}.
+x^{2}y^{\prime\prime}-x y^{\prime}+y=8x^{3}.,"y\,=\,x(C_{1}+C_{2}\mathrm{ln}|x|)\,+\,2x^{3}."
+x^{2}y^{\prime\prime}+x y^{\prime}+4y=10x.,"y\,=\,C_{1}\cos(2\,\mathrm{ln}|x|)\,+C_{2}{\mathrm{sin}}(2\ln|x|)+2x."
+x^{3}y^{\prime\prime}-2x y=6\ln x.,y=C_{1}x^{2}+\frac{1}{x}\left(C_{2}-\frac{2}{3}\ln x-\ln^{2}x\right).
+x^{2}y^{\prime\prime}-3x y^{\prime}+5y=3x^{2}.,y={x^{2}}(C_{1}\cos\ln|{x}|+C_{2}\sin\ln|x|+3).
+x^{2}y^{\prime\prime}-6y=5x^{3}+8x^{2}.,y=C_{1}x^{3}+C_{2}x^{-2}+x^{3}\ln|x|-2x^2
+x^{2}y^{\prime\prime}-2y=\sin\ln x.,"y=C_{1}x^{2}+C_{2}x^{-1}+0,1\cos\ln x-0,3\sin\ln x."
+(x-2)^{2}y^{\prime\prime}-3(x-2)y^{\prime}+4y=x.,"y=(x-\,2)^{2}(C_{1}+C_{2}\,\ln|x-2|)+x-1,5"
+(2x+3)^{3}y^{\prime\prime\prime}+3(2x+3)y^{\prime}-6y=0.,"y=C_{1}(x+{\textstyle{\frac{3}{2}}})+C_{2}|x+{\textstyle{\frac{3}{2}}}|^{3/2}+\,C_{3}|x+\textstyle{\frac{3}{2}}|^{1/2}."
+y^{\prime\prime}+2y^{\prime}+y=\cos i x.,y=\left(C_{1}+C_{2}x+{\frac{x^{2}}{4}}\right)\mathrm{e}^{-x}+{\frac{1}{8}}\mathrm{e}^{x}.
+y^{\prime\prime}-2y^{\prime}+y=x\mathrm{e}^{x}\sin^{2}i x.,y={\frac{1-x}{16}}\mathrm{e}^{3x}-\frac{1+x}{16}\mathrm{e}^{-x}+(\frac{x^{3}}{12}+C_{1}x+{{C_{2}}})\mathrm{e}^{x}
+y^{\prime\prime}+2i y=8\mathrm{e}^{x}\sin x.,y=C_{1}\mathrm{e}^{(-1+i)x}+[C_{2}+(i-1)x]\times e^{(1-i)x} - e^{(1+i)x}
+y^{\prime\prime}+2i y^{\prime}-y=8\cos x.,y~=~(2x^{2}+C_{1}x+C_{2})\mathrm{e}^{-i x}-\mathrm{e}^{i x}.
+y^{\prime\prime\prime}-8i y=\cos2x.,y = C_{1}\mathrm{e}^{({\sqrt3}+i)x}+C_{2}\mathrm{e}^{(i-{\sqrt3})x}+\left(C_{3}-\textstyle{\frac{x}{24}}\right)\mathrm{e}^{-2i x}+\textstyle{\frac{i}{32}}\mathrm{e}^{2i x}.
+y^{\prime\prime}-{\frac{2y}{x^{2}}}=3\ln(-x).,y={\frac{\mathrm{C_1}}{x}}+\left[C_{2_{-}}-{\textstyle\frac{1}{3}}\ln(-x)+{\textstyle\frac{1}{2}}\mathop{\ln}^{2}(-x)\right]x^{2}.
+y^{\prime\prime}+2y^{\prime}+y=x\mathrm{e}^{x}+{\frac{1}{x\mathrm{e}^{x}}}.,y=(C_{1}+C_{2}x+{x}\ln|x|)\mathrm{e}^{-x} + \frac{x-1}{4}e^{x}.
+y^{\prime\prime}+2y^{\prime}+5y=\mathrm{e}^{-x}(\cos^{2}x+\mathrm{tg}x).,y~=~[\textstyle{\frac{1}{8}}+(C_{1}-{\frac{x}{2}})\cos2x+\left(C_{2}+{\frac{x}{8}}+{\frac{1}{2}}\ln|\cos x|\right)\times\sin2x]e^{-x}.
+x^{2}y^{\prime\prime}-2y={\frac{3x^{2}}{x+1}}.,"y\,=\,x^{2}\ln\frac{C_{1}x}{x+1}\,-\,\textstyle{\frac{x}{2}}\,+\,1\,-\,\textstyle{\frac{1}{x}}\,\mathrm{ln}\,C_{2}(x\,+\,1)."
+x^{2}y^{\prime\prime}-x y^{\prime}+y={\frac{\ln x}{x}}+{\frac{x}{\ln x}}.,y =x[C_{1}+(C_{2}+\ln|\ln x|)\ln x]+{\frac{1+\ln x}{4x}}.
+x y^{\prime}=y+x\cos^{2}{\frac{y}{x}},{\mathrm{tg}}\ {\frac{y}{x}}=\operatorname*{ln}C x.
+"(x-y)\,{\mathrm{d}}x+x\,{\mathrm{d}}y=0.",y=x\;(C-\ln x).
+"x y^{\prime}=y\,(\ln y-\ln x).",y=x\mathrm{e}^{1+C x}.
+x^{2}\operatorname{d}y=(y^{2}-x y+x^{2})\operatorname{d}x.,(x- y)\ln C x=x
+x y^{\prime}=y+\sqrt{y^{2}-x^{2}}.,y+\sqrt{{y^{2}-x^{2}}}=C x^{2}
+x y^{\prime}=y+\sqrt{y^{2}-x^{2}}.,"y=x,"
+x y^{\prime}=y+\sqrt{y^{2}-x^{2}}.,y = -x 
+2x^{2}y^{\prime}=x^{2}+y^{2}.,2x = (x - y)\ln Cx
+(4x-3y)\operatorname{d}\!x+(2y-3x)\mathrm{d}y = 0,y^{2}-3x y + 2x^2 = C
+"(y-x)\,\mathrm{d}x+(y+x)\mathrm{d}y = 0","y^{2}+2x y-x^{2}=C\,,"
+"x+y-2+(1-x)\,y^{\prime}=0.",y = 1 + (x - 1)\ln C(x - 1)
+"(3y-7x+7)\mathrm{d}x-(3x - 7y-3)\,\mathrm{d}y=0.",(x + y - 1)^5 - (x - y - 1)^2 = C
+"(x+y-2)\,\mathrm{d}x\,+\,(x-y\,\ -\,4)\,\mathrm{d}y=0.","y^{2}{-}2x y{-}x^{2}-8y\,+4x=C\,."
+"(x+y)\,{\mathrm{d}}x+(x-y-2)\,{\mathrm{d}}y=0.","y^{2}-2x y-x^{2}+4y=C\,."
+2x+3y-5+(3x+2y-5)y^{\prime}=0.,y^{2}+3x y+x^{2}-5x-5y=C
+8x\ +4y\ +1\ + (4x + 2y\ +1)y^{\prime} = 0,(4x+2y+1)^{2}=4x + C
+"(x-2y-1)\,\mathrm{d}x+(3x-6y+2)\,\mathrm{d}y=0.","x+3y-\ln|x-2y|=C,"
+"(x+y)\,{\mathrm{d}}x+(x+y-1)\mathrm{d}y=0\,.",(x+y\!-\!1)^2\!+\!2x=C.
+2x y^{\prime}\left(x-y^{2}\right)+y^{3}=0.,y^{2}=x\ln C y^{2}.
+4y^{6}+x^{3}=6x y^{5}y^{\prime}.,"C x^{4}=y^{6}+x^{3}\,."
+y(1 + \sqrt{x^{2}y^{4}+1})\mathrm{d}x+2x\mathrm{d}y=0.,"\sqrt{{x^{2}}y^{4}+1}=C x^{2}\,y^{2}-1"
+"(x+y^{3})\,\mathrm{d}x+3\,(y^{3}\!-\!x)\,y^{2}\,\mathrm{d}y=0.","2\mathrm{arctg}\frac{y^{3}}{x}=\ln{(x^{2}+y^{6})}+C,"
+y^{\prime}+ 2y=\mathrm{e}^{-x}.,y=Ce^{-2x}+\mathrm{e}^{-x}
+"x^{2}+x y^{\prime}=y,\ y\bigl\vert_{x=1}=0.","y=x-x^{2},"
+y^{\prime}-2x y=2x\mathrm{e}^{x^{2}}.,"y=(C+x^{2})\,e^{x^{2}}"
+y^{\prime}+2x y=\mathrm{e}^{-x^2},y=(C+x)\;{\mathrm{e}}^{-x^{2}}.
+"y^{\prime}\cos x-y\sin x=2x,\ y|_{x=0}=0.",y={\frac{x^{2}}{\cos x}}\ .
+"x y^{\prime}-2y=x^{3}\cos x,",y=C x^{2}+x^{2}\sin x.
+"y^{\prime}-y\ {\mathrm{tg}}\,x={\frac{1}{\cos^{3}x}}\,,\,y\vert_{x=0}=0.",y={\frac{\sin x}{\cos^{2}x}}\;.
+"y^{\prime}\,x\ln x-y=3x^{3}\ln^{2}x.","y=(C+x^{3})\,\ln x\,."
+"(2x-y^{2})\,y^{\prime}=2y.","x=C y-{\frac{y^{2}}{2}}\,."
+"y^{\prime}+y\cos x=\cos x,\ y|_{x=0}=1",y=1
+"y^{\prime}={\frac{y}{2y\ln y+y-x}}\,.",x={\frac{C}{y}}+y\ln y.
+\left(\mathrm{e}^{-{\frac{y^{2}}{2}}}\!-x y\!\right)\!{\mathrm{d}y}\!-\!{\mathrm{d}x}=0.,x=\left(C+y\right)\mathrm{e}^{-{\frac{y^{a}}{2}}}\!\!
+"y^{\prime}-y\mathrm{e}^{x}=2x\mathrm{e}^{x}\,.","y=(C+x^{2})\,\mathrm{e}^{x}\ ,"
+y^{\prime}-x\mathrm{e}^{x}y=\mathrm{e}^{(1-x)\mathrm{e}^{x}}.,"y=(C+x)\;\mathrm{e}^{(1-x)\,\mathrm{e}^{x}\,,}"
+y^{\prime}+2x y=2x y^{2},"y={\frac{1}{1+C\mathrm{e}^{x^{2}}}}\,,"
+3x y^{2}y^{\prime}-2y^{3}=x^{3}.,y^{3}=x^{3}+C x^{2};
+\left(x^{3}+\mathrm{e}^{y}\right)y^{\prime}=3x^{2}.,"x^{3}\,e^{-y}=C+y"
+"y^{\prime}+2x y=y^{2}{\mathrm{e}}^{x^2},",y={\frac{e^{-x^{2}}}{C-x}}.
+"y^{\prime}-2y\mathrm{e}^{x}=2\,\sqrt{{{y}}\,\mathrm{e}^{x}}.",\sqrt{y}\ +1=C\mathrm{e}^{e^x}\;.
+2y^{\prime}\ln\ x+{\frac{y}{x}}=y^{-1}\cos x,"y^{2}\ln x=C+\sin x,"
+2y^{\prime}\sin x+y\cos x=y^{3}\sin^{2}x.,"y^{2}\left(C-x\right)\sin x=1\,."
+"(x^{2}+y^{2}+1)\,{\mathrm{d}}y+x y\,{\mathrm{d}}x=0.","y^{4}+2x^{2}\,y^{2}+2y^{2}=C"
+y^{\prime}-y\cos x=y^{2}\cos x.,"y={\frac{1}{C\mathrm{e}^{-\sin \,x}-1}}\ ."
+"y^{\prime}-\mathrm{tg}\,y=\mathrm{e}^{x}\,\frac{1}{\cos y}\,.","\sin y=(x+C)\operatorname{e}^{x},\ z=\sin y."
+"y^{\prime}=y\,(\mathbf{e}^{x}+\ln y).","\ln\,y=(x+C)\operatorname{e}^{x},\,\ z=\ln y."
+y^{\prime}\cos y+\sin y=x+1.,"\sin y=x+C\mathrm{e}^{-x},"
+"y y^{\prime}+1=(x-1)\,\mathrm{e}^{-{\frac{y^{2}}{2}}}.",x-2\!+\!Ce^{-x}=\mathrm{e}^{y^{2}/2}
+y^{\prime}\cos y+\sin y=x+1.,z=\sin y
+"y y^{\prime}+1=(x-1)\,\mathrm{e}^{-{\frac{y^{2}}{2}}}.",\ z\!=\!\mathrm{e}^{y^{2}/2}
+y^{\prime}+x\sin2y=2x\mathrm{e}^{-x^{2}}\mathrm{cos}^{3}y.,"\mathrm{tg}\,y=(C+x^{2})\;{\mathrm{e}}^{-x^{2}}"
+y^{\prime}+x\sin2y=2x\mathrm{e}^{-x^{2}}\mathrm{cos}^{3}y.,"z=\mathrm{tg\,y}"
+"\int_0^xt y\ (t)\,\mathrm{d}t=x^{2}y\ (x).",x y=C
+y\left(x\right)=\int_0^xy\left(t\right)\mathrm{d}t+\mathrm{e}^{x}.,y=(x+1)\;{\mathrm{e}}^{x}.
+"{{\int_{x}^{a}}}t y\ (t)\,\mathrm{d}t=x^{2}+yx","y=2-(2+a^{2})\,\mathrm{e}^{\frac{x^{2}-a^{4}}{2}}"
+"x\,(2x^{2}+y^{2})+y\,(x^{2}+2y^{2})\,y^{\prime}=0.",x^{4}+x^{2}y^{2}+y^{4}=C;
+"(3x^{2}+6x y^{2})\,\mathrm{d}x+(6x^{2}y\,+\,4y^{3})\,\mathrm{d}y=0,","x^{3}+3x^{2}\,y^{2}+y^{4}=C\,."
+\left(\frac{x}{\sqrt{x^{2}+y^{2}}}+\frac{1}{x}+\frac{1}{y}\right)\mathrm{d}x+ \left(\frac{y}{\sqrt{x^{2}+y^{2}}} + \frac{1}{y} - \frac{x}{y^2}\right)\mathrm{d}y = 0,\sqrt{x^{2}+y^{2}}+\ln|x y| + \frac{x}{y} = C
+"\left(3x^{2}\tg\,y-\frac{2y^{3}}{x^{3}}\right)\mathrm{d}x+(x^{3}\,\mathrm{sec}^{2}\,y\,+\,4y^{3}+\frac{3y^{2}}{x^{2}})\mathrm{d}y=0","x^{3}\,\mathrm{tg}\,y+y^{4}+{\frac{y^{3}}{x^{2}}}=C,"
+"\left(2x+{\frac{x^{2}+y^{2}}{x^{2}y}}\right)\mathrm{d}x={\frac{x^{2}+y^{2}}{x y^{2}}}\,\mathrm{d}y.\,","x^{3}\,y+x^{2}-y^{2}=C x y\,,"
+\left(\frac{\sin 2x}{y}+{x}\right)\mathrm{d}x+\left(y-\frac{\sin^{2}x}{y^{2}}\right)\mathrm{d}y=0.,{\frac{\sin^{2}x}{y}}+{\frac{x^{2}+y^{2}}{2}}=C.
+"(3x^{3}-2x-y)\,{\mathrm{d}}x+(2y-x+3y^{2})\,{\mathrm{d}}y=0.",x^{3}+y^{3}-x^{2}-x y+y^{2}=C.
+\left(\frac{x y}{\sqrt{1 +x^{2}}}+2x y-\frac{y}{x}\right){\mathrm{d}}x+(\sqrt{x^2 + 1} + x^2 -\ln x)\mathrm{d}y = 0,"y\,{\sqrt{1+x^{2}}}+x^2y -y\ln x = C"
+"{\frac{x\,{\mathrm{d}}x+y\,{\mathrm{d}}y}{\sqrt{x^{2}+y^{2}}}}+{\frac{x\,{\mathrm{d}}y-y\,{\mathrm{d}}x}{x^{2}}}=0.",\sqrt{{x}^{2}+y^{2}}+\frac{y}{x}=C.
+\Bigl(\sin y+y\sin x+{\frac{1}{x}}\Bigr)\mathrm{d}x+(x\cos y - \cos x + \frac{1}{y})\mathrm{d}y = 0,"x\sin y-y\cos x+\ln|x y|=C,"
+"\frac{y+\sin x\,\cos^{2}x y}{\cos^{2}x y}\,\mathrm{d}x+\left(\frac{x}{\cos^{2}x y}+\mathrm{sin}\,y\right)\mathrm{d}y=0",\tg x y{\mathrm{-cos~}}x{\mathrm{-cos~}}y = C
+"\frac{2x\,\mathrm{d}x}{y^{3}}+\frac{(y^{2}-3x^{3})\,\mathrm{d}y}{y^{2}}=0,y\vert_{x=1}=1.",y=x
+y\left(x^{2}+y^{2}+a^{2}\right)\mathrm{d}y+x\left(x^{2}+y^{2}-a^{2}\right)\mathrm{d}x=0.,(x^{2}+y^{2})^{2}+2a^{2}\left(y^{3}-x^{2}\right)=C
+"(3x^{2}y+y^{3})\,\mathrm{d}x+(x^{3}+3x y^{2})\,\mathrm{d}y=0.",x y\ (x^{2}+y^{2})=C
+"(1-x^{2}y)\,\mathrm{d}x+x^{2}(y-x)\,\mathrm{d}y=0,","x y^{2}-2x^{2}\,y-2=C x;\ "
+"(x^{2}+y)\,\mathrm{d}x-x\,\mathrm{d}y=0,",x-{\frac{y}{x}}=C
+"(x+y^{2})\,\mathrm{d}x-2x y\,\mathrm{d}y=0",x\ln|x|-y^{2}\!=\!C x
+"(2x^{2}\,y+2y+5)\,{\mathrm{d}}x+(2x^{3}+2x)\,{\mathrm{d}}y=0,",5\operatorname{arctg}x+2x y=C
+"(2x^{2}\,y+2y+5)\,{\mathrm{d}}x+(2x^{3}+2x)\,{\mathrm{d}}y=0,",x=0;
+"(x^{4}\ln x-2x y^{3})\,\mathrm{d}x+3x^{2}y^{2}\,\mathrm{d}y=0,",y^{3}+x^{3}\left(\ln x-1\right)=C x^{2};
+"(x+\sin x+\sin y)\mathrm{d}x+\cos y\,\mathrm{d}y=0,",2\mathrm{e}^{x}\sin y+2\mathrm{e}^{x}\left(x-1\right)+\mathrm{e}^{x}\left(\sin x-\cos x\right)=C
+"(2x y^{2}-3y^{3})\,\mathrm{d}x+(7-3x y^{2})\,\mathrm{d}y=0,",x^{2}-{\frac{7}{y}}-3x y=C
+"(3y^{2}-x)\,\mathrm{d}x+(2y^{3}-6x y)\,\mathrm{d}y=0","(x+y^{2})^{2}\,C=x-y^{2};"
+"(x^{2}+y^{2}+1)\,{\mathrm{d}}x-2x y\,{\mathrm{d}}y=0",1+y^{2}-x^{2}=C x
+"x\,{\mathrm{d}}x+y\,{\mathrm{d}}y+x\,(x\,{\mathrm{d}}y-y\,{\mathrm{d}}x)=0","y-1=C\,\\sqrt{x^{2}+y^{2}},"
+4y^{\prime2}-9x=0.,(y-C)^{2}=x^{3}
+y^{\prime 2}-2y y^{\prime}=y^{2}(\mathrm{e}^{2x}-1).,"\ln\,C y=x \pm 2e^{x / 2}"
+y^{\prime 2}-2y y^{\prime}=y^{2}(\mathrm{e}^{2x}-1).,y=0.
+y^{\prime2}-2x y^{\prime}-8x^{2}=0.,y{=}2x^{2}+C
+y^{\prime2}-2x y^{\prime}-8x^{2}=0.,"y=-x^2+C,"
+x^{2}y^{\prime2}+3x y y^{\prime}+2y^{2}=0.,x y=C
+x^{2}y^{\prime2}+3x y y^{\prime}+2y^{2}=0.,x^{2}y=C.
+"y^{\prime^2}-(2x+y)\,y^{\prime}+x^{2}+x y=0.",y={\frac{x^{2}}{2}}+C
+"y^{\prime^2}-(2x+y)\,y^{\prime}+x^{2}+x y=0.",y=C e^{x}-x-1.
+"y^{\prime^3}+(x+2)\,\mathrm{e}^{y}=0.",4\mathrm{e}^{-y/3}=(x+2)^{4/3}+C.
+y^{\prime3}-y y^{\prime2}-x^{2}y^{\prime}+x^{2}y=0.,"y={\frac{x^{2}}{2}}+C,"
+y^{\prime3}-y y^{\prime2}-x^{2}y^{\prime}+x^{2}y=0.,y=-{\frac{x^{2}}{2}}+C
+y^{\prime3}-y y^{\prime2}-x^{2}y^{\prime}+x^{2}y=0.,y=C e^{x}
+y^{\prime}\colon\mathbf{-}y y^{\prime}+\mathbf{e}^{x}=0.,y=C e^{x}+{\frac{1}{C}}
+y^{\prime}\colon\mathbf{-}y y^{\prime}+\mathbf{e}^{x}=0.,y=\pm2e^{x/2}.
+y^{\prime2}-4x y^{\prime}+2y+2x^{2}=0.,y=C x+{\frac{1}{2}}\;(x^{2}-C^{2})
+y^{\prime2}-4x y^{\prime}+2y+2x^{2}=0.,"y=x^{2},"
+y=y^{\prime2} e^{y^{\prime}}.,"x=\mathrm{e}^{p}\left(p+1\right)+C,y=p^{2}\,\mathrm{e}^{p}"
+y=y^{\prime2} e^{y^{\prime}}.,"y=0\,,"
+y^{\prime}=\mathbf{e}^{y^{\prime}/y}.,"x{=}\ln|\ln p|+{\frac{1}{\ln p}}+C, y={\frac{p}{\ln p}}\ ."
+"y=(y^{\prime}-1)\,\mathrm{e}^{y^{\prime}}.","x=\mathrm{e}^{p}+C,y=(p\mathrm{-}1)\operatorname{e}^{p}"
+"y=(y^{\prime}-1)\,\mathrm{e}^{y^{\prime}}.",y=-1.
+x=\ln y^{\prime}+\sin y^{\prime}{\mathrm{:}},"x=\ln{p}+\sin{p},y=C+p\ (1+\sin p)+\cos p\,."
+y^{\prime2}x=\mathrm{e}^{1/y^{\prime}},"x={\frac{\mathrm{e}^{1/p}}{p^{2}}}\,,y=C+\mathrm{e}^{1/p}\left(1+\frac{1}{p}\right)."
+x=y^{\prime2}-2y^{\prime}+2.,"x=p^{2}-2p+2\,,y+C={\frac{2}{3}}p^{3}\!-\!p^{2}"
+"x\,(1+y^{\prime2}\,)^{3/2}=a.","x=a\cos^{3}t, y+C=-\,a\,\sin^{3}\,t,\;\;\;p=\mathrm{tg}\,t\,."
+y=y^{\prime}\ln y^{\prime}.,"x+c={\frac{(\ln p+1)^{2}}{2}},y=p\ln p"
+y^{\frac{2}{5}}+y^{\prime\frac{2}{5}}=a^{\frac{2}{5}}.,"x=5\Bigl\{\frac{1}{3}\tg^{3}t-t g\,t+t\Bigr\}+ C, y=a\sin^{5}t"
+x=y^{\prime}+\sin y^{\prime}.,"x=p+\sin p, y+C={\frac{1}{2}}\;p^{2}+p\;\mathrm{sin}\;p+\mathrm{cos}\;p"
+"y=y^{\prime}\,(1+y^{\prime}\cos y^{\prime}).","x+C=\ln|p|+\sin p+p\cos p, y=p+p^{2}\cos p"
+y=\arcsin y^{\prime}+\ln{1 + y^{\prime2}},"x+C=2\mathrm{arctg}p-\mathrm{ln}\left|\frac{1+\sqrt{1 - p^2}}{p}\right|,y=\operatorname{arcsin}p+\ln\,(1+p^{2}),"
+y=2x y^{\prime}+\ln y^{\prime}.,"x={\frac{C}{p}}-{\frac{1}{p}}\,, y={\frac{2C}{p}}+\ln\,p-2\,,"
+y=\ x\ (1+y^{\prime})+y^{\prime2}.,"x=2(p - 1)+ C\mathrm{e}^{-p}, y=\{2\ (1-p)+C\,\mathrm{e}^{-p}]\ (1+p)+p^{2}"
+y=2x y^{\prime}+\sin y^{\prime}.,"x={\frac{C}{p^2}}-{\frac{\cos p}{p^2}}-{\frac{\sin p}{p}}\;,y={\frac{2C}{p}}-{\frac{2\cos p}{p}}-\sin p,"
+"y=x y^{\prime2}-{\frac{1}{y^{\prime}}}\;,","x={\frac{Cp^{2}+2p-1}{2p^{2}\,(p-1)^{2}}}\;, y=\frac{C p^{2}+2p-1}{2\,(p-1)^{2}}-\frac{1}{p}\;,"
+"y={\frac{3}{2}}\,x y^{\prime}+\,\mathrm{e}^{y^{\prime}}.","x={\frac{C}{p^{3}}}-2\mathrm{e}^{p}\left({\frac{1}{p}}-{\frac{2}{p^{2}}}+{\frac{2}{p^{3}}}\right), y=\frac{3C}{2p^{2}}-2\mathrm{e}^{p}\left(1-\frac{3}{p}+\frac{3}{p^{2}}\right);"
+y=x y^{\prime}+{\frac{a}{y^{\prime 2}}}\ .,y=Cx+\frac{a}{C^{2}}
+y=x y^{\prime}+{\frac{a}{y^{\prime 2}}}\ .,4y^{3}=27a x^{2}.
+y=x y^{\prime}+y^{\prime2}\ .,"y=C x+C^{2},"
+y=x y^{\prime}+y^{\prime2}\ .,y=-\frac{x^2}{4}
+x y^{\prime2}-y y^{\prime}-y^{\prime}+1=0.,y=C x-\frac{C-1}C
+x y^{\prime2}-y y^{\prime}-y^{\prime}+1=0.,"(y+1)^{2}=4x\,,"
+y=x y^{\prime}+a\sqrt{1 + y^{\prime 2}}.,y=Cx + a\sqrt{1 + C^2}
+y=x y^{\prime}+a\sqrt{1 + y^{\prime 2}}.,x^2 + y^2 = a^2
+x=\frac{y}{y^{\prime}}+\frac{1}{y^{\prime 2}}.,x=C y+C^{2}
+x=\frac{y}{y^{\prime}}+\frac{1}{y^{\prime 2}}.,4x=-y^{2}.
+y^{\prime}=(x-y)^{2}+1.,y=x-{\frac{1}{x+C}}:
+"x\sin x\cdot y^{\prime}+(\sin x-x\cos x)\,y=\sin x\cos x-x","y=C\,{\frac{~\sin\;x}{x}}+\cos x"
+"{\frac{\mathrm{d}y}{\mathrm{d}x}}+ y\cos x=y^{n}\sin2x\,,\quad n\neq1\,.","y^{1-n}=2\sin x+\frac{2}{n-1}\,+\,C\mathrm{e}^{(n-1)\,\sin\,x}"
+"(x^{3}-3x y^{2})\,\mathrm{d}x+(y^{3}-3x^{2}y)\,\mathrm{d}y=0.","x^{4}-6x^{2}\,y^{2}+y^{4}=C"
+"(5x y-4y^{2}-6x^{2})\,\mathrm{d}x+(y^{2}-8x y+2,5x^{2})\,\mathrm{d}y=0.","15x^{2}y-24x y^{2}-\,12x^{3}+2y^{3}=C."
+"(3x y^{2}-x^{2})\,{\mathrm{d}}x+(3x^{2}y-6y^{2}-1)\,{\mathrm{d}}y=0.","6y+12y^{3}-9x^{2}\,y^{2}+2x^{3}=C;"
+"\left(y-x y^{2}\ln x\right)\mathrm{d}x+x\mathrm{d}y=0,",2+x y\ln^{2}x=C x y
+"(2x y\,\mathrm{e}^{x^{2}}\!-\!x\sin x)\,\mathrm{d}x\;+\mathrm{e}^{x^{2}}\mathrm{d}y=0.","y=C\mathrm{e}^{-\,x^{2}}+(\mathrm{sin}\;x{}-x\,\mathrm{cos}\;x)~\mathrm{e}^{-\,x^{2}}\,"
+y^{\prime}={\frac{1}{\;2x-y^{2}\;}}.,x=C\;\mathrm{e}^{2y}\;+\;{\frac{y^{2}+y}{2}}\;+\;{\frac{1}{4}}
+x^{2}+x y^{\prime}=3x+y^{\prime}.,y+C=2x-{\frac{x^{2}}{2}}+2\ln|1-x|
+x y y^{\prime}-y^{2}=x^{4}.,y^2 = Cx^2 + x^4
+\frac{\mathrm{d}x}{x^{2}-x y+y^{2}}=\frac{\mathrm{d}y\!}{2y^{2}-x y},y\ (y-2x)^{3}=C\ (y-x)^{2}.
+"(2x-1)\,y^{\prime}-2y={\frac{1-4x}{x^{2}}}","y=C\left(2x-1\right)\,+\,{\frac{1}{x}}"
+"(x-y+3)\,{\mathrm{d}}x+(3x+y+1)\,{\mathrm{d}}y=0,",x+y-1 = Ce^{\frac{2x + 2}{x + y - 1}}
+"y^{\prime}+\cos{\frac{x+y}{2}}=\cos{\frac{x-y}{2}}\,_{i}","\ln\left|\mathrm{tg}\,\frac{y}{4}\right|=C-2\,\cos\,\frac{x}{2}\,."
+y^{\prime}\left(3x^{2}-2x\right)-y\left(6x-2\right)=0.,y=C\;(3x^{2}-2x).
+xy^2y^{\prime} - y^3 = \frac{1}{3}x^4,y^{3}=C x^{3}+x^{4}.
+"\left(1\,+\,\mathrm{e}^{\frac{x}{y}}\right)\mathrm{d}x\,+\,\mathrm{e}^{\frac{x}{y}}\left(1-{\frac{x}{y}}\right)\mathrm{d}y=0,\quad y\,|_{x=1}=1.",x + 4e^{\frac{x}{y}} = 1 + e
+"(x^{2}+\,y^{2})\,{\mathrm{d}}x-x y\,{\mathrm{d}}y=0.",\ln|x|-{\frac{y^{2}}{2x^{2}}}=C
+"(x-y+2)\,\mathrm{{d}}x+(x-y+3)\,\mathrm{{d}}y=0.","\ln|2x-2y\!+\!5|-2\,(x\!+\!y\!-\!2)\!=C"
+"(x y^{2}+ y)\,{\mathrm{d}}x-x\,{\mathrm{d}}y=0",x^{2}y{\mathrel{+}}2x=C y
+"(x^{2}+y^{2}+2x)\,\mathrm{d}x+2y\,\mathrm{d}y=0","x^{2}+y^{2}= C\,\mathrm{e}^{-x}."
+(x - 1)(y^{2}-y+1)\mathrm{d}x=(y+1)(x^{2} + x + 1)\mathrm{d}y., 
+\left(x-2x y-y^{2}\right)y^{\prime}+ y^{2}=0.,"x=y^{2}\left(1+C\,\mathrm{e}^{1/y}\right)\!."
+y\cos x\operatorname{d}\!x+(2y-\sin x)\operatorname{d}\!y=0.,\sin x+2y\ln|y|-C y=0
+y^{\prime}-1=\mathrm{e}^{x+2y}.,"3\mathrm{e}^{-2y}=C\,\mathrm{e}^{-2x}-2\,\mathrm{e}^{x},"
+2(x^{5}+2x^{3} -y^{2}x)\mathrm{d}x\ +\left(y^{2}+2x^{2}y-x^{4}\right)\mathrm{d}y=0,x^4 + y^4 = C(x^2 + y^2)
+"x^{2}\,y^{n}\,y^{\prime}\,=\,2x y^{\prime}\,-\,y,\quad n\neq-\,2.",{\frac{1}{x}}={\frac{C}{y^{2}}}+{\frac{y^{n}}{n+2}};\;n\neq-2
+"\left[3x + y-a^{2}\right]y^{\prime}\,=4\left(x^{\phantom{2}}+y\right)+b^{2}.",7\left(3y-4x\right)+(4a^{2}-3b^{2})\ln|7\left(x+y\right)+a^{2}+b^{2}|=C
+"(x-y^{2})\,\mathrm{d}x-2x y\,\mathrm{d}y=0",xe^{\frac{y^{2}}{x}}=C
+"x y^{\prime}+\ y=y^{3}\ln x,\quad y\vert_{x=1}=\frac{1}{2}",y\;(1\;+\;x\;+\;\ln x)=1.
+\sin\left(\ln x\right)\mathrm{d}x-\cos\left(\ln y\right)\mathrm{d}y=0.,"y\,[\sin(\ln y)+\cos\,(\ln\,y)]=x\,[\sin\,(\ln\,x)-\cos\,(\ln\,x)]+C,"
+"y^{\prime}={\sqrt{\frac{9y^{2}-6y+2}{x^{2}-2x+5}}}\,,","(x-1+\sqrt{x^{2}-2x+5})^{3}=C\,(3y-1+\sqrt{{9y^{2}-6y+2}})."
+(5x-7y+ 1)\mathrm{d}y + (x+y-1){\mathrm{d}}x=0.,(x{-}y)\ (x+7y{-}4)=C.
+"(x+\ y+1)\,{\mathrm{d}}x+(2x+2y-1)\,{\mathrm{d}}y=0,\ \ \ \ y\,{\vert}_{x=1}=2.",x+2y+3\ln|x+y-2|=5
+"y^{3}\,\mathrm{d}x+2\left(x^{2}-x y^{2}\right)\mathrm{d}y=0.",y^{2}=Ce^{y^{2}/x}.
+y^{\prime}=2\left({\frac{y+2}{x+y-1}}\right)^{2}\!\!,2\operatorname{arctg}{\frac{y+2}{x-3}}+\ln C\left(y+2\right)=0
+"y^{\mathrm{IV}}=\,x.","y={\frac{x^{5}}{120}}+C_{1}\,x^{3}+C_{2}\,x^{4}+C_{3}\,x+C_{4}."
+"y^{\prime\prime\prime}=\,x + \cos x","y={\frac{x^{4}}{24}}-\sin x+C_{1}\,x^{2}+C_{2}\,x-C_{3}"
+"y^{\prime\prime}(x+2)^{5}=1;\ \ \ y\,(-1)={\frac{1}{12}}\,,\ \ \ y^{\prime}(-1)=-\,1/4.",y={\frac{1}{12\left(x+2\right)^{3}}}\
+"y^{\prime}=x\mathrm{e}^{x},\ \ \ y\left(0\right)=y^{\prime}\left(0\right)=0","y=(x-2)\,\mathrm{e}^{x}+x+2\,,"
+y^{\prime\prime}=2x\ln x.,"y=\frac{x^{3}}{3}\ln x-\frac{5}{18}\,x^{3}+C_{1}\,x+C_{2}."
+x y^{\prime\prime}=y^{\prime}.,"y=C_{1}\,x^{2}+C_{2}."
+xy^{\prime\prime} + y^{\prime} = 0,y=C_{1}\ln|x|+C_{\mathrm{\mathrm{2}}}.
+"x y^{\prime\prime}=(1+2x^{2})\,y^{\prime}.",y=C_{1}\operatorname{e}^{x^{2}}+ C_{2}.
+x y^{\prime\prime}=y^{\prime}+x^{2}.,"y={\frac{x^{3}}{3}}+C_{1}\,x^{2}+C_{2},"
+x\ln x\cdot y^{\prime \prime}=y^{\prime}.,y{=}C_{1}x\ (\ln x-1){+}C_{2};
+x y^{\prime\prime}=y^{\prime}\ln{\frac{y^{\prime}}{x}},y{=}\!\left(C_{1}x{-}C_{1}^{2}\right)\mathrm{e}^{\frac{x}{C_{1}}+1}+C_2
+"2y^{\prime\prime}={\frac{y^{\prime}}{x}}+{\frac{x^{2}}{y^{\prime}}}\,;\quad y\left(1\right)\,={\frac{\sqrt{2}}{5}}\,,\quad y^{\prime}\left(1\right)={\frac{\sqrt{2}}{2}}\,.","y=\frac{\sqrt{2}}{5}\,x^{5/2}."
+"y^{\prime\prime\prime}=\textstyle{\sqrt{\;1-y^{\prime\prime 2}}\,}.",y=C_{3}+C_{2}x-\sin\left(x+C_{1}\right).
+x y^{\prime\prime\prime}-y^{\prime\prime}=0.,y=C_{1}\;x^{3}+C_{2}x+C_{3}.
+y^{\prime\prime} = \sqrt{1 + y^{\prime 2}},"y=\operatorname{ch}\,(x+C_{1})+C_{2}."
+y^{\prime\prime} =y^{\prime2},y=C_{2}-\ln|C_{1}-x|.
+y^{\prime\prime}=\sqrt{1 - y^{\prime2}},"y=C_{2}-\cos\,(C_{1}+x)\,,"
+y^{\prime\prime}=1+y^{\prime 2}.,"y=C_{2}-\ln{\left|\cos{\left(C_{1}+x\right)}\right|}\,."
+y^{\prime\prime}={\sqrt{{1+y^{\prime}}}}.,y={\frac{(x+C_{1})^{3}}{12}}-x+C_{2}
+"y^{\prime\prime}=y^{\prime}\ln y^{\prime};\ \;y\left(0\right)=0,\ \;\;y^{\prime}\left(0\right)=1.",y=x
+"y^{\prime\prime}+y^{\prime}+2=0,\quad y\left(0\right)=0,\quad y^{\prime}\left(0\right)=-2,",y=-2x
+y^{\prime\prime}=y^{\prime}\left(1+y^{\prime}\right).,"y=C_{2}-\ln\left|1-\mathrm{e}^{x+C_{1}}\right|\,."
+3y^{\prime\prime}=(1+y^{\prime 2})^{3/2}.,"(x+C_{1})^{2}+(y+C_{2})^{2}=9\,."
+y^{\prime\prime\prime}+y^{\prime\prime 2}=0.,y=(x+C_{1})\ln|x+C_{1}|+C_{2}x+ C_{3}.
+y y^{\prime\prime}=y^{\prime2}.,y=C_{2}e^{C_1x}.
+y^{\prime\prime}=2y y^{\prime};\ \ \ y\ (0)=y^{\prime}\left(0\right)=1.,y=\frac{1}{\sqrt{1 - x}}\
+3y^{\prime}y^{\prime\prime}=2y;\ \ y\ (0)=y^{\prime}\left(0\right)=1.,y=\left(1+{\frac{x}{3}}\right)^{3}.
+"2y^{\prime\prime}=3y^{2};~~~y\,(-2)=1,~~~y^{\prime}\,(-2)=-1.",y={\frac{4}{(x+4)^{2}}}\ 
+y y^{\prime\prime}+y^{\prime2}=0.,y^{2}=C_{1}x+C_{2}.
+y y^{\prime\prime}=y^{\prime}+ y^{\prime2},y={\frac{1}{C_{1}}}\left(1+C_{2}\mathrm{e}^{C_{1}x}\right).
+y y^{\prime\prime}=1+y^{\prime2}.,"y=C_{1}\ch{\frac{x+C_{2}}{C_{1}}}\,."
+2y y^{\prime}=1\ +\ y^{\prime}{}^{2}.,y=\frac{1}{C_{1}}\biggl[1+\frac{(C_{1}x+C_{3})^{2}}{4}\biggr]\;.
+"y^{3}y^{\prime\prime}=-1;\ \ y\ (1)=1,\ \ \ y^{\prime}\left(1\right)=0.",y={\sqrt{\;2x-x^{2}}}
+y y^{\prime\prime}-y^{\prime 2}=y^{2}y^{\prime}.,C_{1}x+C_{2}=\ln\left|{\frac{y}{y+C_{1}}}\right|.
+"y^{\prime\prime}=\mathrm{e}^{2y};\quad y\,(0)=0,\quad y^{\prime}\,(0)=1.",y=-\ln|x-1|.
+2y y^{\prime\prime}-3y^{\prime 2}=4y^{2}.,y\cos^{2}\left(x+C_{1}\right)=C_2.
+"y^{\prime\prime\prime}=3y y^{\prime};\quad y\left(0\right)=y^{\prime}\left(0\right)=1,\quad y^{\prime\prime}\left(0\right)=3/2.","y={\frac{4}{(x-2)^{3}}}\,."
+y^{\prime\prime}-y=0.,"y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-x},"
+3y^{\prime\prime}-2y^{\prime}-8y=0.,y=C_{1}\mathrm{e}^{2x}+C_{2}\mathrm{e}^{-{\frac{4}{3}}x}\ .
+"y^{\prime\prime\prime}-3y^{\prime}+3y^{\prime}-y=0, y(0)=1, y^{\prime}(0)=2, y^{\prime\prime}(0)=3","y=\mathrm{e}^{x}\left(1\,+\,x\right),"
+y^{\prime\prime}+2y^{\prime}+y=0.,y=\mathrm{e}^{-x}\left(C_{1}+C_{2}x\right).
+"y^{\prime\prime}-4y^{\prime}+3y=0, y(0)=6, y^{\prime}(0)=10",y=4\mathrm{e}^{x}+2\mathrm{e}^{3x}.
+"y^{\prime\prime\prime}+6y^{\prime\prime}+1\,1\,y^{\prime}+6y=0.","y=C_{1}\mathrm{e}^{-x}+C_{2}\mathrm{e}^{-2x}+C_{3}\mathrm{e}^{-3x},"
+y^{\prime\prime}-2y^{\prime}-2y=0.,"y=C_{1}\mathrm{e}^{(\mathrm{i}-\sqrt{{{3}}})\;x}+C_{2}\mathrm{e}^{(1+\sqrt{{{3}}})\;x},"
+y^{\mathrm{VI}}+2y^{\mathrm{V}}+ y^{\mathrm{IV}}=0.,"y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}x^{3}+\mathrm{e}^{-x}\,(C_{5}+C_{6}x)\,."
+4y^{\prime\prime}-8y^{\prime}+5y=0.,"y=\mathrm{e}^{x}\left(C_{1}\cos\,\frac{x}{2}+C_{2}\sin\frac{x}{2}\right)."
+"y^{\prime\prime\prime}-8y=0,",y = C_1e^{2x} + e^{-x}(C_2\cos\sqrt{3}x + C_3\sin\sqrt{3}x)
+y^{IV}+4y^{\prime\prime\prime}+10y^{\prime\prime}+12y^{\prime}+5y=0.,y=\mathrm{e}^{-x}\left(C_{1}+C_{2}x\right)+\mathrm{e}^{-x}\left(C_3\cos2x+C_{4}\;\sin\;2x\right).
+"y^{\prime\prime}-2y^{\prime}+2y=0,\ y\left(0\right)=0,\ y^{\prime}\left(0\right)=1\,.","y=e^x\operatorname{sin}x\,."
+"y^{\prime\prime}-2y^{\prime}+3y=0,\ y\left(0\right)=1,\ y^{\prime}\left(0\right)=3",y=e^x(\cos\sqrt{2}x+\sqrt{2}\sin\sqrt{2}x)
+y^{IV}}+2y^{\prime\prime\prime}+4y^{\prime\prime}-2y^{\prime}-5y=0.,y = C_1e^x+C_2e^{-x} + e^{-x}(C_1\cos 2x + C_4\sin 2x)
+y^{\vee}+4y^{1\vee}+5y^{\prime\prime}-6y^{\prime}-4y=0.,y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-2x}+\mathrm{e}^{-x}\left(C_{3}+C_{4}\cos x+C_{5}\sin x\right).
+y^{\prime\prime\prime}+\ 2y^{\prime\prime}-y^{\prime}-2y=0.,q=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-x}+C_{3}\mathrm{e}^{-2x}.
+y^{\prime\prime\prime}-2y^{\prime\prime}+2y^{\prime}=0.,y=C_{1}+\mathrm{e}^{x}\left(C_{2}\cos x+C_{3}\sin x\right).
+y^{IV}- y=0.,"y=C_1e^x\,+\,C_{2}\mathrm{e}^{-x}+C_{3}\cos x+C_{4}\,\sin x."
+y^{X}=0.,y = C_1 + C_2x + C_3x^2 +C_4x^3 + ... + C_{10}x^9
+y^{\prime\prime\prime}-3y^{\prime}-2y=0.,y=\mathrm{e}^{-x}\;(C_{1}+C_{2}x)+ C_{3}\mathrm{e}^{2x}.
+2y^{\prime\prime\prime}-3y^{\prime\prime}+y^{\prime}=0.,y=C_{1}+C_2e^{x}+C_3\mathrm{e}^{x/2};
+"y^{\prime\prime\prime}+y^{\prime\prime}=0;\ y\left(0\right)=1,\ y^{\prime}\left(0\right)=0,\ y^{\prime}\left(0\right)=1.",y=x+\mathrm{e}^{-x}.
+y^{\prime\prime}+2y^{\prime}+y=-2.,"y=(C_{1}+C_{2}x)\,\mathrm{e}^{-x}-2\,."
+y^{\prime\prime}+2y^{\prime}+2=0.,"y=C_{1}+C_{2}\mathrm{e}^{-2x}-x\,."
+y^{\prime\prime}+9y-9=0.,"y=C_{1}\cos3x+C_{2}\sin3x+1,"
+y^{\prime\prime\prime} + y^{\prime\prime}=1.,y = C_1 + C_2x + C_{3} \mathrm{e}^{-x}+{\frac{x^{2}}{2}}
+5y^{\prime\prime\prime}-7y^{\prime\prime}-3=0.,"y=C_{1}+C_{2}x+C_{3}\mathrm{e}^{\frac{7}{5}} - \frac{3}{14}\,x^{2},"
+y^{IV} - 6y^{\prime\prime\prime}+6=0.,"y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}\mathrm{e}^{6x}+{\frac{1}{6}}\,x^{3}"
+3y^{IV}+y^{\prime\prime\prime}=2.,y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}\mathrm{e}^{-{\frac{x}{3}}}+{\frac{x^{3}}{3}}\ 
+y^{IV}-2y^{\prime\prime\prime}+2y^{\prime\prime}-2y^{\prime}+y=1.,y=C_{1}\cos x + C_{2}\sin x + (C_{3}+C_{4} x) e^{x} +1
+y^{\prime\prime}-4y^{\prime}+4y=x^{2}.,y=(C_{1}+C x)\;\mathrm{e}^{2x}+{\frac{x^{3}}{4}}+{\frac{x}{2}}+{\frac{3}{8}}\;.
+y^{\prime\prime} + 8 y^{\prime}=8 x.,y=C_{1}+C_{2}\mathrm{e}^{-8x}+\frac{x^{2}}{2}-\frac{x}{8}
+y^{\prime\prime} - 2k y^{\prime} + k^{2}y=\mathrm{e}^{x} (k\ne1).,y=(C_{1}+C_{2}x)\;\mathrm{e}^{k x}+\frac{\mathrm{e}^{x}}{(k-1)^{2}}
+"y^{\prime\prime}+4y^{\prime}+4y=8\mathrm{e}^{-2x},",y=(C_{1}+C_{2}x)\mathrm{e}^{-2x} + 4x^2e^{-2x}
+y^{\prime\prime}\ +4y^{\prime}+3y=9\mathrm{e}^{-3x}.,y=C_{1}\mathrm{e}^{-3x}+C_{2}\mathrm{e}^{-x}-{\frac{9}{2}}\ x\mathrm{e}^{-3x}
+7y^{\prime\prime}-y^{\prime}=14x.,y=C_{1}+C_{2}\mathrm{e}^{\frac{x}{7}}-7x^{2}-98x.
+y^{\prime\prime}+y^{\prime}=3x\mathrm{e}^{-3x}.,y=C_{1}+C_{2}e^{-3x}+\big(\frac{x^2}{2} + \frac{x}{3}\big)e^{-3x}
+y^{\prime\prime}+5y^{\prime}+6y=10\left(1-x\right)\mathrm{e}^{-2x},y=C_{1}\mathrm{e}^{-3x}+C_{x}\mathrm{e}^{-2x}+(20x - 5x^2)e^{-2x}
+y^{\prime\prime}+2y^{\prime}+2y=1+x,y=(C_{1}\cos x+C_{2}\sin x)\operatorname{e}^{-x}+\frac{x}{2}
+"y^{\prime\prime} + y^{\prime} + y= (x + x^{2})\,\mathrm{e}^{x}",y=\left(C_{1}\cos\frac{\sqrt{3}}{2}x+C_{2}\sin\frac{\sqrt{3}}{2}x\right)e^{-\frac{x}{2}} + \frac{1}{3}(x^2 - x + 1)e^x
+y^{\prime\prime} + 4y^{\prime}-2y=8\sin2x.,y=C_{1}e^{-(\sqrt{6} + 2)^{x}}+C_{2}\mathrm{e}^{(\sqrt{6}-2)^{x}}-{\frac{16\cos2x+12\sin2x}{25}}
+y^{\prime\prime}+y=4x\cos x.,y=C_{1}\cos x + C_{2}\sin x + x \cos x + x^{2}\sin x.
+y^{\prime\prime}-2m y^{\prime} + m^{2}y=\sin n x.,y=(C_{1} + C_{2}x)\;\mathrm{e}^{m x}+\frac{2m n\cos n x + (m^{2}-n^{2})\;\sin n x}{(m^{2}+n^{2})^{2}}
+y^{\prime\prime}\ + 2 y^{\prime}\ +\ 5y=\mathrm{e}^{-x}\sin2x,"y=(C_{1}\cos2x+C_{2}\sin2x)\mathrm{\,e}^{-x}-\frac{1}{4}\,x\mathrm{e}^{-x}\cos2x"
+y^{\prime\prime} + a^2y = 2\cos{mx} + 3 \sin{mx},y=C_{1}\cos a x + C_2\sin a x + \frac{2\cos m x + 3\sin m x }{a^2 - m^2}
+y^{\prime\prime}-y^{\prime}={e}^{x}\sin x,y=C_{1}+C_{2}\mathrm{e}^{x}-{\frac{1}{2}}\ (\cos x+\sin x)e^x
+"y^{\prime\prime}+2y^{\prime}=4\mathrm{e}^{x}\left(\mathrm{sin}x+\mathrm{cos}\,x\right)",y=C_{1}+ C_{2}\mathrm{e}^{-2x} + \frac{1}{5}\left(6\mathrm{sin}x-2\cos x\right)e^x.
+y^{\prime\prime} + 4y^{\prime} + 5y = 10e^{-2x}\cos x,y=(C_{1}\cos x+C_{2}\sin x)e^{-2x}+5x\mathrm{e}^{-2x}\sin x
+4y^{\prime\prime}+8y^{\prime}=x\sin x,y=C_{1}+{}^{\vphantom{\leftarrow}{}}C_{2}{\mathrm{e}^{-2x}}-\left({\frac{x}{10}}+{\frac{1}{50}}\right){\mathit{\cos}}\;x+\left({\frac{7}{50}}-{\frac{x}{20}}\right)\sin x
+y^{\prime\prime}-3y^{\prime}+2y=x\mathrm{e}^{x},y=C_{1}\mathrm{e}^{2x}+C_{2}\mathrm{e}^{x}-\left({\frac{x^{2}}{2}}+x\right)\mathrm{e}^{x}.
+y^{\prime\prime}+y^{\prime}-2y=x^{2}\mathrm{e}^{4x},y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{-2x}+\frac{1}{18}\left(x^{2}-x + \frac{7}{18}\right){e}^{4x}
+y^{\prime}\leftarrow3y^{\prime}\div2y=(x^{2}\leftarrow2)\operatorname{e}^{3x}.,y=C_{1}\mathrm{e}^{x}+C_{2}\mathrm{e}^{\mathrm{2}x}+\left({\frac{x^{2}}{2}}-x+1\right)\mathrm{e}^{3x}
+y^{\prime\prime\prime} - y^{\prime\prime} + y^{\prime}- y=x^{2}+x,"y=C_{1}\mathrm{e}^{x}+C_{2}\cos\,x+C_{3}\sin\,x-(x^{2}+3x\,+\,1)"
+y^{IV}-2y^{\prime\prime\prime}+2y^{\prime\prime}-2y^{\prime}+y=e^{x}.,y=(C_{1}+C_{2}x)\ \mathrm{e}^{x}+C_{3}\cos x+C_{4}\sin x+{\frac{x^{2}}{4}}\ \mathrm{e}^{x}
+y^{\prime\prime}-2y^{\prime}+y=x^{3},y=(C_{1}+C_{2}x)\ \mathrm{e}^{x}+x^{3}+6 x^{2}+18x+24
+y^{IV}+ y^{\prime\prime}=x^{2} + x,y=C_{1}+C_{2}x+C_{3}\cos x+C_{4}\sin x+{\frac{x^{4}}{12}}+{\frac{x^{3}}{6}}-x^{2}.
+y^{\prime\prime}+y=x^{2}\sin x,y=\left(C_{1}+{\frac{x}{4}}-{\frac{x^{3}}{6}}\right)\cos x\;+\left(C_{2}+{\frac{x^{2}}{4}}\right)\sin x
+y^{\prime\prime}+2y^{\prime} + y=x^{2}\mathrm{e}^{-x}\cos x,y=(C_{1}+C_{2}x)~\mathrm{e}^{-x}+[(6-x^{2})\cos x+4x\sin\;x]\mathrm{e}^{-x}
+y^{\prime\prime\prime}- y=\sin x,"y=C_{1}\mathrm{e}^{x}+\left(C_{2}\cos\,\frac{\sqrt{3}}{2}\,x\!+\!C_{3}\sin\,\frac{\sqrt{3}}{2}\,x\right)\mathrm{e}^{-\frac{x}{2}}+ \frac{1}{2}(\cos{x} - \sin{x})"
+y^{1\mathrm{V}}-2y^{\prime\prime}+ y=\cos x,y=(C_{1}+C_{2}x)\mathrm{e}^{x}+(C_{3}+C_{4}x){e}^{-x} + \frac{1}{4}\cos{x}
+y^{\prime\prime\prime}-3y^{\prime\prime}+3y^{\prime}-y=\mathrm{e}^{x}\cos2x,y=(C_{1}+C_{2}x+C_{3}x^{2})\mathrm{e}^{x}-\frac{e^x}{8}\sin{2x}
+y^{\prime\prime}-4y^{\prime}+5y=\mathrm{e}^{2x}(\sin x+2\cos x).,y=(C_1\cos{x} + C_2\sin{x} - \frac{x}{2}\cos{x} + x\sin{x})e^{2x}
+y^{\prime\prime}-3g^{\prime}=18x-10\cos x.,y=C_{1}+C_{2}\mathrm{e}^{3x}-3x^{2}-2x+\cos x+3\sin x.
+y^{\prime\prime}-2y^{\prime}+y=2+\mathrm{e}^{x}\sin x,y=2\ +e^{x}\left(C_{1}+C_{2}x-\sin x\right).
+"y^{\prime\prime}+2y^{\prime}+2y=(5x+4)\,\mathrm{e}^{x}+\mathrm{e}^{-x},",y=(C_{1}\cos x+C_2\sin{x})e^{-x} + xe^x + e^{-x}
+y^{\prime\prime}+2y^{\prime}+5y=4\mathrm{e}^{-x}+17\sin2x.,"y=(C_{1}\,\mathrm{cos}\,2x+C_2\sin{2x})e^{-x} + e^{-x} - 4\cos{2x} + \sin{2x}"
+"2y^{\prime\prime}-3y^{\prime}-2y=5\mathrm{e}^x\mathrm{ch}\,x","y=C_{1}\mathrm{e}^{2x}+C_{2}\mathrm{e}^{-{\frac{x}{2}}}+{\frac{1}{4}}\;(2x\mathrm{e}^{2x}-5)\,."
+y^{\prime\prime}+4y=x\sin^{2}x.,"y=C_{1}\cos2x+C_{2}\sin2x+{\frac{x}{8}}\left(1-{\frac{\cos2x}{4}}-{\frac{x}{2}}\sin2x\right),"
+y^{IV}+2y^{\prime\prime\prime}+2y^{\prime\prime}+2y^{\prime}+y=x\mathrm{e}^{x}+\frac{1}{2}\cos x,y=(C_{1}+C_{2}x)\;\mathrm{e}^{-x}+C_{3}\cos x+C_{4}\sin x-{\frac{x}{8}}\cos x+ \frac{1}{4}(\frac{x}{2} - 1)e^x
+y^{\prime\prime}+y^{\prime}=\cos^{2}x+\mathrm{e}^{x}+x^{2}.,"y=C_{1}+C_{2}\mathrm{e}^{-x}+\frac{1}{2}\,\mathrm{e}^{x}-\frac{1}{10}\cos{2x} + \frac{1}{20}\sin{2x} + \frac{x^3}{3} - x^2 + 2x"
+y^{V}+4y^{\prime\prime\prime}=\mathrm{e}^{x}+3\sin2x + 1\,y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}\cos2x+C_{5}{\mathrm{sin}}2x+{\frac{e^{x}}{5}}+ \frac{x^3}{24} + \frac{3x\sin{2x}}{32}
+y^{\prime\prime}-2y^{\prime}\ +5y=10\sin x + 17\sin2x.,y=(C_1\cos{2x}+C_2\sin{2x})e^x+\cos{x} + 2\sin{x} + 4\cos{2x} + \sin{2x}
+y^{\prime\prime}\ +y^{\prime}=x^{2}-\mathrm{e}^{-x}+\mathrm{e}^{x}.,y=C_1 +C_{2}\mathrm{e}^{-x}+x\mathrm{e}^{-x}+{\frac{1}{2}}\mathrm{e}^{x}\ +\ {\frac{x^{3}}{3}}\ -x^{2}+2x
+y^{\prime\prime}-2y^{\prime}-3y=2x+\mathrm{e}^{-x}-2\mathrm{e}^{3x},"y=C_{1}\mathrm{e}^{-x}+C_{2}\mathrm{e}^{3x}-{\frac{2}{3}}\,x+{\frac{4}{9}}-{\frac{1}{4}}\,x\mathrm{e}^{-x}-{\frac{1}{2}}\,x\mathrm{e}^{3x}"
+y^{\prime\prime}+4y=\mathrm{e}^{x}+4\sin2x\ +2\cos^{3}x - 1,y=C_{1}\cos2x+C_{2}\sin2x+x\left({\frac{1}{4}}\sin2x-\cos2x\right)+\frac{1}{5}e^x
+y^{\prime\prime}+3y^{\prime}+2y=6x\mathrm{e}^{-x}(1-\mathrm{e}^{-x}).,"y=C_{1}\mathrm{e}^{-x}+C_{2}\mathrm{e}^{-2x}+3(x^{2}-2x)\,\mathrm{e}^{-x}+3(x^2 + 2x)e^{-2x}"
+y^{\prime\prime}+y=\cos^{2}\!2x\ +\ \mathrm{sin}^{2}\frac{x}{2},y=C_{1}\cos x+C_{2}\sin x - \frac{1}{3}\cos4x - \frac{x}{4}\sin{x} + 1
+y^{\prime\prime}-4y^{\prime}+5y=1 + 8\cos x+\mathrm{e}^{2x}.,"y=(C_1\cos{x} + \left.+\,C_{2}\,\sin x\right)\mathrm{e}^{2x}+\cos x-\sin x+\mathrm{e}^{2x}+{\frac{1}{5}}"
+"y^{\prime\prime}-2y^{\prime}+2y=\mathrm{e}^{x}\sin^{2}\frac{x}{2}\,,",y=(C_{1}\cos x+ C_{2}\sin x+\frac{1}{2}-\frac x4\sin x)\mathrm{e}^{x}
+y^{\prime\prime}-3y^{\prime}=1 + e^x + \cos x + \sin x,y=C_{1}+C_{2}\mathrm{e}^{3x}+{\frac{\cos x-2\sin x}{5}}-{\frac{e^{x}}{2}}-{\frac{x}{3}}
+"y^{\prime\prime}-2y^{\prime}+5y=\mathrm{e}^{x}\left(1-2\,\mathrm{sin}^{2}\,x\right)+ 10x + 1",y=\left(C_{1}\cos2x+C_{2}\sin2x+{\frac{x}{4}}\sin2x\right)\mathrm{e}^{x}+2x+1.
+y^{\prime\prime}-4y^{\prime}+4y=4x+\sin x+\sin2x.,y=(C_{1}+C_{2}x){\mathrm{e}}^{x}+{\frac{1}{25}}\ (4\cos x+3\sin x){+}{\frac{1}{8}}\cos2x+x{+}1
+y^{\prime\prime}+2y^{\prime}+y=1\ +2\cos x\ +\cos2x-\sin2x.,"y=(C_{1}+C_{2}\,x)\;\mathrm{e}^{-x}+\frac{\cos2x+7\sin2x}{25}+\sin x+1,"
