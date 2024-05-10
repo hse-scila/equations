@@ -14,7 +14,7 @@ def get_size(sequence, pad):
 
 def get_loaders(filename, tokenizer_type, vocab_size, batch_size, only_decoder=False):
     
-    df = pd.read_csv(filename, sep='#')
+    df = pd.read_csv(filename, sep=',')
 
     if tokenizer_type=='BPE':
         tokenizer = Tokenizers.get_bpe_tokenizer(df, vocab_size)

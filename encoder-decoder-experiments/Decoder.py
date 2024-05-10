@@ -11,6 +11,7 @@ class Decoder(nn.Module):
         hidden_dim,
         n_layers,
         dropout,
+        device,
         pad_id=0,
         bidirectional=False,
         one_hot=False,
@@ -22,6 +23,7 @@ class Decoder(nn.Module):
         self.n_layers = n_layers
         self.rnn_type = rnn_type
         self.one_hot = one_hot
+        self.device = device
         if not one_hot:
             self.embedding = nn.Embedding(
                 input_dim, embedding_dim, padding_idx=pad_id
@@ -65,7 +67,7 @@ class Decoder(nn.Module):
         else:
             embedded = torch.stack(
                 [self.one_hot_encode(batch_sample, self.rnn.input_size) for batch_sample in input]
-            ).to(device)
+            ).to(self.device)
         # embedded = [1, batch size, embedding dim]
         if self.rnn_type == "lstm":
             output, (hidden, cell) = self.rnn(embedded, (hidden, cell))

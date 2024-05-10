@@ -11,6 +11,7 @@ class Encoder(nn.Module):
         hidden_dim,
         n_layers,
         dropout,
+        device,
         pad_id = 0,
         bidirectional=False,
         one_hot=False,
@@ -19,6 +20,7 @@ class Encoder(nn.Module):
         super().__init__()
         self.hidden_dim = hidden_dim
         self.n_layers = n_layers
+        self.device = device
         self.one_hot = one_hot
         self.rnn_type = rnn_type
         self.dumb = dumb
@@ -61,18 +63,18 @@ class Encoder(nn.Module):
                 return (
                     torch.zeros((self.bididectional + 1) * self.n_layers, src.shape[1], self.hidden_dim),
                     torch.zeros((self.bididectional + 1) * self.n_layers, src.shape[1], self.hidden_dim)
-                )
+                ).to(self.device)
             else:
                 return (
                     torch.zeros((self.bididectional + 1) * self.n_layers, src.shape[1], self.hidden_dim)
-                )
+                ).to(self.device)
 
         if not self.one_hot:
             embedded = self.dropout(self.embedding(src))
         else:
             embedded = torch.stack(
                 [self.one_hot_encode(batch_sample, self.rnn.input_size) for batch_sample in src]
-            ).to(device)
+            ).to(self.device)
 
         packed_inputs = pack_padded_sequence(
             embedded, src_len.cpu(), enforce_sorted=False

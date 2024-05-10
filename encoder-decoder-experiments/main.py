@@ -70,12 +70,13 @@ def train(train_dict, device, k=0, n_epochs=50):
                                                             hidden_dim,
                                                             n_layers,
                                                             encoder_dropout,
+                                                            device,
                                                             pad_idx,
                                                             bidirectional,
                                                             one_hot=one_hot,
                                                             dumb=only_decoder
                                                         )
-                        
+                                                        
                                                         decoder = Decoder(
                                                             rnn_type,
                                                             vocab_size,
@@ -84,6 +85,7 @@ def train(train_dict, device, k=0, n_epochs=50):
                                                             hidden_dim,
                                                             n_layers,
                                                             decoder_dropout,
+                                                            device,
                                                             pad_idx,
                                                             bidirectional,
                                                             one_hot=one_hot,
