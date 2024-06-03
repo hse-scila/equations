@@ -219,7 +219,7 @@ def train_func(hparams):
     #определяем как будем сохранять (для каждой модели - лучшую эпоху)
     checkpoint_callback = ModelCheckpoint(
         monitor="loss/val_epoch",
-        dirpath=f'C:/users/toxas/eqs/checkpoints/Seq2Seq_model/{id}',
+        dirpath=f'C:/users/toxas/eqs/checkpoints/Seq2Seq_model/{id}', #путь куда сохранять модели
         filename='{epoch}.ckpt',
         save_top_k=1,
         mode='min',
@@ -228,7 +228,8 @@ def train_func(hparams):
 
     #Определяем логгер, который будет записывать все наши метрики и строить графики 
     #(в нашем случае это тензорборд, но можно связывать и сдругими )в т.ч. онлайн платформами
-    tensorboard_logger = TBLogger(f'C:/users/toxas/eqs/logs', name='Seq2Seq_model',
+    tensorboard_logger = TBLogger(f'C:/users/toxas/eqs/logs', #путь куда сохранять логи
+                                  name='Seq2Seq_model',
                                    version=id, default_hp_metric=False, 
                                    log_graph=True
                                    )
