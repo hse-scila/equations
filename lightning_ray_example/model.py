@@ -568,8 +568,8 @@ class Seq2Seq(pl.LightningModule):
             pred_string.append(self.decode_and_remove_special_tokens(pred, is_source=False))
             trg_string.append(self.decode_and_remove_special_tokens(target, is_source=False))
 
-        self.validation_preds.extend(pred_string)
-        self.validation_refs.extend(trg_string)
+        self.test_preds.extend(pred_string)
+        self.test_refs.extend(trg_string)
 
     #оперделяем, что делаем для тестовой выборки - какие метрики считаем
     def on_test_epoch_end(self):
