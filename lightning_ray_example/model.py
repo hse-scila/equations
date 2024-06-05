@@ -353,8 +353,9 @@ class Seq2Seq(pl.LightningModule):
                 if inference:
                     eos_generated |= (top1 == self.trg_eos_token_id)
                     top1[eos_generated] = self.trg_pad_token_id 
-                
-                input = torch.where(torch.le(torch.rand(1, device=self.device), self.teacher_forcing_ratio), trg[t],  top1)
+                    input = top1
+                else:
+                    input = torch.where(torch.le(torch.rand(1, device=self.device), self.teacher_forcing_ratio), trg[t],  top1)
         
         #другая логика для decoder-only
         elif self.model_type == 'decoder-only':
@@ -470,28 +471,35 @@ class Seq2Seq(pl.LightningModule):
             trg = trg.transpose(0, 1)
             src_len = src_len.cpu()
 
-        output = self(src, src_len, trg, inference=True)
+        output = self(src, src_len, trg, inference=False)
         output_dim = output.shape[-1]
         output = output[1:].view(-1, output_dim)
         if self.model_type == 'decoder-only':
-            trg = src[1:, :].contiguous().view(-1)
+            trg = src
+            trg_all = src[1:, :].contiguous().view(-1)
         else:
-            trg = trg[1:, :].contiguous().view(-1)
-        loss = self.criterion(output, trg)
+            trg_all = trg[1:, :].contiguous().view(-1)
+        loss = self.criterion(output, trg_all)
         self.log('loss/val', loss, on_step=True, on_epoch=True, prog_bar=True) #сохраняем лосс
 
-        pred_tokens = output.argmax(1).tolist()
-        trg_tokens = trg.tolist()
-
+        
+        output = self(src, src_len, trg, inference=True)
+        pred_tokens = output.argmax(2).transpose(0, 1).tolist()
+        trg_tokens = trg.transpose(0, 1).tolist()
+        
         if self.model_type == 'decoder-only':
-            pred_tokens = self.extract_tokens_after_break(pred_tokens)
-            trg_tokens = self.extract_tokens_after_break(trg_tokens)
+            for i in len(pred_tokens):
+                pred_tokens[i] = self.extract_tokens_after_break(pred_tokens[i])
+                trg_tokens[i] = self.extract_tokens_after_break(trg[i])
 
-        pred_string = self.decode_and_remove_special_tokens(pred_tokens, is_source=False)
-        trg_string = self.decode_and_remove_special_tokens(trg_tokens, is_source=False)
+        pred_string, trg_string = [], []
 
-        self.validation_preds.append(pred_string)
-        self.validation_refs.append(trg_string)
+        for pred, target in zip(pred_tokens, trg_tokens):
+            pred_string.append(self.decode_and_remove_special_tokens(pred, is_source=False))
+            trg_string.append(self.decode_and_remove_special_tokens(target, is_source=False))
+
+        self.validation_preds.extend(pred_string)
+        self.validation_refs.extend(trg_string)
 
     #сохраняем норму весов разный слоев just in case, вдруг будет что интересное (также полезно для дебага)
     def on_train_epoch_end(self):
@@ -542,28 +550,26 @@ class Seq2Seq(pl.LightningModule):
             trg = trg.transpose(0, 1)
             src_len = src_len.cpu()
 
+        if self.model_type == 'decoder-only':
+            trg = src
+        
         output = self(src, src_len, trg, inference=True)
-        output_dim = output.shape[-1]
-        output = output[1:].view(-1, output_dim)
-        if self.model_type == 'decoder-only':
-            trg = src[1:, :].contiguous().view(-1)
-        else:
-            trg = trg[1:, :].contiguous().view(-1)
-        loss = self.criterion(output, trg)
-        self.log('test/loss', loss, on_epoch=True, prog_bar=True, logger=True)
-
-        pred_tokens = output.argmax(1).tolist()
-        trg_tokens = trg.tolist()
+        pred_tokens = output.argmax(2).transpose(0, 1).tolist()
+        trg_tokens = trg.transpose(0, 1).tolist()
 
         if self.model_type == 'decoder-only':
-            pred_tokens = self.extract_tokens_after_break(pred_tokens)
-            trg_tokens = self.extract_tokens_after_break(trg_tokens)
+            for i in len(pred_tokens):
+                pred_tokens[i] = self.extract_tokens_after_break(pred_tokens[i])
+                trg_tokens[i] = self.extract_tokens_after_break(trg[i])
 
-        pred_string = self.decode_and_remove_special_tokens(pred_tokens, is_source=False)
-        trg_string = self.decode_and_remove_special_tokens(trg_tokens, is_source=False)
+        pred_string, trg_string = [], []
 
-        self.test_preds.append(pred_string)
-        self.test_refs.append(trg_string)
+        for pred, target in zip(pred_tokens, trg_tokens):
+            pred_string.append(self.decode_and_remove_special_tokens(pred, is_source=False))
+            trg_string.append(self.decode_and_remove_special_tokens(target, is_source=False))
+
+        self.validation_preds.extend(pred_string)
+        self.validation_refs.extend(trg_string)
 
     #оперделяем, что делаем для тестовой выборки - какие метрики считаем
     def on_test_epoch_end(self):
