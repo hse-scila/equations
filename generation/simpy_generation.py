@@ -1,7 +1,8 @@
-from sympy import latex, symbols, diff, parse_expr
+from sympy import latex, symbols, diff, parse_expr, Eq, solve
 import random
 import pandas as pd
 from itertools import combinations, permutations
+from generate_second_order import generate_second_order
 
 base_funcs = [
     "x",
@@ -140,3 +141,17 @@ def level2(term_count=2, complexity=2):
 #TODO: write a function 'level3' that will create more complicated funcions
 # of the form (f(x) + g(x)) / (p(x) + q(x)) and other
 
+def solve_equation(equation):
+    y = symbols('y')
+    equation = parse_expr(tex2sympy(equation))
+    return(latex(solve(Eq(equation, 0), y)))
+
+def generate_linear(start=-10, end=11) -> pd.DataFrame | tuple:
+    eqs = []
+    ans = []
+    equations, _ = generate_linear(start, end)
+    for equation in equations:
+        for base_func in base_funcs:
+            equation = equation[:len(equation) - 2] + base_func
+            eqs.append(equation)
+            ans.append(solve_equation(equation))

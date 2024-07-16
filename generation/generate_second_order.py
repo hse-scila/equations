@@ -24,7 +24,7 @@ def second_order_equation(x_1, x_2):
     prime2 = "{\prime\prime}"
     return f"y^{prime2}" + a_component + b_component + "=0"
 
-def generate_second_order(start=-10, end=11):
+def generate_second_order(start=-10, end=11, return_df=False):
     equations = []
     answers = []
     for x1 in range(start, end):
@@ -40,4 +40,6 @@ def generate_second_order(start=-10, end=11):
                 x2_component += f"e^{'{' + str(x2) + 'x}'}"
             answers.append(x1_component + "+" + x2_component)
             # print(f"Answer for equation {equations[-1]} is {answers[-1]}")
-    return pd.DataFrame({"equation": equations, "answer": answers})
+    if return_df:
+        return pd.DataFrame({"equation": equations, "answer": answers})
+    return (equations, answers)

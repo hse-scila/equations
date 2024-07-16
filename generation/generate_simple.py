@@ -50,7 +50,13 @@ def deriv(args: list) -> str:
         ),
     )
 
-def generate(d: dict = None) -> pd.DataFrame:
+def generate(d: dict = None, return_df=False) -> pd.DataFrame | tuple:
+    '''
+    generates equations of the form y^{\prime} = poly(x)
+    param d should contain pairs (key, value)
+    where key is degree of equation,
+    value - amount of equation you want to generate
+    '''
     if d is None:
         d = {i : random.randint(10, 100) for i in range(2, 10)}
     equations = []
@@ -61,5 +67,7 @@ def generate(d: dict = None) -> pd.DataFrame:
             equations.append('y^{\prime}=' + re.sub(r'\+-', '-', deriv(args)))
             answers.append('y=' + re.sub(r'\+-', '-', equation(args)))
             # print(f"Answer for equation {equations[-1]} is {answers[-1]}")
-    return pd.DataFrame({"equation": equations, "answer": answers})
+    if return_df:
+        return pd.DataFrame({"equation": equations, "answer": answers})
+    return (equations, answers)
 

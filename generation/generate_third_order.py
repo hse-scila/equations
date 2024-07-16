@@ -31,7 +31,7 @@ def third_order_equation(x_1, x_2, x_3):
         c_component = f"{c}y"
     return f"y^{prime3}" + a_component + b_component + c_component + "=0"
 
-def generate_third_order(start=-10, end=11):
+def generate_third_order(start=-10, end=11, return_df=False):
     equations = []
     answers = []
     for x1 in range(start, end):
@@ -51,6 +51,8 @@ def generate_third_order(start=-10, end=11):
                     x3_component += f"e^{'{' + str(x3) + 'x}'}"
                 answers.append(x1_component + "+" + x2_component + "+" + x3_component)
                 # print(f"Answer for equation {equations[-1]} is {answers[-1]}")
-    return pd.DataFrame({"equation": equations, "answer": answers})
+    if return_df:
+        return pd.DataFrame({"equation": equations, "answer": answers})
+    return (equations, answers)
 
 
