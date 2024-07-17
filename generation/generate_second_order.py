@@ -43,3 +43,4 @@ def generate_second_order(start=-10, end=11, return_df=False):
     if return_df:
         return pd.DataFrame({"equation": equations, "answer": answers})
     return (equations, answers)
+
