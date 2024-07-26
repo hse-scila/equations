@@ -189,7 +189,7 @@ class CustomSearcherWrapper(Searcher):
 def train_func(hparams):
 
     #читаем данные (вставить свой путь)
-    dataframe = pd.read_csv('C:/users/toxas/eqs/generated_pairs.csv').iloc[:50,:]
+    dataframe = pd.read_csv('C:/users/toxas/eqs/generated_pairs.csv') #.iloc[:128,:] раскомменить для тестоого запуска
     #создаем и обучаем токенизатор в соответствии с гиперпараметрами
     tokenizer = CustomTokenizer(tokenizer_type=hparams['tokenizer_type'],
                                  vocab_size=hparams['vocab_size'])
@@ -235,7 +235,8 @@ def train_func(hparams):
                                    )
 
     # Определяем трейнера, который будет обучать нашу модель - сам тренинг луп не нужен, все уже есть в классе модели 
-    trainer = pl.Trainer(max_epochs=1, gradient_clip_val=1,
+    trainer = pl.Trainer(max_epochs=100, #для теста поставить 1 или 2 эпохи 
+                         gradient_clip_val=1,
                          accelerator="gpu", devices=1,
                          callbacks=[checkpoint_callback], 
                          logger=tensorboard_logger, log_every_n_steps=1,
