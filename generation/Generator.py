@@ -107,7 +107,7 @@ class Generator:
         """
         a = -x_1 - x_2 - x_3
         b = x_1 * x_2 + x_2 * x_3 + x_1 * x_3
-        c = x_1 * x_2 * x_3
+        c = - x_1 * x_2 * x_3
         prime1 = "{\prime}"
         prime2 = "{\prime\prime}"
         prime3 = "{\prime\prime\prime}"
