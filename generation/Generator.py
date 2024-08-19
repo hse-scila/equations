@@ -3,6 +3,7 @@ from sympy import *
 from itertools import combinations, permutations
 import random
 import re
+import concurrent.futures
 
 
 class Generator:
@@ -14,29 +15,29 @@ class Generator:
             sin(2 * self.x): "\sin(2 * x)",
             cos(self.x): "\cos(x)",
             cos(2 * self.x): "\cos(2 * x)",
-            tan(self.x): "\\tg(x)",
-            tan(2 * self.x): "\\tg(2x)",
-            cot(self.x): "\\ctg(x)",
-            cot(2 * self.x): "\\ctg(2x)",
+            # tan(self.x): "\\tg(x)",
+            # tan(2 * self.x): "\\tg(2x)",
+            # cot(self.x): "\\ctg(x)",
+            # cot(2 * self.x): "\\ctg(2x)",
             exp(self.x): "e^{x}",
             exp(2 * self.x): "e^{2 * x}",
-            ln(self.x): "\ln(x)",
-            ln(2 * self.x): "ln(2 * x)",
-            0: "0",
+            # ln(self.x): "\ln(x)",
+            # ln(2 * self.x): "ln(2 * x)",
+            # 0: "0",
             self.x: "x",
             2 * self.x: "2x",
             self.x**2: "x^{2}",
             self.x**3: "x^{3}",
-            sqrt(self.x): "\sqrt(x)",
-            sqrt(2 * self.x): "\sqrt(x)",
-            asin(self.x): "\\arcsin(x)",
-            asin(2 * self.x): "\\arcsin(2x)",
-            acos(self.x): "\\arccos(x)",
-            acos(2 * self.x): "\\arccos(2x)",
-            atan(self.x): "\\arctg(x)",
-            atan(2 * self.x): "arctg(2x)",
-            acot(self.x): "arcctg(x)",
-            acot(2 * self.x): "arcctg(2x)",
+            # sqrt(self.x): "\sqrt(x)",
+            # sqrt(2 * self.x): "\sqrt(x)",
+            # asin(self.x): "\\arcsin(x)",
+            # asin(2 * self.x): "\\arcsin(2x)",
+            # acos(self.x): "\\arccos(x)",
+            # acos(2 * self.x): "\\arccos(2x)",
+            # atan(self.x): "\\arctg(x)",
+            # atan(2 * self.x): "arctg(2x)",
+            # acot(self.x): "arcctg(x)",
+            # acot(2 * self.x): "arcctg(2x)",
             sinh(self.x): "sh(x)",
             sinh(2 * self.x): "sh(2x)",
             cosh(self.x): "ch(x)",
@@ -166,24 +167,24 @@ class Generator:
             return pd.DataFrame({"equation": equations, "answer": answers})
         return (equations, answers)
 
-    def create_linear_combination(self, length: int = 1) -> tuple[list[str], list[str]]:
+    def create_linear_combination(self, length: int = 2) -> tuple[list[str], list[str]]:
         tex_funcs = []
         sp_funcs = []
-        for subset in combinations(self.base_funcs, length):
+        for subset in combinations(self.func2tex.keys(), length):
             for perm in permutations(subset):
                 sp, tex = None, None
-                for func_sp, func_tex in perm.items():
+                for func_sp in perm:
                     if sp is None:
                         sp = func_sp
-                        tex = func_tex
+                        tex = self.func2tex[func_sp]
                     else:
                         op = random.choice(["+", "-"])
                         if op == "+":
                             sp += func_sp
-                            tex += " + " + func_tex
+                            tex += " + " + self.func2tex[func_sp]
                         else:
-                            rhs -= func_sp
-                            tex += " - " + func_tex
+                            sp -= func_sp
+                            tex += " - " + self.func2tex[func_sp]
                 tex_funcs.append(tex)
                 sp_funcs.append(func_sp)
         return sp_funcs, tex_funcs
@@ -192,16 +193,13 @@ class Generator:
     # TODO: make work
     def simplyfy(text):
         return (
-            text.replace("+ -", "-")
-            .replace(" 0y^{\prime}", "")
-            .replace(" 0y", "")
-            .replace(" 1y", "y")
-            .replace(" 1y^{\prime}", " y^{\prime}")
-            .replace(" 1y^{\prime\prime}", " y^{\prime\prime}")
-            .replace(" 0y^{\prime\prime}", "")
+            text.replace("1y^{\prime\prime}", "y^{\prime\prime}")
+            .replace("1y^{\prime}", "y^{\prime}")
+            .replace("1y", "y")
+            .replace("+ -", "-")
         )
 
-    @classmethod
+    
     def linear_inhomogeneous_second_order(
         self,
         a_range: list  = range(-10, 11),
@@ -223,18 +221,7 @@ class Generator:
                 continue
             for b in b_range:
                 for c in c_range:
-                    for rhs, tex in self.create_linear_combination(rhs_length):
-                        equations.append(
-                            Generator.simplyfy(
-                                str(a)
-                                + "y^{\prime\prime} + "
-                                + str(b)
-                                + "y^{\prime} + "
-                                + str(c)
-                                + "y = "
-                                + tex
-                            )
-                        )
+                    for rhs, tex in zip(*self.create_linear_combination(rhs_length)):
                         y = Function("y")
                         lhs = (
                             a * y(self.x).diff(self.x, self.x)
@@ -242,7 +229,26 @@ class Generator:
                             + c * y(self.x)
                         )
                         equation = Eq(lhs, rhs)
-                        answers.append(latex(dsolve(equation)))
+                        try:
+                            ans = dsolve(equation)
+                        except Exception as e:
+                            print(e)
+                        else:
+                            equations.append(
+                                Generator.simplyfy(
+                                    str(a)
+                                    + "y^{\prime\prime} + "
+                                    + str(b)
+                                    + "y^{\prime} + "
+                                    + str(c)
+                                    + "y = "
+                                    + tex
+                                )
+                            )
+                            print(equations[-1])
+                            answers.append(latex(ans))
+                        
+        print(len(equations), len(answers))                
         if return_df:
             return pd.DataFrame({"equation": equations, "answer": answers})
         return (equations, answers)
@@ -272,19 +278,6 @@ class Generator:
                 for c in c_range:
                     for d in d_range:
                         for rhs, tex in self.create_linear_combination(rhs_length):
-                            equations.append(
-                                Generator.simplyfy(
-                                    str(a)
-                                    + "y^{\prime\prime\prime} + "
-                                    + str(b)
-                                    + "y^{\prime\prime} + "
-                                    + str(c)
-                                    + "y^{\prime} + "
-                                    + str(d)
-                                    + "y = "
-                                    + tex
-                                )
-                            )
                             y = Function("y")
                             lhs = (
                                 a * y(self.x).diff(self.x, self.x, self.x)
@@ -293,7 +286,26 @@ class Generator:
                                 + d * y(self.x)
                             )
                             equation = Eq(lhs, rhs)
-                            answers.append(latex(dsolve(equation)))
+                            try: 
+                                answer = dsolve(equation)
+                            except Exception as e:
+                                print(e)
+                            else:
+                                answers.append(latex(answer))
+                                print(equations[-1], answers[-1])
+                                equations.append(
+                                        Generator.simplyfy(
+                                            str(a)
+                                            + "y^{\prime\prime\prime} + "
+                                            + str(b)
+                                            + "y^{\prime\prime} + "
+                                            + str(c)
+                                            + "y^{\prime} + "
+                                            + str(d)
+                                            + "y = "
+                                            + tex
+                                        )
+                                    )
         if return_df:
             return pd.DataFrame({"equation": equations, "answer": answers})
         return (equations, answers)
