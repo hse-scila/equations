@@ -26,8 +26,8 @@ def main():
     if args.type == "poly":
         if config is None:
             Generator.generate_polynomial(
-                {2: 1000000, 3: 1000000, 4: 1000000, 5: 1000000}, -5000, 5000, True
-            ).to_csv(args.name)
+                {2: 1000, 3: 1000, 4: 1000, 5: 1000, 6: 1000, 7: 1000, 8: 1000, 9: 1000}, -5000, 5000, True
+            ).to_csv(args.name, index=False)
         else:
             Generator.generate_polynomial(
                 config["amounts"], config["start"], config["end"], True
@@ -35,7 +35,7 @@ def main():
     elif args.type == "homo2":
         if config is None:
             Generator.fast_linear_homogeneous_second_order(
-                a_range=range(-100, 100), b_range=(-100, 100), return_df=True
+                a_range=range(-50, 50), b_range=range(-50, 50), return_df=True
             ).to_csv(args.name)
         else:
             Generator.fast_linear_homogeneous_second_order(
@@ -43,10 +43,10 @@ def main():
             ).to_csv(args.name)
     elif args.type == "homo3":
         if config is None:
-            Generator.fast_linear_homogeneous_second_order(
-                a_range=range(-100, 100),
-                b_range=(-100, 100),
-                c_range=(-100, 100),
+            Generator.fast_linear_homogeneous_third_order(
+                a_range=range(-10, 10),
+                b_range=range(-10, 10),
+                c_range=range(-10, 10),
                 return_df=True,
             ).to_csv(args.name)
         else:
@@ -59,32 +59,32 @@ def main():
     elif args.type == "inhomo2":
         if config is None:
             Generator().linear_inhomogeneous_second_order(
-                a_range=range(-100, 100),
-                b_range=(-100, 100),
-                c_range=(-100, 100),
-                rhs_length=2,
+                a_range=range(-5, 6),
+                b_range=range(-5, 6),
+                c_range=range(-5, 6),
+                rhs_length=1,
                 return_df=True,
-            ).to_csv(args.name)
+            ).to_csv(args.name, index=False)
         else:
-            Generator().fast_linear_homogeneous_third_order(
+            Generator().linear_inhomogeneous_second_order(
                 a_range=config["a_range"],
                 b_range=config["b_range"],
                 c_range=config["c_range"],
                 rhs_length=config["rhs_length"],
                 return_df=True,
-            ).to_csv(args.name)
+            ).to_csv(args.name, index=False)
     else:
         if config is None:
             Generator().linear_inhomogeneous_second_order(
-                a_range=range(-100, 100),
-                b_range=(-100, 100),
-                c_range=(-100, 100),
-                d_range=(-100, 100),
-                rhs_length=2,
+                a_range=range(1, 5),
+                b_range=(-2, 3),
+                c_range=(-2, 3),
+                d_range=(-2, 3),
+                rhs_length=1,
                 return_df=True,
-            ).to_csv(args.name)
+            ).to_csv(args.name, index=False)
         else:
-            Generator().fast_linear_homogeneous_third_order(
+            Generator().linear_inhomogeneous_third_order(
                 a_range=config["a_range"],
                 b_range=config["b_range"],
                 c_range=config["c_range"],
