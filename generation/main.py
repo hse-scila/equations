@@ -77,9 +77,9 @@ def main():
         if config is None:
             Generator().linear_inhomogeneous_third_order(
                 a_range=range(1, 5),
-                b_range=(-2, 3),
-                c_range=(-2, 3),
-                d_range=(-2, 3),
+                b_range=range(-2, 3),
+                c_range=range(-2, 3),
+                d_range=range(-2, 3),
                 rhs_length=1,
                 return_df=True,
             ).to_csv(args.name, index=False)
