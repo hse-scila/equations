@@ -75,7 +75,7 @@ def main():
             ).to_csv(args.name, index=False)
     else:
         if config is None:
-            Generator().linear_inhomogeneous_second_order(
+            Generator().linear_inhomogeneous_third_order(
                 a_range=range(1, 5),
                 b_range=(-2, 3),
                 c_range=(-2, 3),
