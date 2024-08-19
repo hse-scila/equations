@@ -253,7 +253,6 @@ class Generator:
             return pd.DataFrame({"equation": equations, "answer": answers})
         return (equations, answers)
 
-    @classmethod
     def linear_inhomogeneous_third_order(
         self,
         a_range: list  = range(-10, 11),
@@ -277,7 +276,7 @@ class Generator:
             for b in b_range:
                 for c in c_range:
                     for d in d_range:
-                        for rhs, tex in self.create_linear_combination(rhs_length):
+                        for rhs, tex in zip(*self.create_linear_combination(rhs_length)):
                             y = Function("y")
                             lhs = (
                                 a * y(self.x).diff(self.x, self.x, self.x)
@@ -292,7 +291,6 @@ class Generator:
                                 print(e)
                             else:
                                 answers.append(latex(answer))
-                                print(equations[-1], answers[-1])
                                 equations.append(
                                         Generator.simplyfy(
                                             str(a)
@@ -306,6 +304,7 @@ class Generator:
                                             + tex
                                         )
                                     )
+                                print(equations[-1])
         if return_df:
             return pd.DataFrame({"equation": equations, "answer": answers})
         return (equations, answers)
