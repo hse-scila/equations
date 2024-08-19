@@ -27,8 +27,43 @@ base_funcs = [
     "\\ln(2 \cdot x)",
     "e^{x}",
     "e^{2 \cdot x}",
-    "1",
+    # "1",
 ]
+
+derives = [
+    "1",
+    "2x",
+    "3x^{2}",
+    "\cos(x)",
+    "2\cos(2 \cdot x)",
+    "-\sin(x)",
+    "-2\sin(2 \cdot x)",
+    "\\frac{1}{\cos^{2}(x)}",
+    "\\frac{2}{\cos^{2}(2 \cdot x)}",
+    "\\frac{1}{\sin^{2}(x)}",
+    "\\frac{2}{\sin^{2}(2 \cdot x)}",
+    "\\frac{1}{\sqrt{1 - x^{2}}}",
+    "\\frac{2}{\sqrt{1 - 4 \cdot x^{2}}}",
+    "-\\frac{1}{\sqrt{1 - x^{2}}}",
+    "-\\frac{2}{\sqrt{1 - 4 \cdot x^{2}}}",
+    "\\frac{1}{x^{2} + 1}",
+    "\\frac{2}{4x^{2} + 1}",
+    "-\\frac{1}{x^{2} + 1}",
+    "-\\frac{2}{4x^{2} + 1}",
+    "\\frac{1}{x}",
+    "\\frac{2}{x}",
+    "e^{x}",
+    "2 \cdot e^{2 \cdot x}",
+    # "0"
+]
+
+def simplest_base():
+    for func, deriv in zip(base_funcs, derives):
+        for i in range(-100000000, 1000000000):
+            if i == 0:
+                continue
+            yield "y = " + f"{i} \cdot {func}"+" + C", "y^{\prime} = " + f"{i} \cdot {deriv}"
+
 
 def parse_frac(frac):
     if "\\frac" not in frac:
@@ -94,17 +129,13 @@ def level1(term_count=1):
     y = \sum_{i=0}^{term_count}f(x)
     where f(x) is a base_func
     """
-    funcs = []
-    derives = []
     for subset in combinations(base_funcs, term_count):
         for perm in permutations(subset):
             latex_func = perm[0]
             for func in perm[1:]:
                 op = random.choice([" + ", " - "])
                 latex_func += op + func
-            funcs.append("y=" + latex_func)
-            derives.append("y^{\prime}=" + calc_derive(latex_func))
-    return pd.DataFrame({"equation": derives, "answer": funcs})
+            yield "y=" + latex_func + "+C", "y^{\prime}=" + calc_derive(latex_func)
 
 def create_terms(complexity):
     for subset in combinations(base_funcs, complexity):
@@ -125,18 +156,20 @@ def level2(term_count=2, complexity=2):
     y = \sum_{i=0}^{term_count}f(x)
     where f(x) is a product or fraction of base_funcs
     """
-    funcs = []
-    derives = []
     for subset in combinations(create_terms(complexity), term_count):
+        print(subset)
         for perm in permutations(subset):
             latex_func = perm[0]
             for func in perm[1:]:
                 op = random.choice(["+", "-"])
                 latex_func += op + func
-            funcs.append("y=" + latex_func)
-            derives.append("y^{\prime}=" + calc_derive(latex_func))
-    return pd.DataFrame({"equation": derives, "answer": funcs})
+            try:
+                yield "y=" + latex_func + "+C", "y^{\prime}=" + calc_derive(latex_func)
+            except:
+                print(latex_func)
 
 #TODO: write a function 'level3' that will create more complicated funcions
 # of the form (f(x) + g(x)) / (p(x) + q(x)) and other
 
+if __name__ == "__main__":
+    pd.DataFrame(level2()).to_csv('divided_vars.csv', index=False)
