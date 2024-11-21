@@ -31,7 +31,7 @@ class TBLogger(TensorBoardLogger):
         metrics.pop('epoch', None)
         return super().log_metrics(metrics, step)
 
-#определяем функцию, котора фильтрует невалидные комбинации гиперпараметров (чтобы запускать сразу все эксперименты, которые нужны а не сабсетами)
+#we define a function that filters invalid combinations of hyperparameters (to run all the experiments that are needed at once, not subsets)
 def validate_combination(config):
     # Rule 1: There can't be decoder-only with shared embeddings
     if config["model_type"] == "decoder-only" and config["shared_embeddings"]:
@@ -111,7 +111,7 @@ def validate_combination(config):
 
     return True
 
-#отбор валидный комбинаций с помощью предыдущей функции
+#selection of valid combinations using the previous function
 def generate_valid_configs(grid=None):
     if grid is None:
         grid = {
@@ -143,7 +143,7 @@ def generate_valid_configs(grid=None):
     all_combinations = [dict(zip(keys, v)) for v in itertools.product(*values)]
     return [config for config in all_combinations if validate_combination(config)]
 
-#специальный счетчик, который присваивает модели простой порядковый id (нужен именно такой, чтобы нормально работал с параллельными процессами)
+#a special counter that assigns a simple ordinal id to the model (this is exactly what is needed to work properly with parallel processes)
 @ray.remote
 class Counter:
     def __init__(self):
@@ -153,7 +153,7 @@ class Counter:
         self.count += 1
         return self.count
 
-#класс, который осуществляет выдачу наших гиперпараетров для каждой новой модели на очереди
+#a class that outputs our hyperparameters for each new model in line
 @ray.remote
 class CustomSearcher(Searcher):
     def __init__(self, search_space):
@@ -185,12 +185,12 @@ class CustomSearcherWrapper(Searcher):
 
 
 
-#функция обучения одной модели, которая получает на вход все необходимые гиперпараметры
+#a function for training a single model that receives all the required hyperparameters as input
 def train_func(hparams):
 
-    #читаем данные (вставить свой путь)
-    dataframe = pd.read_csv('C:/users/toxas/eqs/generated_pairs.csv') #.iloc[:128,:] раскомменить для тестоого запуска
-    #создаем и обучаем токенизатор в соответствии с гиперпараметрами
+    #read data (insert your path)
+    dataframe = pd.read_csv('C:/users/toxas/eqs/generated_pairs.csv')
+    #create and train tokenizer according to hyperparameters
     tokenizer = CustomTokenizer(tokenizer_type=hparams['tokenizer_type'],
                                  vocab_size=hparams['vocab_size'])
     tokenizer.fit((dataframe.iloc[:,0]+dataframe.iloc[:,1]).tolist(),
@@ -200,7 +200,7 @@ def train_func(hparams):
     hparams['trg_vocab_size'] = tokenizer.trg_vocab_size
     del hparams['vocab_size']
     
-    #создаем модуль данных в соответсвии с шиперпараметрами
+    #create a data module according to hyperparameters
     data_module = TextDataModule(dataframe, 
                                  tokenizer, 
                                  model_type=hparams['model_type'], 
@@ -209,33 +209,33 @@ def train_func(hparams):
                                  val_split=0.1, 
                                  test_split=0.1)
 
-    #создаем модель в соответствии с гиперпараметрами
+    #we create a model according to hyperparameters
     model = Seq2Seq(tokenizer,
                     hparams, device='cuda')
 
 
-    #получаем id модели
+    #пget model's id
     id = ray.get(counter.increment.remote())
-    #определяем как будем сохранять (для каждой модели - лучшую эпоху)
+    #we determine how we will save (for each model - the best epoch)
     checkpoint_callback = ModelCheckpoint(
         monitor="loss/val_epoch",
-        dirpath=f'C:/users/toxas/eqs/checkpoints/Seq2Seq_model/{id}', #путь куда сохранять модели
+        dirpath=f'C:/users/toxas/eqs/checkpoints/Seq2Seq_model/{id}', #where to save models
         filename='{epoch}.ckpt',
         save_top_k=1,
         mode='min',
         verbose=True,
     )
 
-    #Определяем логгер, который будет записывать все наши метрики и строить графики 
-    #(в нашем случае это тензорборд, но можно связывать и сдругими )в т.ч. онлайн платформами
-    tensorboard_logger = TBLogger(f'C:/users/toxas/eqs/logs', #путь куда сохранять логи
+   #We define a logger that will record all our metrics and build graphs
+   #(in our case, this is a tensorboard, but it can be linked to others), including online platforms
+    tensorboard_logger = TBLogger(f'C:/users/toxas/eqs/logs', #path where to save logs
                                   name='Seq2Seq_model',
                                    version=id, default_hp_metric=False, 
                                    log_graph=True
                                    )
 
-    # Определяем трейнера, который будет обучать нашу модель - сам тренинг луп не нужен, все уже есть в классе модели 
-    trainer = pl.Trainer(max_epochs=100, #для теста поставить 1 или 2 эпохи 
+    # We define a trainer who will train our model - the training loop itself is not needed, everything is already in the model class
+    trainer = pl.Trainer(max_epochs=100, 
                          gradient_clip_val=1,
                          accelerator="gpu", devices=1,
                          callbacks=[checkpoint_callback], 
@@ -245,20 +245,20 @@ def train_func(hparams):
                          enable_progress_bar=False
                          )
 
-    #обучаем модель (функция prepare trainer нужна именно для ray tune)
+    #train the model (the prepare trainer function is needed specifically for ray tune)
     trainer = prepare_trainer(trainer)
     trainer.fit(model, data_module)
  
 
-    # Тестируем в конце на лучше эпохе
+    #We test at the end on a better epoch
     best_model_path = checkpoint_callback.best_model_path
     trainer.test(ckpt_path=best_model_path, datamodule=data_module)
 
 
-#непосредственно запуск экспериментов
+#launching experiments
 if __name__ == "__main__":
 
-    #определяем все параметры, которые хотим перебрать (невалидные комбинации отсеятся с помощью функций определенных выше)
+    #we define all the parameters that we want to iterate over (invalid combinations will be filtered out using the functions defined above)
     working_grid  = {
         "tokenizer_type": ["character"],
         "vocab_size": [None],
@@ -284,14 +284,13 @@ if __name__ == "__main__":
         "decoder_output": ['hidden_attention', 'hidden']
     }
 
-    #прнтим всякую общую инфу вначале
     print("CUDA available: ", torch.cuda.is_available())
     print("CUDA device count: ", torch.cuda.device_count()) 
     valid_configs = generate_valid_configs(working_grid)
     print(f'Количество экспериментов: {len(valid_configs)}')
     ray.init(num_gpus = 1)
     print("Ray GPU resources: ", ray.available_resources().get("GPU", 0))
-    #создаем счетчик моделей и переборщик гиперпараметров
+    #create a model counter and hyperparameter enumerator
     global counter
     counter = Counter.remote()
     print('Created Counter...')
@@ -299,25 +298,25 @@ if __name__ == "__main__":
     custom_searcher = CustomSearcher.remote(valid_configs)
     custom_searcher_wrapper = CustomSearcherWrapper(custom_searcher)
     print('Created searcher...')
-    #пишем scaling config, который определяет сколько ресурсов будет выделятся одной задаче 
-    #(в нашем случае 1 worker (т.е. одну модель будет обучать один процесс - для больших моделей можно задать несколько процессов, например, если батч не лезет в 1 GPU)
-    #, 2 CPU и 0.1 GPU (в нашем случае модели маленькие относительно памяти карты A100 80GB на суперкомпе, поэтому это оптимально))
+    #we write a scaling config, which determines how many resources will be allocated to one task
+    #(in our case 1 worker (i.e. one model will be trained by one process - for large models you can specify several processes, for example, if the batch does not fit into 1 GPU)
+    #, 2 CPUs and 0.1 GPU (in our case, the models are small relative to the memory of the A100 80GB card on a supercomputer, so this is optimal))
     scaling_config = ScalingConfig(
         num_workers=1,
         resources_per_worker={
             "GPU": 0.1,
-            "CPU": 10}, #здесь имеются ввиду именно логические ядры, на обычном компе их не сильно больше, чем физических, а на суперкомпе - сильно 
-                        #поэтому. запрсив 10 CPU, вы получите гораздо больше логических ядер, так что внимательнее с этим
+            "CPU": 10}, #here we mean logical cores, on a regular computer there are not much more of them than physical ones, and on a supercomputer - much
+                        #that's why. by requesting 10 CPUs, you will get much more logical cores, so be careful with this
             use_gpu=True)
 
-    #задаем доп трейнер из ray (да знаю, много трейнеров, но зато можно параллелить)
+    #we set an additional trainer from ray (yes, I know, there are a lot of trainers, but at least we can parallelize)
     ray_trainer = TorchTrainer(
-    torch_config = TorchConfig(backend="gloo"), #!!!!!!!!!!!! для линкуса или суперкомпа закоментировать эту строку - gloo для винды
+    torch_config = TorchConfig(backend="gloo"), # for linux or supercomputer comment out this line - gloo is for windows
     train_loop_per_worker = train_func,
     scaling_config = scaling_config
     )
     print('Created_Trianer...')
-    #задаем тюнер
+    #set Tuner
     tuner = tune.Tuner(
         ray_trainer,
         param_space = {
@@ -325,11 +324,11 @@ if __name__ == "__main__":
         'train_loop_config' : {}
         },
         tune_config=TuneConfig(search_alg=custom_searcher_wrapper,
-                                num_samples=len(valid_configs), max_concurrent_trials=10, #максимально возможное количество одновременно обучаемых моделей
+                                num_samples=len(valid_configs), max_concurrent_trials=10, #maximum possible number of simultaneously trained models
     ))
-    #запускаем эксперименты и уходим на несколько дней - главное предусмотреть потребление ресурсов
-    #модели будут сохранятся в папку указанную ModelCheckpoint, а метрики в папку указанную tensorboard_logger. 
-    # Можно в любой момент (в т. ч. во время обучения) запустить tensorboard и посмотреть на графики
+    #run experiments and leave for a few days - the main thing is to anticipate resource consumption
+    #models will be saved in the folder specified by ModelCheckpoint, and metrics in the folder specified by tensorboard_logger.
+    #You can run tensorboard at any time (including during training) and look at the graphs
     print('Created_Tuner...')
     results = tuner.fit()
     ray.shutdown()
