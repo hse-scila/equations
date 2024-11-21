@@ -18,4 +18,4 @@ Code can be found [here](https://github.com/hse-scila/equations/tree/main/lightn
 
 Datasets can be found [here](https://github.com/hse-scila/equations/blob/main/pairs_dataset.csv) and [here(synthetic)](https://github.com/hse-scila/equations/blob/main/generated_pairs.csv)
 
-Result can be found here [here](https://github.com/hse-scila/equations/blob/main/encoder_decoder/results_BookDataset.csv) and [here(synthetic)](https://github.com/hse-scila/equations/blob/main/encoder_decoder/results_SyntheticDataset.csv)
+Results can be found here [here](https://github.com/hse-scila/equations/blob/main/encoder_decoder/results_BookDataset.csv) and [here(synthetic)](https://github.com/hse-scila/equations/blob/main/encoder_decoder/results_SyntheticDataset.csv)
