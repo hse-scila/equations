@@ -3,7 +3,7 @@ from tokenizers.processors import TemplateProcessing
 import copy
 
 
-#посимвольный ткенизатор с таким же интерфейсом, как и токенизаторы из библиотеки tokenizers
+#character-by-character tokenizer with the same interface as tokenizers from the tokenizers library
 class CharacterTokenizer:
     def __init__(self, special_tokens):
         self.special_tokens = special_tokens
@@ -61,7 +61,7 @@ class CharacterTokenizer:
         return " ".join(decoded_chars)
     
     
-#кастомный токенизатор, который в зависимости от tokenizer_type становится тем или иным токенизатором
+#a custom tokenizer that becomes one or another tokenizer depending on tokenizer_type
 class CustomTokenizer:
     def __init__(self, 
                  tokenizer_type='character',
@@ -72,7 +72,7 @@ class CustomTokenizer:
         self.vocab_size = vocab_size
         self.build_tokenizer()
 
-    #получаем тип токенизатора, который нужен
+    #we get the type of tokenizer that is needed
     def build_tokenizer(self):
         if self.tokenizer_type == 'character':
             assert self.vocab_size is None, "vocab_size must be None for character-wise tokenizer initially."
@@ -90,7 +90,7 @@ class CustomTokenizer:
         else:
             raise ValueError("Unsupported tokenizer type")
 
-    #определяем специальные токены, которые будут вставлятся в начало/конец последовательности
+    #we define special tokens that will be inserted at the beginning/end of the sequence
     def set_special_tokens(self, tokenizer, model_type, is_source=True):
         if self.tokenizer_type != 'character':
             if model_type == 'encoder-decoder':
@@ -127,7 +127,7 @@ class CustomTokenizer:
             self.src_tokenizer.set_special_tokens(model_type, is_source=True)
             self.trg_tokenizer.set_special_tokens(model_type, is_source=False)
 
-    #обучение токенизатора
+    #tokenizer training
     def train(self, tokenizer, corpus):
         if self.tokenizer_type == 'character':
             tokenizer.train_from_iterator(corpus)
@@ -142,7 +142,7 @@ class CustomTokenizer:
             tokenizer.train_from_iterator(corpus, trainer=trainer)
         return tokenizer
 
-    #метод, который делает все сразу - инициализирует, обучает и добавляет спец токены
+    #a method that does everything at once - initializes, trains and adds special tokens
     def fit(self, corpus, corpus_2=None, model_type='encoder-decoder'):
         
         print('training tokenizer...')
@@ -168,14 +168,14 @@ class CustomTokenizer:
         self.set_special_tokens(self.src_tokenizer, model_type, is_source=True)
         self.set_special_tokens(self.trg_tokenizer, model_type, is_source=False)
 
-    #перевод текста в токены
+    #Translation of text into tokens
     def tokenize(self, text, max_len=None, add_special_tokens=True, is_source=True):
         tokenizer = self.src_tokenizer if is_source else self.trg_tokenizer
         if self.tokenizer_type!= 'character':
             return tokenizer.encode(text, add_special_tokens=add_special_tokens).ids
         return tokenizer.encode(text, add_special_tokens=add_special_tokens)
 
-    #перевод токенов в текст
+    #Translation of tokens into text
     def detokenize(self, tokens, is_source=True, skip_special_tokens=True):
         tokenizer = self.src_tokenizer if is_source else self.trg_tokenizer
         return tokenizer.decode(tokens, skip_special_tokens=skip_special_tokens)
