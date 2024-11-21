@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset, random_split
 import lightning.pytorch as pl
 
-#обычный torch Dataset
+#basic torch Dataset
 class TextDataset(Dataset):
     def __init__(self, 
                  dataframe, 
@@ -18,13 +18,13 @@ class TextDataset(Dataset):
         self.src_pad_id =  tokenizer.src_tokenizer.token_to_id('<pad>')
         self.trg_pad_id =  tokenizer.trg_tokenizer.token_to_id('<pad>')
 
-    #определяет длинну датасета (нужно, чтобы сэплировать индексы для формирования батча)
+    #defines the length of the dataset (needed to sample indices to form a batch)
     def __len__(self):
         return len(self.dataframe)
 
-    #метод, который по индексу получает непосредственно sample
+    #a method that gets sample directly by index
     def __getitem__(self, idx):
-        #кэширование, чтобы токенизация проводилась только в первую эпоху
+        #caching so that tokenization is only done in the first epoch
         if self.use_cache and idx in self.cache:
             return self.cache[idx]
 
@@ -44,7 +44,7 @@ class TextDataset(Dataset):
 
         return result
 
-    #метод для формирования батчей (padding + для decoder-only моделей конкатенация equation и answer с разделяющим символом между ними)
+    #method for forming batches (padding + for decoder-only models concatenation of equation and answer with a separator symbol between them)
     def collate_fn(self, batch):
         if self.model_type == 'decoder-only':
             lengths = [len(tokens) for tokens in batch]
@@ -62,7 +62,7 @@ class TextDataset(Dataset):
             return torch.tensor(padded_src_batch), torch.tensor(src_lengths), torch.tensor(padded_trg_batch), torch.tensor(trg_lengths)
 
 
-#lightning DataModule - разбивает выборку на обучающую, валидационную и тестовую и возвращает соответвующие лоудеры
+#lightning DataModule - splits the sample into training, validation and test and returns the corresponding loaders
 class TextDataModule(pl.LightningDataModule):
     def __init__(self, 
                  dataframe, 
@@ -85,7 +85,7 @@ class TextDataModule(pl.LightningDataModule):
         self.seed = seed
         self.num_workers = num_workers
 
-    #просто разбиваем данные
+    #splits the data
     def setup(self, stage=None):
 
         full_dataset = TextDataset(self.dataframe, self.tokenizer, self.model_type, self.use_cache)
@@ -96,7 +96,7 @@ class TextDataModule(pl.LightningDataModule):
         self.train_dataset, self.val_dataset, self.test_dataset = random_split(full_dataset,
                                                                                 [train_size, val_size, test_size],
                                                                                 generator = torch.Generator().manual_seed(self.seed))
-    #определяем как получаются даталоудеры (очень просто)
+    #getting dataloaders
     def train_dataloader(self):
         return DataLoader(self.train_dataset, batch_size=self.batch_size, 
                           shuffle=True, collate_fn=self.train_dataset.dataset.collate_fn,
