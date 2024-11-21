@@ -9,39 +9,7 @@ from lightning.pytorch.utilities import grad_norm
 from transformers import get_linear_schedule_with_warmup, get_cosine_schedule_with_warmup, get_constant_schedule_with_warmup
 
 
-#один способ считать attention
-class AttentionLayerBilinear(nn.Module):
-    def __init__(self,hid_size):
-        """ Слой, подсчитывающий выходы аттеншена и веса """
-        super().__init__()
-        self.hid_size = hid_size # размер вектора скрытого состояния аттеншена 
-        self.linear = nn.LazyLinear(hid_size)
-
-    def forward(self, enc, dec, lengths):
-        """
-        Подсчитывает выход аттеншена и веса
-        :param enc: входная последовательность кодировщика, float32[batch_size, ninp, enc_size]
-        :param dec: выходная последовательность декодировщика (query), float32[batch_size, dec_size]
-        :param inp_mask: маска для последовательностей кодировщика (0 после первого токена eos), float32 [batch_size, ninp]
-        :returns: attn[batch_size, enc_size], probs[batch_size, ninp]
-            - attn - вектор выхода аттеншена (взвешенная сумма enc).
-            - probs - веса аттеншена после софтмакса (softmax)
-        """
-        
-        # Подсчет логитов    
-        # Наложение маски - если mask равна 0, логиты должны быть -inf или -1e9
-        # Вам может понадобиться torch.where
-        # Подсчет вероятностей аттеншена (softmax)
-        # Подсчет выхода аттеншена, используя enc и probs
-        x = self.linear(dec).unsqueeze(1)
-        scores = torch.bmm(x, enc.permute(1, 0, 2)).squeeze(1)
-        mask = torch.arange(scores.size(1)).expand(lengths.size(0), -1) >= lengths.unsqueeze(1)
-        scores[mask] = -1e9
-        scores = torch.nn.functional.softmax(scores, dim=1)
-        
-        return scores 
-
-#второй способ считать attention
+# attention
 class Attention(nn.Module):
     def __init__(self, hidden_dim, attention_dim, bidirectional_encoder=False, init_decoder_from_encoder=False):
         super(Attention, self).__init__()
@@ -62,7 +30,7 @@ class Attention(nn.Module):
         attention[mask] = -1e9
         return nn.functional.softmax(attention, dim=1)
     
-#encoder - кодирует последовательность
+#encoder
 class Encoder(nn.Module):
     def __init__(self, 
                  pad_id, 
@@ -114,7 +82,7 @@ class Encoder(nn.Module):
                 hidden = torch.cat((hidden[::2], hidden[1::2]), dim=2)
             return outputs, hidden, None
         
-    #если не используем слой эмбеддингов, то переводим токенизированные тексты в one-hot вектора
+    #if we don't use an embedding layer, then we translate tokenized texts into one-hot vectors
     def one_hot_encode(self, sequence, vocab_size):
         #tensor = torch.zeros(sequence.size(0), int(vocab_size))
         #tensor[torch.arange(sequence.size(0)), sequence] = torch.ones(sequence.size(0))
@@ -125,7 +93,7 @@ class Encoder(nn.Module):
         
         return one_hot
 
-#декодер - декодирует последовательность для encoder-decoder варианта и просто работает на подобие gpt для decoder-only варианта
+#decoder - decodes the sequence for the encoder-decoder variant and simply works like gpt for the decoder-only variant
 class Decoder(nn.Module):
     def __init__(self, 
                  hparams,
@@ -208,7 +176,6 @@ class Decoder(nn.Module):
         else:
             return output, hidden, None
         
-    #если не используем слой эмбеддингов, то переводим токенизированные тексты в one-hot вектора
     def one_hot_encode(self, sequence, vocab_size):
         #tensor = torch.zeros(sequence.size(0), int(vocab_size))
         #tensor[torch.arange(sequence.size(0)), sequence] = torch.ones(sequence.size(0))
@@ -219,7 +186,7 @@ class Decoder(nn.Module):
         
         return one_hot
 
-    #инициализируем первое скрытое состояние нулями в том случае, когда не получаем его из энкодера
+    #initialize the first hidden state to zeros in the case when we do not receive it from the encoder
     def init_hidden(self, batch_size):
         hidden = torch.zeros(self.rnn.num_layers, batch_size, self.rnn.hidden_size).to(self.device)
         if self.rnn_type == 'lstm':
@@ -227,7 +194,7 @@ class Decoder(nn.Module):
             return hidden, cell
         return hidden, None
     
-#класс, который собирает все вместе
+#the class that brings it all together
 class Seq2Seq(pl.LightningModule):
     def __init__(self, 
                  tokenizer, 
@@ -327,7 +294,7 @@ class Seq2Seq(pl.LightningModule):
         else:
             outputs = torch.zeros(length_size, batch_size, self.decoder.fc_out.out_features, device=self.device)
 
-        #Одна логика для encoder-decoder
+        #encoder-decoder forward
         if self.model_type == 'encoder-decoder':
 
             encoder_outputs, hidden, cell = self.encoder(src, src_len)
@@ -357,7 +324,7 @@ class Seq2Seq(pl.LightningModule):
                 else:
                     input = torch.where(torch.le(torch.rand(1, device=self.device), self.teacher_forcing_ratio), trg[t],  top1)
         
-        #другая логика для decoder-only
+        #decoder-only forward
         elif self.model_type == 'decoder-only':
             hidden = self.decoder.init_hidden(batch_size)
             cell = None
@@ -397,7 +364,7 @@ class Seq2Seq(pl.LightningModule):
         decoded_string = self.tokenizer.detokenize(tokens, is_source=is_source, skip_special_tokens=True)
         return decoded_string
 
-    #считаем 100% accuracy (ускорение с помощью numba)
+    #we calculate 100% accuracy (speedup with numba)
     @staticmethod
     @jit(nopython=True)
     def calculate_full_accuracy(preds, refs):
@@ -420,7 +387,7 @@ class Seq2Seq(pl.LightningModule):
             total_chars += len(ref)
         return correct_chars / total_chars 
 
-    #определяем метрики, которые будут ключевыми для выбора лучшей модели и сохраняем их в таблицу гиперпараметров 
+    #we define the metrics that will be key to choosing the best model and save them in the hyperparameter table
     def on_train_start(self):
         print(self.hparams)
         self.logger.log_hyperparams(self.hparams, 
@@ -429,14 +396,14 @@ class Seq2Seq(pl.LightningModule):
                                                "hp/val_partial_accuracy": 0,
                                                "hp/val_loss": float('inf')})
         
-    #считаем норму градиентов и тоже сохраняем (на всякий случай, чтобы следить за затуханием/взрывом градиентов)
+    #we calculate the gradient norm and also save it (just in case, to monitor the attenuation/explosion of gradients)
     def on_before_optimizer_step(self, optimizer):
     # Compute the 2-norm for each layer
     # If using mixed precision, the gradients are already unscaled here
         norms = grad_norm(self, norm_type=2)
         self.log_dict(norms)
 
-    #определяем тренировочный шаг (до получения лосса, optimezr.zero_grad и прочее делать не надо - это происходит под капотом)
+    #we define the training step (before getting the loss, optimezr.zero_grad and other things do not need to be done - this happens under the hood)
     def training_step(self, batch, batch_idx):
         if self.model_type == 'decoder-only':
             src, src_len = batch
@@ -456,10 +423,10 @@ class Seq2Seq(pl.LightningModule):
         else:
             trg = trg[1:, :].contiguous().view(-1)
         loss = self.criterion(output, trg)
-        self.log('loss/train', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True) #сохраняем лосс
+        self.log('loss/train', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         return loss
     
-    #определяем валидационный шаг (расчет всех метрик)
+    #we define the validation step (calculation of all metrics)
     def validation_step(self, batch, batch_idx):
         if self.model_type == 'decoder-only':
             src, src_len = batch
@@ -480,7 +447,7 @@ class Seq2Seq(pl.LightningModule):
         else:
             trg_all = trg[1:, :].contiguous().view(-1)
         loss = self.criterion(output, trg_all)
-        self.log('loss/val', loss, on_step=True, on_epoch=True, prog_bar=True) #сохраняем лосс
+        self.log('loss/val', loss, on_step=True, on_epoch=True, prog_bar=True) 
 
         
         output = self(src, src_len, trg, inference=True)
@@ -501,15 +468,15 @@ class Seq2Seq(pl.LightningModule):
         self.validation_preds.extend(pred_string)
         self.validation_refs.extend(trg_string)
 
-    #сохраняем норму весов разный слоев just in case, вдруг будет что интересное (также полезно для дебага)
-    def on_train_epoch_end(self):
+    #
+    #def on_train_epoch_end(self):
+    #
+    #    for name, param in self.named_parameters():
+    #        norm = torch.norm(param).item()
+    #        self.logger.experiment.add_scalar(f'weight_2.0_norm/{name}', norm, self.current_epoch)
 
-        for name, param in self.named_parameters():
-            norm = torch.norm(param).item()
-            self.logger.experiment.add_scalar(f'weight_2.0_norm/{name}', norm, self.current_epoch)
-
-    #оперделяем, что делаем в конце каждой валидационной эаохи - какие метрики считаем
-    #если метрики улучшаются (в данном случае лосс на валидации, то обнровляем таблицу гиперпараметров и метрик)
+    #we define what we do at the end of each validation step - what metrics we count
+    
     def on_validation_epoch_end(self):
         bleu_score = self.bleu(self.validation_preds, [[ref] for ref in self.validation_refs])
         full_accuracy = self.calculate_full_accuracy(self.validation_preds, self.validation_refs)
@@ -571,7 +538,7 @@ class Seq2Seq(pl.LightningModule):
         self.test_preds.extend(pred_string)
         self.test_refs.extend(trg_string)
 
-    #оперделяем, что делаем для тестовой выборки - какие метрики считаем
+    #we define what we do for the test sample - what metrics we calculate
     def on_test_epoch_end(self):
         bleu_score = self.bleu(self.test_preds, [[ref] for ref in self.test_refs])
         full_accuracy = self.calculate_full_accuracy(self.test_preds, self.test_refs)
@@ -584,7 +551,7 @@ class Seq2Seq(pl.LightningModule):
         self.test_preds = []
         self.test_refs = []
 
-    #оперделяем, как задаются оптимайзеры и шедулеры
+    #we define how optimizers and schedulers are set
     def configure_optimizers(self):
         optimizer = Adam(self.parameters(), lr=self.lr)
 
