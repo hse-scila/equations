@@ -1,0 +1,4 @@
+torch==2.2.0
+transformers==4.50.3
+transformers[torch]
+datasets==3.5.0
