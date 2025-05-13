@@ -8,6 +8,9 @@ import nltk
 nltk.download('punkt')
 
 def latex_to_func(latex_str, variable='x'):
+    """
+    Преобразует латех строку в sympy выражение
+    """
     try:
         expr = latex2sympy(latex_str)
     except Exception as e:
@@ -19,7 +22,29 @@ def latex_to_func(latex_str, variable='x'):
     
     return expr
 
+def latex_equiv(latex_str1, latex_str2):
+    """
+    Возвращает 1 если функции, представленные строками в формате латех
+    идентичны и 0 иначе
+    """
+    try:
+        expr1 = latex2sympy(latex_str1)
+    except Exception as e:
+        print(f"Не удалось распарсить LaTeX: {latex_str1}, ", e)
+        return 0
+    try:
+        expr2 = latex2sympy(latex_str2)
+    except Exception as e:
+        print(f"Не удалось распарсить LaTeX: {latex_str2}, ", e)
+        return 0
+
+    return expr1 == expr2
+        
+
 def compute_norm(func1, func2, variable='x', a=-10, b=10, n_points=1000):
+    """
+    Считает L2 норму между двумя sympy функциями
+    """
     x = sp.symbols(variable)
     
     f1 = lambdify(x, func1, 'numpy')
@@ -37,6 +62,9 @@ def compute_norm(func1, func2, variable='x', a=-10, b=10, n_points=1000):
     return np.trapezoid(diff**2, x_vals) ** 0.5, np.max(np.abs(diff))
     
 def compute_bleu(text1, text2):
+    """
+    Считает BLEU между двумя документами
+    """
     tokens1 = list(text1)
     tokens2 = list(text2)
     
@@ -53,6 +81,7 @@ def compute_norm_for_dataframe(df):
     l2_norms = []
     inf_norms = []
     bleus = []
+    is_eq = []
     for idx, row in df.iterrows():
         try:
             func1 = latex_to_func(row['prediction'])
@@ -60,10 +89,12 @@ def compute_norm_for_dataframe(df):
             l2_norm, inf_norm = compute_norm(func1, func2)
             l2_norms.append(l2_norm)
             inf_norms.append(inf_norm)
+            is_eq.append(func1 == func2)
         except Exception as e:
             print(f"Ошибка в строке {idx}: {e}")
             l2_norms.append(np.nan)
             inf_norms.append(np.nan)
+            is_eq.append(0)
         
         bleu = np.nan
         try:
