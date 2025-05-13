@@ -89,6 +89,6 @@ if __name__ == "__main__":
     df = pd.read_csv(file_path)
     df = compute_norm_for_dataframe(df)
     
-    output_path = file_path.replace('.', '_metrics.')
+    output_path = file_path.replace('.', '_metrics')
     df.to_csv(output_path, index=False)
     

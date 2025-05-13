@@ -1,0 +1,3 @@
+prediction,label
+y=x^{2}+3x+2,y=x^{2}+3x+2
+y=5x+C,y=x^{3}+x^{2}+x+C
