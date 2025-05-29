@@ -1,20 +1,22 @@
 import pandas as pd
 import sympy as sp
 import numpy as np
-from latex2sympy2 import latex2sympy
 from sympy import lambdify
+from sympy.parsing.sympy_parser import parse_expr
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import nltk
 nltk.download('punkt')
 
 def latex_to_func(latex_str, variable='x'):
     """
-    Преобразует латех строку в sympy выражение
+    Преобразует строку с математическим выражением в sympy выражение
     """
     try:
-        expr = latex2sympy(latex_str)
+        # Заменяем некоторые LaTeX-специфичные конструкции на SymPy-совместимые
+        expr_str = latex_str.replace('\\', '').replace('{', '').replace('}', '')
+        expr = parse_expr(expr_str)
     except Exception as e:
-        raise ValueError(f"Не удалось распарсить LaTeX: {latex_str}, ", e)
+        raise ValueError(f"Не удалось распарсить выражение: {latex_str}, ошибка: {e}")
     
     x = sp.symbols(variable)
     if not expr.has(x):
@@ -24,18 +26,17 @@ def latex_to_func(latex_str, variable='x'):
 
 def latex_equiv(latex_str1, latex_str2):
     """
-    Возвращает 1 если функции, представленные строками в формате латех
-    идентичны и 0 иначе
+    Возвращает 1 если функции, представленные строками идентичны и 0 иначе
     """
     try:
-        expr1 = latex2sympy(latex_str1)
+        expr1 = latex_to_func(latex_str1)
     except Exception as e:
-        print(f"Не удалось распарсить LaTeX: {latex_str1}, ", e)
+        print(f"Не удалось распарсить выражение: {latex_str1}, ошибка: {e}")
         return 0
     try:
-        expr2 = latex2sympy(latex_str2)
+        expr2 = latex_to_func(latex_str2)
     except Exception as e:
-        print(f"Не удалось распарсить LaTeX: {latex_str2}, ", e)
+        print(f"Не удалось распарсить выражение: {latex_str2}, ошибка: {e}")
         return 0
 
     return expr1 == expr2
@@ -84,8 +85,8 @@ def compute_norm_for_dataframe(df):
     is_eq = []
     for idx, row in df.iterrows():
         try:
-            func1 = latex_to_func(row['prediction'])
-            func2 = latex_to_func(row['label'])
+            func1 = latex_to_func(row['predictions'])
+            func2 = latex_to_func(row['answer'])
             l2_norm, inf_norm = compute_norm(func1, func2)
             l2_norms.append(l2_norm)
             inf_norms.append(inf_norm)
@@ -98,7 +99,7 @@ def compute_norm_for_dataframe(df):
         
         bleu = np.nan
         try:
-            bleu = compute_bleu(row['label'], row['prediction'])
+            bleu = compute_bleu(row['answer'], row['predictions'])
         except Exception as e:
             print(f"Ошибка в строке {idx} при вычислении BLEU: {e}")
         bleus.append(bleu)
@@ -106,6 +107,7 @@ def compute_norm_for_dataframe(df):
     df['l2_norm'] = l2_norms
     df['inf_norm'] = inf_norms
     df['bleus'] = bleus
+    df['is_eq'] = is_eq
     return df
 
 if __name__ == "__main__":
@@ -117,9 +119,8 @@ if __name__ == "__main__":
     
     file_path = sys.argv[1]
     
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(file_path, escapechar="\\", on_bad_lines='warn')
     df = compute_norm_for_dataframe(df)
     
-    output_path = file_path.replace('.', '_metrics')
+    output_path = file_path.replace('.', '_metrics.')
     df.to_csv(output_path, index=False)
-    
